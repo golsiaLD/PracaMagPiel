@@ -1,3 +1,7 @@
+## User files
+.DS_Store
+praca_dyplomowa.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
