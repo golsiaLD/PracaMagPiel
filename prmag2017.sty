@@ -30,13 +30,13 @@
 \long\def\oswiadczenie#1{\gdef\@oswiadczenie{#1}}
 \long\def\streszczenia#1{\gdef\@streszczenia{#1}}
 
-\gdef\@miasto{WARSZAWA}
+\gdef\@miasto{LEGNICA}
 \gdef\@uczelnia{POLITECHNIKA WARSZAWSKA}
-\gdef\@wydzial{WYDZIAŁ ELEKTRYCZNY}
+\gdef\@wydzial{WYDZIAŁ PIELĘGNIARSKI}
 \gdef\@instytut{Instytut Elektrotechniki Teoretycznej\linebreak[1] i~Systemów Informacyjno-Pomiarowych}
 \gdef\@zaklad{Zakład Elektrotechniki Teoretycznej\linebreak[1] i~Informatyki Stosowanej}
 \gdef\@rodzajpracy{inżynierska}
-\gdef\@kierunekstudiow{Informatyka}
+\gdef\@kierunekstudiow{Pielęgniarstwo}
 \gdef\@specjalnosc{Inżynieria oprogramowania}
 \gdef\@opiekun{{\Large\bf BŁĄD: BRAK POLECENIA {\tt \(\backslash\)opiekun} !}}
 \gdef\@terminwykonania{{\Large\bf BŁĄD: BRAK POLECENIA {\tt \(\backslash\)terminwykonania} !}}
@@ -94,17 +94,18 @@
 \def\@maketitle{\newpage
   {\fontfamily{phv}\selectfont
   
-  {\noindent\kern-1.2cm\includegraphics[width=16cm]{PWHead.png}
-  \par}
+  %{\noindent\kern-1.2cm\includegraphics[width=16cm]{PWHead.png}
+  %\par}
   
     \vfill
    
  \begin{center}
- {\fontsize{12}{13.4}\selectfont\@instytut\\ \@zaklad\par}
+ %{\fontsize{12}{13.4}\selectfont\@instytut\\ \@zaklad\par}
  
    \vfill
 
- \noindent\kern-1.2cm\@ifundefined{@magisterska}{\includegraphics[width=16cm]{inzhead.png}}{\includegraphics[width=16cm]{mgrhead.png}}\par
+ \noindent\kern-1.2cm\@ifundefined{@magisterska}{\includegraphics[width=16cm]{inzhead.png}}{\includegraphics[width=16cm]{mgrhead.png}}
+ \par
 
 
  
