@@ -19,6 +19,16 @@
 \usepackage{verbatim}
 \usepackage{indentfirst}
 \usepackage[pdftex]{hyperref}
+\usepackage[none]{hyphenat}
+
+%marginesy jakie są każdy widzi
+\usepackage[tmargin=2cm, bmargin=1.5cm, lmargin=3.5cm, rmargin=2.0cm]{geometry}
+
+%tytuły rozdziałów bez słowa "Rozdział"
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\LARGE\thechapter.\ }
+\let\chaptername\relax
+
 
 
 % rozmaite polecenia pomocnicze
@@ -36,9 +46,11 @@
 % na oprawe (1.1cm - 0.7cm)*2 = 0.8cm
 %  oddsidemargin lewy margines na nieparzystych stronach
 % evensidemargin lewy margines na parzystych stronach
-\def\oprawa{1.05cm}
-\addtolength{\oddsidemargin}{\oprawa}
-\addtolength{\evensidemargin}{-\oprawa}
+%\def\oprawa{1.05cm}
+%\addtolength{\oddsidemargin}{\oprawa}
+%\addtolength{\evensidemargin}{-\oprawa}
+
+%\geometry{tmargin=2cm, bmargin=1.5cm, lmargin=3.5cm, rmargin=2cm}
 
 % table span multirows
 \usepackage{multirow}
@@ -51,7 +63,7 @@
 
 %%%%%%%%%%%%%%% Strona Tytułowa %%%%%%%%%%%%%%%%%
 % To trzeba wypelnic swoimi danymi
-\title{Wpływ pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy}
+\title{Wpływ pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy pracujących zawodowo}
 
 % autor
 \author{Małgorzata Ługin-Dąbrowska}
@@ -75,8 +87,6 @@
 \miasto{Legnica}
 \uczelnia{Wyższa Szkoła Medyczna}
 \wydzial{WYDZIAŁ PIELĘGNIARSTWA}
-%\instytut{INSTYTUT ELEKTROTECHNIKI TEORETYCZNEJ\linebreak[1] I~SYSTEMÓW INFORMACYJNO-POMIAROWYCH}
-%\zaklad{ZAKŁAD ELEKTROTECHNIKI TEORETYCZNEJ\linebreak[1] I~INFORMATYKI STOSOWANEJ}
 \kierunekstudiow{PIELĘGNIARSTWO}
 
 % domyslnie praca jest inzynierska, ale po odkomentowaniu ponizszej linii zrobi sie magisterska
@@ -94,11 +104,13 @@
 }
 
 \begin{document}
+\sloppy
 \maketitle
 
 %-----------------
 % Wstęp
 %-----------------
+
 \chapter{Wstęp}
 Tu trzeba zacząć wstawiać własną treść i oczywiście usunąć tę, która jest użyta w przykładzie...
 
@@ -107,13 +119,13 @@ Tu trzeba zacząć wstawiać własną treść i oczywiście usunąć tę, która
 %-----------------
 % Wpływ pracy zawodowej pielęgniarek i pielęgniarzy na życie osobiste
 %-----------------
-\chapter{Wpływ pracy zawodowej pielęgniarek i pielęgniarzy na życie osobiste w świetle literatury przedmiotu.}
+\chapter{Wpływ pracy zawodowej pielęgniarek i~pielęgniarzy na życie osobiste w świetle literatury przedmiotu}
 Zawód pielęgniarki należy do najbardziej prestiżowych profesji na świecie. W wydanym przez WHO i Międzynarodową Radę Pielęgniarek raporcie o stanie światowego pielęgniarstwa w roku 2020, podkreśla się szczególne znaczenie pielęgniarstwa, w każdym systemie ochrony zdrowia. Pielęgniarki pełnią kluczową rolę w sytuacji światowego zagrożenia zdrowotnego.\cite{who} Również w Polsce coroczne rankingi najbardziej szanowanych zawodów, umieszczają tę grupę zawodową na wysokich pozycjach \cite{rap}. Mimo tego, od lat, obserwuje się znaczną dysproporcję między powszechną opinią o szacunku, a kojarzeniem zawodu z niskim wynagrodzeniem, ciężką pracą fizyczną i umysłową oraz nieustannymi wyrzeczeniami w życiu osobistym. Fenomen pogłębia fakt, iż pielęgniarki w większości, nie żałują wyboru zawodu, podkreślają, że daje wiele satysfakcji.
 
   %-----------------
   % Historyczne uwarunkowania samodzielności zawodowej.
   %-----------------
-\section{Historyczne uwarunkowania samodzielności zawodowej.}
+\section{Historyczne uwarunkowania samodzielności zawodowej}
 Pielęgniarstwo ewaluowało na przestrzeni wieków, od spontanicznego odruchu serca, do autonomii wysokiego poziomu. Już w starożytności, nad cierpiącymi, czuwały osoby, wykonujące czynności pielęgnacyjne. Istnieją źródła historyczne, dotyczące organizacji opieki pielęgnacyjnej w starożytnych Indiach, Rzymie, Chinach, Japonii czy Grecji. Choć początkowo role te pełnili mężczyźni, to z czasem zawód stał się domeną kobiet.\cite{zro} Od czasów średniowiecza pielęgnowaniem chorych zajmowały się siostry zakonne. Tradycyjne zwracanie się do pielęgniarek ,,siostro”, tam ma, swój początek. Przez wiele wieków pielęgniarki, kojarzono ze złą reputacją \cite{tlo}. Fakt ten, związany był z zatrudnianiem do pielęgnowania chorych, osób z marginesu społecznego. Dopiero Florence Nightingale w połowie XIX w. pokonując liczne przeszkody, otworzyła szkołę dla pielęgniarek. Główny nacisk oprócz typowych umiejętności pielęgniarskich położono, na nienaganne zachowanie w pracy i poza nią. Jej działalność na rzecz podniesienia prestiżu zawodu, jest niepodważalna. \cite{flo} Wychowała wiele pokoleń pielęgniarek. Jej uczennice niosły kaganek zmian, nawet na inne kontynenty. Przykładem może być Linda'e Richards, znana jako pierwsza wyszkolona pielęgniarka USA, która promowała pielęgniarstwo, również w Japonii \cite{linda}.
 
 Niezwykle istotne, dla przyszłości światowego pielęgniarstwa, było utworzenie w Stanach Zjednoczonych Ameryki, na przełomie wieków, Międzynarodowej Rady Pielęgniarek \cite{rada}. Organizacji zrzeszającej profesjonalistów. Ściśle współpracującej z takimi instytucjami jak WHO, Czerwony Krzyż czy UNICEF. Choć pielęgniarki polskie, włączone zostały do jej struktur, dopiero 1948 roku, czynnie uczestniczyły w licznych projektach, dotyczących zdrowia i współpracy między tymi organizacjami.
@@ -137,7 +149,7 @@ Od 2003 roku, aby zostać pielęgniarką, nie wystarczy ukończyć Liceum czy St
   %-----------------
   % Ustawa o zawodzie pielęgniarki i położnej pierwszym krokiem do autonomii zawodu.
   %-----------------
-\section{Ustawa o zawodzie pielęgniarki i położnej pierwszym krokiem do autonomii zawodu.}
+\section{Ustawa o zawodzie pielęgniarki i położnej pierwszym krokiem do autonomii zawodu}
 Determinantami każdego niezależnego zawodu, są: regulacje prawne i organizacyjne, wiedza, doświadczenie, autorytet, profesjonalizm i określony system wartości  \cite{deter}.
 
 Pierwsze zalążki rodzącej się autonomii zawodowej pojawiają się jeszcze przed II Wojną Światową. Długofalowe działania na rzecz ustawodawstwa są zasługą pielęgniarek m.in.  Marii Babickiej- Zachert, Heleny Nagórskiej, Zofii Zawadzkiej, Elżbiety Rabowskiej, Zofii Szlekier piastujących kierownictwa Referatu Pielęgniarstwa w Departamencie Zdrowia kierownictwa szkół pielęgniarskich, szkół PCK i wielu innych wybitnych postaci ze środowiska medycznego.
@@ -176,7 +188,7 @@ Niezależność, samodzielność zawodową uważa się za kluczowy czynnik rozwo
   %-----------------
   % Kompetencje i uprawnienia zawodowe pielęgniarek i pielęgniarzy.
   %-----------------
-\section{Kompetencje i uprawnienia zawodowe pielęgniarek i pielęgniarzy.}
+\section{Kompetencje i uprawnienia zawodowe \newline pielęgniarek i pielęgniarzy}
 Pielęgniarstwo w Polsce, nigdy nie było profesją, w którą inwestowaliby rządzący, niezależnie jaką opcję polityczną by reprezentowali. Wszystkie osiągnięcia zawdzięcza ciężkiej pracy swych przedstawicielek oraz licznych grup pielęgniarek i pielęgniarzy organizujących marsze, strajki, monitujących pielęgniarek- posłanek w Sejmie, roboczych grupach komisji zdrowia. Nigdy nie postawiły one na szali, życia i zdrowia pacjenta \cite{strajk}. Mimo tego, że zawód, jest trudny i w porównaniu z innymi profesjami nie jest atrakcyjny pod względem finansowym, funkcjonujące w systemie pielęgniarki spełniają wymogi ustawy o zawodzie pielęgniarki i położnej  w zakresie ustawicznego kształcenia \cite{2011}. Łącznie liczba pielęgniarek i położnych posiadających tytuł licencjata i magistra pielęgniarstwa, oraz tytuł licencjata i magistra położnictwa to połowa zarejestrowanych aktywnych zawodowo pielęgniarek i położnych\cite{ile}. Pielęgniarki w Polsce podejmują również studia doktoranckie, prowadzą badania oparte na dowodach naukowych EBM, są cenionymi naukowcami w strukturach światowych organizacji, próbują, przebić mur uprzedzeń i niechęci rządzących i społeczeństwa. Polskie pielęgniarki są kreatywne, otrzymują wyróżnienia, nagrody. W 2021 roku Nagrodę Pielęgniarską Królowej Szwecji Queen Silvia Nursing Award zdobyła Julia Osiecka, za projekt- powrót do młodych lat. Laureatka zachęca do wykorzystania wirtualnej rzeczywistości do przedstawienia i doświadczania aktywności, które w młodości były codziennością obecnych seniorów \cite{julia}. Wszystkie propozycje zgłoszone do nagrody były innowacyjne i warte rozwoju. Nie promuje się jednak  pielęgniarstwa i nie pomaga w tym narracja w mediach.
 
 Kompetencje, to ranga, nobilitacja, ale również odpowiedzialność i nierozerwalnie z nią związane roszczenia pacjentów. Środowisko pielęgniarskie, boi się konsekwencji i niechętnie korzysta ze swoich uprawnień. Widać to szczególnie w ilości wystawianych recept przez uprawnione pielęgniarki. W pierwszej połowie 2019 roku receptę wystawiło 2150 pielęgniarek \cite{model}. Za przyczyny tego faktu podaje się brak wymogów formalnych, dynamiczny system refundacji leków, trudności proceduralne takie jak dostęp do systemu E-wuś, podpis certyfikowany, zakładanie konta na platformie P1, konieczne jest zaplecze sprzętowe, spełniające określone wymagania techniczne.  Nie bez znaczenia jest także odpowiedzialność, także finansowa. Poza tym za nowymi kompetencjami, czyli kolejnymi obowiązkami, nie idzie wzrost wynagrodzeń za usługę. Niewykorzystana szansa systemu, gdzie w czasach zagrożenia epidemicznego, pacjenci muszą się narażać pobytem w placówce ochrony zdrowia, w celu wypisania czy przedłużenia recepty. Podobne dylematy dotyczą pozostałych nabytych kompetencji pielęgniarskich. Rzeczywiste wykonywanie tych czynności zmieniłoby postrzeganie pielęgniarki przez społeczeństwo jako służącej pana doktora, na korzyść pielęgniarki profesjonalistki, która z powodzeniem dokona badania fizykalnego, zleci i dokona analizy badań i jeśli będzie to konieczne zaordynuje odpowiednie leki. Oczywiście profesjonalizm przekłada się na prestiż, którego wykładnią są adekwatne wynagrodzenia. 
@@ -209,7 +221,7 @@ Jednak mimo krytycznej sytuacji w Systemie Ochrony Zdrowia istnieją narzędzia,
   %-----------------
   % Życie osobiste pielęgniarek i pielęgniarzy aktywnych zawodowo
   %-----------------
-\section{Życie osobiste pielęgniarek i pielęgniarzy aktywnych zawodowo.}
+\section{Życie osobiste pielęgniarek i pielęgniarzy \newline aktywnych zawodowo}
 \label{sectionZycieOsobiste}
 Równowaga w życiu człowieka, to cel, do którego powinno się dążyć. Im więcej aktywności, zadań, które się podejmuje, tym trudniej tę równowagę osiągnąć. Powstały systemy filozoficzne, religijne, nauki, gałęzie treningu personalnego, mentalnego, które skupiają się na poczuciu równowagi w życiu. Od czasów starożytnych, Hipokratesa, Buddy, mędrców kultury chińskiej, słynnego yin/yang, po teorie Antonovskiego o poczuciu koherencji, osiągnięciu status quo na kontinuum zdrowia, system work-life balance, poszukuje się homeostazy \cite{salutogeneza}.
 
@@ -228,7 +240,7 @@ Z kolei pielęgniarki mające doświadczenie cierpliwości wobec własnych dziec
   %-----------------
   % Systemy wsparcia pielęgniarek i pielęgniarzy czynnych zawodowo
   %-----------------
-\section{Systemy wsparcia pielęgniarek i pielęgniarzy czynnych zawodowo.}
+\section{Systemy wsparcia pielęgniarek\newline i~pielęgniarzy czynnych zawodowo}
 \label{sectionSystemyWsparcia}
 Wsparcie to nie tylko instytucje. To również kultura organizacji, bezpieczeństwo jej członków \cite{bezpieczeństwo}. Wytworzone własne mechanizmy wsparcia, takie jak  prężność poznawcza, czy też w postaci  rodzin, przyjaciół, sportu, pasji \cite{prężność}. Pielęgniarek, które tworzą piękne przedmioty, rzeczy użytkowe, biżuterię, piszą książki, malują czy muzykują. jest bardzo wiele. Dzięki nowoczesnym technologiom, internetowi można te prace, podziwiać, kupić \cite{talent}. Jeśli chodzi o uprawianie sportu wśród grupy pielęgniarek i pielęgniarzy, badania pokazują, że najwięcej osób trenuje regularnie wśród najmłodszych i najstarszych pracowników \cite{sport}.
 
@@ -245,7 +257,7 @@ Trwająca sytuacja rodzi pytania o uruchomienie mechanizmów adaptacyjnych, wśr
 Praca pielęgniarza/pielęgniarki to odpowiedzialność osobista, zawodowa. Dynamiczne zmiany w ochronie zdrowia, wymagają uwagi w zakresie szeroko pojętego prawa medycznego. Kolejne ustawy, rozporządzenia, nadają uprawnienia, prawa pacjenta w czasie pandemii ulegają ograniczeniu. Warto mieć wsparcie w tym względzie, korzystać z webinarów, pomocy prawników w Izbach Pielęgniarek i Położnych. Strona MedLaw prawo dla medycyny, powstała, aby upowszechniać wiedzę z dziedziny prawa i medycyny. Prowadzona jest przez dr n. prawniczych Anitę Gałęską- Śliwkę. Doświadczoną i praktykującą prawniczkę \cite{anita}.
 
 
-\chapter{Metodyka badań.}
+\chapter{Metodyka badań}
 
   %-----------------
   % Cel badań
@@ -270,7 +282,7 @@ Na podstawie celu ogólnego wyodrębniono następujące cele szczegółowe:
   %-----------------
   % Szczegółowe problemy i hipotezy badawcze
   %-----------------
-\section{Szczegółowe problemy i hipotezy badawcze.}
+\section{Szczegółowe problemy i hipotezy badawcze}
 Według Janusza Szumskiego problemem badawczym nazywamy to, co jest przedmiotem wysiłków badawczych, czyli co orientuje przedsięwzięcia poznawcze \cite{janusz}.
 
 Główny problem badawczy niniejszej pracy dotyczy zagadnienia czy wpływ pracy zawodowej na życie osobiste, istnieje w świadomości aktywnej zawodowo grupy pielęgniarskiej i jak jest przez nią postrzegane. Ze względu na złożoność problemu wyłoniono problemy szczegółowe:
@@ -295,7 +307,7 @@ Sformułowano hipotezy szczegółowe:
   %-----------------
   % Metody i narzędzia badawcze
   %-----------------
-\section{Metody i narzędzia badawcze.}
+\section{Metody i narzędzia badawcze}
 Tadeusz Pilch o metodzie badawczej mówi, że jest to zespól czynności i zabiegów zmierzających do poznania określonego przedmiotu. To pewnego rodzaju charakterystyczne działanie, które podejmujemy, w celu zdobycia interesujących nas danych \cite{tadeusz}. Dla celów pracy wybrano metodę sondażu diagnostycznego, analizę i krytykę piśmiennictwa.\cite{krys}
 
 O technice badawczej autor mówi, iż jest wykładnią naczelnych problemów badawczych \cite{tadeusz}. W pracy ze względu na ograniczony dostęp do wybranej grupy badanej, zastosowano autorski kwestionariusz ankietowy oraz techniki statystyczne.
@@ -305,7 +317,7 @@ Natomiast narzędzie badawcze wg Wincentego Okonia, to materiały, narzędzia te
   %-----------------
   % Organizacja i przebieg badań.
   %-----------------
-\section{Organizacja i przebieg badań.}
+\section{Organizacja i przebieg badań}
 Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyższej Szkoły Medycznej w Legnicy, na kierunku pielęgniarstwo w okresie od 1.11.2021 do 1.03.2022. Kryterium włączenia stanowiły osoby czynnie pracujące zawodowo. 
 
 ...
@@ -330,44 +342,41 @@ Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyż
 \begin{thebibliography}{99}
 \addcontentsline{toc}{chapter}{Bibliografia}
 \bibitem{who}{ State of Worlds Nursing 2020. Investing in education, job and  leadership; https://apps.who.int/iris/handle/10665/331677. [dostęp 05.02.2022]}
-\bibitem{rap}{Najbardziej poważane zawody przez Polaków w 2021; https://swresearch.pl/news/najbardziej-powazane-zawody-przez-polakow-w-2021. [dostęp 05.02.2022]}
-\bibitem{zro}{Historia medycyny;https://historiamedycyny.pl/ [dostęp 05.02.2022]}
+\bibitem{rap}{Najbardziej poważane zawody przez Polaków w 2021;\newline https://swresearch.pl/news/najbardziej-powazane-zawody-przez-polakow-w-2021. [dostęp 05.02.2022]}
+\bibitem{zro}{Historia medycyny; https://historiamedycyny.pl/ [dostęp 05.02.2022]}
 \bibitem{tlo}{Maksymowicz A. Zagadnienia zawodowe pielęgniarstwa na tle historycznym. Warszawa: Wydawnictwo Lekarskie PZWL; 1977}
-\bibitem{flo}{Bostridge M. Florence Nighitingale-The lady with lamp; https://www.bbc.co.uk/history/british/victorians/nightingale-01.shtml [dostęp 05.02.2022]}
-\bibitem{linda}{Richards L. Reminescences of Linda Richards. Americas firsttrained nurse.Boston: Whitcomb \& Barrows;2015}
+\bibitem{flo}{Bostridge M. Florence Nighitingale -The lady with lamp;\newline https://www.bbc.co.uk/history/british/victorians/nightingale-01.shtml\newline [dostęp 05.02.2022]}
+\bibitem{linda}{Richards L. Reminescences of Linda Richards. Americas firsttrained nurse. Boston: Whitcomb \& Barrows; 2015}
 \bibitem{rada}{Poznańska S. Pielęgniarstwo wczoraj i dziś. Warszawa: Wydawnictwo Lekarskie PZWL;1988}
 \bibitem{ikon}{Supady J. Początek nowoczesnego pielęgniarstwa w XIX wieku. Health Promotion and Physical Activity. 2019; 2(7)}
 \bibitem{ikonpol}{Slosorz T. Kształcenie pielęgniarek w ujęciu historycznym. Polski Przegląd Nauk o Zdrowiu. 2014; 4(41)}
 \bibitem{szkol}{Iżycka-Kowalska A. Powstanie Warszawskiej Szkoły Pielęgniarstwa i jej rozwój w latach 1921-1928. Warszawa; Wydawnictwo Lekarskie PZWL; 1989}
-\bibitem{50}{Kaniewska-Iżycka J. Rozwój pielęgniarstwa polskiego do 1950 roku. Materiały pomocnicze do historii zawodu pielęgniarskiego cz.1. Centrum Metodyczne Doskonalenia Nauczycieli Średniego Szkolnictwa Medycznego;1987}
-\bibitem{czas}{Wolska-Lipiec K. Czasopisma; http://www.wmpp.org.pl/pl/wydawnictwa-pielegniarskie/czasopisma. html. [dostęp 11.02.2022]}
-\bibitem{spec}{Hutner R. Kuźnia koncepcji pielęgniarskich.Pielęgniarstwo 2000;1992;3}
+\bibitem{50}{Kaniewska-Iżycka J. Rozwój pielęgniarstwa polskiego do 1950 roku. Materiały pomocnicze do historii zawodu pielęgniarskiego cz.1. Centrum Metodyczne Doskonalenia Nauczycieli Średniego Szkolnictwa Medycznego; 1987}
+\bibitem{czas}{Wolska-Lipiec K. Czasopisma;\newline http://www.wmpp.org.pl/pl/wydawnictwa-pielegniarskie/czasopisma.html. [dostęp 11.02.2022]}
+\bibitem{spec}{Hutner R. Kuźnia koncepcji pielęgniarskich. Pielęgniarstwo 2000; 1992; 3}
 \bibitem{model}{Ministerstwo Zdrowia. Nowe kompetencje pielęgniarek i położnych. Warszawa; Fundusze Europejskie. Wiedza Edukacja Rozwój; 2020}
-\bibitem{deter}{Sak-Skowron M. Determinanty satysfakcji z pracy. Studium teoretyczne. Marketing i zarządzanie.2017;2(48)}
+\bibitem{deter}{Sak-Skowron M. Determinanty satysfakcji z pracy. Studium teoretyczne. Marketing i zarządzanie. 2017; 2(48)}
 \bibitem{usta}{Wilczewska L. Rozwój zawodu pielęgniarskiego w ujęciu historycznym. Biuletyn Naczelnej Izby Pielęgniarek i Położnych. Warszawa; 1994}
-\bibitem{1935}{Gnich J. Ustawa o zawodzie z 1935 r.; http://www.wmpp.org.pl/pl/ustawa-o-zawodzie.html. [dostęp 11.02.2022]}.
-\bibitem{1996}{Ustawa z dnia 5 lipca 1996 r. o zawodach pielęgniarki i położnej.; https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19960910410 [dostęp 11.02.2022]}
-\bibitem{2011}{Ustawa z dnia 15 lipca 2011 r. o zawodach pielęgniarki i położnej.; https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=wdu20111741039 [dostęp 11.02.2022]}
-\bibitem{nipip}{Ustawa z dnia 1 lipca 2011 r. o samorządzie pielęgniarek i położnych.; http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20111741038 [dostęp 11.02.2022]}
+\bibitem{1935}{Gnich J. Ustawa o zawodzie z 1935 r.;\newline http://www.wmpp.org.pl/pl/ustawa-o-zawodzie.html. [dostęp 11.02.2022]}.
+\bibitem{1996}{Ustawa z dnia 5 lipca 1996 r. o zawodach pielęgniarki i położnej.;\newline https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19960910410\newline [dostęp 11.02.2022]}
+\bibitem{2011}{Ustawa z dnia 15 lipca 2011 r. o zawodach pielęgniarki i położnej.; https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=wdu20111741039\newline [dostęp 11.02.2022]}
+\bibitem{nipip}{Ustawa z dnia 1 lipca 2011 r. o samorządzie pielęgniarek i położnych.; http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20111741038\newline [dostęp 11.02.2022]}
 \bibitem{prawo}{Karkowska D. Prawo medyczne dla pielęgniarek. Warszawa: Wolters Kluwer; 2020}
-\bibitem{akty}{Akty prawne w dziedzinie pielęgniarstwa.; https://isap.sejm.gov.pl/isap.nsf/ByKeyword.xsp?key=pielęgniarstwo [dostęp 11.02.2022]}
-\bibitem{strategia}{ Ministerstwo Zdrowia. Polityka wieloletnia państwa na rzecz pielęgniarstwa i położnictwa w Polsce. Warszawa; Fundusze Europejskie.Wiedza Edukacja Rozwój ; 2020}
+\bibitem{akty}{Akty prawne w dziedzinie pielęgniarstwa.;\newline https://isap.sejm.gov.pl/isap.nsf/ByKeyword.xsp?key=pielęgniarstwo\newline [dostęp 11.02.2022]}
+\bibitem{strategia}{ Ministerstwo Zdrowia. Polityka wieloletnia państwa na rzecz pielęgniarstwa i położnictwa w Polsce. Warszawa; Fundusze Europejskie. Wiedza Edukacja Rozwój; 2020}
 \bibitem{federic}{ Laloux F. Pracować inaczej. Nowatorski model organizacji inspirowany kolejnym etapem rozwoju ludzkiej świadomości. Warszawa; Studio Emka; 2015}
 \bibitem{ile}{Strzelec P. Nowe uprawnienia, nowe roszczenia-aspekty odpowiedzialności prawnej pielęgniarek i położnych. Bydgoszcz; Okręgowa Izba Pielęgniarek i Położnych; 2018}
 \bibitem{strajk}{Związek i jego historia. Ogólnopolski Związek Zawodowy Pielęgniarek i Położnych; https://ozzpip.pl/about/ [dostęp 11.02.2022]}.
-\bibitem{julia}{Osiecka J. Powrót do młodych lat; https://www.queensilvianursingaward.com/pl-stories/powrot-do-mlodych-lat [dostęp 11.02.2022]}.
+\bibitem{julia}{Osiecka J. Powrót do młodych lat;\newline https://www.queensilvianursingaward.com/pl-stories/powrot-do-mlodych-lat [dostęp 11.02.2022]}.
 \bibitem{dorota}{ Kilańska D. Nowe role i zadania pielęgniarki w XXI w. Gabinet Prywatny; 2012: 7/8}
-\bibitem{petycja}{Petycja. Rozszerzenie kompetencji pielęgniarek i położnych. https://www.rynekzdrowia.pl/Polityka-zdrowotna/Pielegniarki-chca-szerszych-kompetencji-Wystawiania-L4-recept-i-skierowan-na-szczepienia,229508,14.html [dostęp 20.02.2022]}
-\bibitem{poz}{Pielęgniarki w zespole do spraw POZ. https://www.rynekzdrowia.pl/Polityka-zdrowotna/Pielegniarki-chca-pracowac-nad-zmianami-w-POZ-Chca-dolaczyc-do-zespolu-powolanego-przez-ministra,229668,14.html [dostęp 20.02.2022]}
-\bibitem{badania}{Felsmann M, Głowacka M, Haor B, Humańska M, Kurowska K, Rezmerska L, et al. Badania fizykalne jako integralny element pracy pielęgniarki. Bydgoszcz; 2006}
-\bibitem{spoty}{Latos M. Krew i mózg; https://open.spotify.com/show/643Y5GdI7yGkqVxzPaBvSH [dostęp 16.02.2022]}
+\bibitem{petycja}{Petycja. Rozszerzenie kompetencji pielęgniarek i położnych.\newline https://www.rynekzdrowia.pl/Polityka-zdrowotna/Pielegniarki-chca-szerszych- kompetencji-Wystawiania-L4-recept-i-skierowan-na-szczepienia,229508,14.html [dostęp 20.02.2022]}
+\bibitem{poz}{Pielęgniarki w zespole do spraw POZ. https://www.rynekzdrowia.pl/Polityka- zdrowotna/Pielegniarki-chca-pracowac-nad-zmianami-w-POZ-Chca-dolaczyc-do- zespolu-powolanego-przez-ministra,229668,14.html [dostęp 20.02.2022]}
+\bibitem{badania}{Felsmann M, Głowacka M, Haor B, Humańska M, Kurowska K, Rezmerska L, et~al. Badania fizykalne jako integralny element pracy pielęgniarki. Bydgoszcz; 2006}
+\bibitem{spoty}{Latos M. Krew i mózg;/newline https://open.spotify.com/show/643Y5GdI7yGkqVxzPaBvSH [dostęp 16.02.2022]}
 \bibitem{zdrowie}{Andruszkiewicz A. Nowik M Zachowania zdrowotne kobiet czynnych zawodowo. Problemy Pielęgniarstwa. 2011; (19)}
-
-%książka
 \bibitem{obciążenia}{Ksykiewicz-Dorota A. Podstawy organizacji pracy pielęgniarskiej. Lublin; Czelej; 2004}
-
 \bibitem{statystyka}{Raport NIPIP: Katastrofa kadrowa pielęgniarek i położnych. Warszawa; NIPIP; 2021 [dostęp 16.02.2022]}
-\bibitem{zgony}{Ile żyje polska pielęgniarka. Wyjaśniamy  wątpliwości wokół danych NIPIP; https://demagog.org.pl/analizy i raporty/ile-zyje-polska-pielegniarka-wyjasniamy-watpliwosci-wokol-danych-nipip/ [dostęp 18.02.2022]}.
+\bibitem{zgony}{Ile żyje polska pielęgniarka. Wyjaśniamy  wątpliwości wokół danych NIPIP;\newline https://demagog.org.pl/analizy-i-raporty/ile-zyje-polska-pielegniarka-wyjasniamy- watpliwosci-wokol-danych-nipip/ [dostęp 18.02.2022]}.
 \bibitem{sen}{Current psychiatry report. Medical College of Georgia at Augusta University. Frontiers Ottawa. 2021; https://www.mp.pl/covid19/covid19-aktualnosci/270418,pandemiczna-bezsennosc-medykow [dostęp 18.02.2022]}
 \bibitem{covid}{Biegańska-Banaś J. Makara-Studzińska. Strategie radzenia sobie pielęgniarek podczas pandemii Covid-19. Problemy Pielęgniarstwa 2020/1}
 \bibitem{cyfrowe}{Lewoniewska J. Zarobki i dodatkowe zatrudnienie pielęgniarek i położnych w Polsce. Raport Stowarzyszenia Pielęgniarki Cyfrowe; 2021;https://www.pielegniarkicyfrowe.pl/2021/06/12/zarobki-i-dodatkowe-zatrudnienie-pielegniarek-i-poloznych-w-polsce/[dostęp 18.02.2022]}
