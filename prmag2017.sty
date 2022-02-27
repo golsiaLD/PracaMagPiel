@@ -59,8 +59,8 @@
  \endgroup
 %  \@streszczenia
 % \cleardoublepage
- \@oswiadczenie
-\cleardoublepage
+% \@oswiadczenie
+%\cleardoublepage
    \setcounter{page}{1}
    \pagenumbering{roman}
    \tableofcontents
@@ -77,9 +77,9 @@
 %   \thispagestyle{empty}
  \fi
  % Dodanie podziekowania
- \@ifundefined{@podziekowania}{\relax}{%
- \@podziekowania
- \newpage}
+% \@ifundefined{@podziekowania}{\relax}{%
+% \@podziekowania
+% \newpage}
   % strona tutulowa
  \cleardoublepage
   \setcounter{page}{1}
@@ -100,40 +100,53 @@
     \vfill
    
  \begin{center}
- %{\fontsize{12}{13.4}\selectfont\@instytut\\ \@zaklad\par}
+
  
    \vfill
 
- \noindent\kern-1.2cm\@ifundefined{@magisterska}{\includegraphics[width=16cm]{inzhead.png}}{\includegraphics[width=16cm]{mgrhead.png}}
- \par
+%\noindent\kern-1.2cm\
+\begin{center}
+{\includegraphics[width=11cm]{wsm_name_logo.png}}
+% \par
 
+  \vskip30pt
 
+ %\noindent\kern-1.2cm\
+ {\includegraphics[width=6cm]{wsm_mag.png}}
+% \par
+\end{center}
+ 
+ \vskip40pt
  
  %{\fontsize{12}{13.4}\selectfont na kierunku \@kierunekstudiow\\
   %w specjalności \@specjalnosc}
-  
-  \vfill
+  \begin{center}
+ \fontsize{14}{17}\selectfont \@author
+ \vskip1pt
+ \fontsize{14}{17}\selectfont Nr albumu: \@nrindeksu 
+ 
+  \vskip80pt
  
   {\fontsize{14}{17}\selectfont \@title \par}
+  \end{center}
   
-    \vfill
   
-  {\lineskip .5em
-  \begin{center}
-   \begin{tabular}[t]{ccc}
-   \fontsize{21}{25}\selectfont \@author  \@ifundefined{@authorII}{\relax}{&\ & \fontsize{21}{25}\selectfont \@authorII} \\
-   nr albumu \@nrindeksu  \@ifundefined{@nrindeksuII}{\relax}{&\ & nr albumu \@nrindeksuII}
-  \end{tabular}\bigskip\par
-  \end{center}}
+ % {\lineskip .5em
+  %\begin{center}
+   %\begin{tabular}[t]{ccc}
+ %  \fontsize{21}{25}\selectfont \@author  \@ifundefined{@authorII}{\relax}{&\ & \fontsize{21}{25}\selectfont \@authorII} \\
+%   nr albumu \@nrindeksu  \@ifundefined{@nrindeksuII}{\relax}{&\ & nr albumu \@nrindeksuII}
+ % \end{tabular}\bigskip\par
+ % \end{center}}
   
-    \vskip20pt
+    \vskip80pt
 
-  \@ifundefined{@opiekun}{\relax}{promotor\\ \@opiekun\par\vskip5pt}
+  \@ifundefined{@opiekun}{\relax}{ \fontsize{14}{17}\selectfont Promotor: \@opiekun\par\vskip5pt}
   \@ifundefined{@konsultant}{\relax}{konsultant \\\@konsultant\par}
 
   \vfill
   
- \@miasto\ \@rok
+ \fontsize{14}{17}\selectfont \@miasto\ \@rok
  \end{center}
  }
 }
