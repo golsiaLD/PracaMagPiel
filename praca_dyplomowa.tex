@@ -21,6 +21,10 @@
 \usepackage[pdftex]{hyperref}
 \usepackage[none]{hyphenat}
 
+\usepackage{subfigure}
+
+\usepackage{floatrow}
+
 %marginesy jakie są każdy widzi
 \usepackage[tmargin=2cm, bmargin=1.5cm, lmargin=3.5cm, rmargin=2.0cm]{geometry}
 
@@ -63,7 +67,7 @@
 
 %%%%%%%%%%%%%%% Strona Tytułowa %%%%%%%%%%%%%%%%%
 % To trzeba wypelnic swoimi danymi
-\title{Wpływ pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy czynnych zawodowo}
+\title{Wpływ pracy zawodowej  w ponadnormatywnym wymiarze czasu pracy, na życie osobiste pielęgniarek i pielęgniarzy}
 
 % autor
 \author{Małgorzata Ługin-Dąbrowska}
@@ -233,7 +237,7 @@ Wsparcie to nie tylko instytucje. To również kultura organizacji, bezpieczeńs
 
 Również Okręgowe Izby Pielęgniarek i Położnych zapewniają wsparcie swoim członkom w wielu obszarach: edukacji – (kursy, szkolenia warsztaty, ale także dostęp do bibliotek wirtualnych, serwisów prawnych), działania pomocowe – (zapomogi finansowe, pomoc, w przypadku trudnej sytuacji życiowej), oferują karty do klubów fitness, doradztwo, w wielu problemach \cite{izby}.
 
-Wszystkie te metody, są uznanymi sposobami wsparcia. Jednak często, konieczne jest wdrożenie profesjonalnej pomocy. Pandemia obnażyła System Opieki Zdrowotnej w tym względzie. Nie tylko pacjenci, często nie są objęci opieką psychologiczną, ale także personel, który doświadcza zespołu stresu pourazowego czy wtórnej traumatyzacji.  Wyniki przeprowadzonych już badań są zatrważające, jeśli chodzi o skutki pracy medyków w pandemii. Kryzys, to nie jest jakaś sytuacja. To wyraz percepcji, tego zdarzenia przez człowieka i jego reakcji na zagrażającą sytuację. W tym procesie, człowiek zdaje sobie sprawę, że posiadane przez niego strategie radzenia sobie, nie mogą być tak efektywne jak dotychczas \cite{covid}.
+Wszystkie te metody, są uznanymi sposobami wsparcia. Jednak często, konieczne jest wdrożenie profesjonalnej pomocy. Pandemia obnażyła System Opieki Zdrowotnej w tym względzie. Nie tylko pacjenci, często nie są objęci opieką psychologiczną, ale także personel, który doświadcza zespołu stresu pourazowego czy wtórnej traumatyzacji.  Wyniki przeprowadzonych już badań są zatrważające, jeśli chodzi o skutki pracy medyków w pandemii. ,,Kryzys, to nie jest jakaś sytuacja. To wyraz percepcji, tego zdarzenia przez człowieka i jego reakcji na zagrażającą sytuację. W tym procesie, człowiek zdaje sobie sprawę, że posiadane przez niego strategie radzenia sobie, nie mogą być tak efektywne jak dotychczas" \cite{covid}.
 
 Na pomoc tym zjawiskom wychodzi szereg organizacji pozarządowych, uczelni, również Ministerstwo Zdrowia oferuje pomoc psychologiczną, oddziały Okręgowych Izb Pielęgniarek i Położnych, ale także dyrektorzy placówek medycznych, urzędy miast. Istnieją akcje prowadzone w mediach takie jak: Ulga dla medyka, SOS- bezpłatna pomoc psychologiczna dla pielęgniarek i położnych, , \#DawkaWsparcia, \#NieDamySię Wsparcie psychologiczne dla służby zdrowia. Można nawiązać kontakt i uzyskać wsparcie psychologiczne wykwalifikowanych terapeutów \cite{jak}.
 
@@ -276,6 +280,8 @@ Główny problem badawczy niniejszej pracy dotyczy zagadnienia czy wpływ pracy 
 \begin{enumerate}
 	\item Czy istnieje konflikt interesów na płaszczyźnie rodzina-praca, praca rodzina?
 	\item Czy można się realizować zawodowo i prowadzić szczęśliwe życie osobiste?
+	\item Czy empatia pomaga, czy przeszkadza w wykonywaniu tego zawodu?
+	\item Jakie niebezpieczeństwa niesie wykonywanie zawodu pielęgniarki/arza?
 \end{enumerate}
 
 Hipotezy badawcze są uszczegółowieniem celów i problemów badawczych. Stanowią nowe twierdzenia, co do których istnieje pewne prawdopodobieństwo, że są właściwym rozwiązaniem sformułowanych problemów badawczych \cite{janusz}.
@@ -284,9 +290,9 @@ Główna hipoteza badawcza brzmi: praca zawodowa, w ponadnormatywnym czasie prac
 
 Sformułowano hipotezy szczegółowe:
 \begin{enumerate}
-	\item Poziom świadomości pielęgniarek i pielęgniarzy na temat zagrożeń, wynikających z pracy zawodowej, a w szczególności pracy w ponadnormatywnym czasie pracy jest niewystarczający.
+	\item  Poziom świadomości na temat zagrożeń wynikających z pracy zawodowej w ponadnormatywnym wymiarze pracy,  jest  istotnie niewystarczający, lub schodzi na plan dalszy, wobec różnych potrzeb, które podlegają zmianom w trakcie życia.
 	\item Pielęgniarki/arze mają predyspozycje do godzenia życia zawodowego i rodzinnego.
-	\item Zawodowa grupa pielęgniarska, kształci się, aby niwelować skutki traumatyzacji, wynikające z trudnych sytuacji w pracy.
+	\item Poziom wykształcenia kadry pielęgniarskiej ma istotne znaczenie, dla  redukowania skutków traumatyzacji, wynikających z trudnych sytuacji w pracy.
 	\item Satysfakcja zawodowa pielęgniarek i pielęgniarzy, wynika z kultury organizacji oraz nabywania kolejnych uprawnień.
 	\item System Opieki Zdrowotnej nie spełnia oczekiwań, w zakresie promocji, przyszłości i autonomii pielęgniarstwa.
 \end{enumerate}
@@ -305,9 +311,35 @@ Natomiast narzędzie badawcze wg Wincentego Okonia, to materiały, narzędzia te
   % Organizacja i przebieg badań.
   %-----------------
 \section{Organizacja i przebieg badań}
-Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyższej Szkoły Medycznej w Legnicy, na kierunku pielęgniarstwo w okresie od 1.11.2021 do 1.03.2022. Kryterium włączenia stanowiły osoby czynnie pracujące zawodowo. 
+Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyższej Szkoły Medycznej w Legnicy, na kierunku pielęgniarstwo w okresie od 01.11.2021 do 01.03.2022. Kryterium włączenia stanowiły osoby czynnie pracujące zawodowo. 
 
 ...
+
+%-----------------
+% Wyniki badań
+%-----------------
+\chapter{Wyniki badań}
+
+
+% płeć
+\begin{figure}
+\includegraphics[width=9cm]{char_gr_bad/plec}
+\caption{Płeć}
+\end{figure}
+
+% wiek
+\begin{figure}
+\includegraphics[width=9cm]{char_gr_bad/wiek}
+\caption{Wiek}
+\end{figure}
+
+% wiek
+\begin{figure}
+\includegraphics[width=9cm]{char_gr_bad/wiek2}
+\caption{Wiek}
+\end{figure}
+
+
 
 %-----------------
 % Wnioski 
@@ -315,10 +347,78 @@ Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyż
 \chapter{Wnioski}
 
 
+%-----------------
+% Dyskusja
+%-----------------
+\section{Dyskusja}
+,, Dyskusja jest częścią krytyki metodologicznej i stanowi swoistą metametodę, leżącą u podstaw współczesnego myślenia naukowego, jak i stały element metod, w ramach których można ją sensownie realizować"\cite{krytyka}.
 
-%-----------------
-% Dodatki 
-%-----------------
+
+Celem badania własnego było określenie wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy czynnych zawodowo. To zagadnienie było obiektem zainteresowań badaczy różnych specjalności. Zarówno socjologów, psychologów jak i zarządzania w systemie ochrony zdrowia.  Dzięki temu, możliwe jest szerokie spojrzenie na życie, specyficznej grupy zawodowej jaką są pielęgniarki. Możliwe jest zaobserwowanie pewnych zjawisk, np. wypalenia zawodowego, określenie przyczyn ich występowania, a następnie wdrożenie działań profilaktycznych, naprawczych czy protekcyjnych. Wyniki kolejnych badań wzbogacają wiedzę, służą rozwojowi pielęgniarstwa. Ze względu, iż temat jest rozległy i obejmuje wiele dziedzin życia społecznego, badacze nadal poszukują odpowiedzi na pytania : czy wykonując tak odpowiedzialny i wyczerpujący zawód, można prowadzić szczęśliwe życie osobiste? Czy empatia pomaga, czy przeszkadza w wykonywaniu tego zawodu? Jakie niebezpieczeństwa niesie wykonywanie tego zawodu? Niniejsza praca również podejmuje próbę odpowiedzi na te pytania.
+
+
+
+Poziom świadomości pielęgniarek i pielęgniarzy na temat zagrożeń, wynikających z pracy w ponadnormatywnym czasie pracy, powinien mieć istotne znaczenie na decyzję o podjęciu dodatkowej działalności zawodowej.
+Jak wykazano w części teoretycznej, praca zawodowa pielęgniarek i pielęgniarzy, zwłaszcza praca w godzinach nocnych i ponadnormatywnym wymiarze pracy niesie niekorzystne skutki dla stanu biopsychospołecznego człowieka. Świadomość tego faktu jest niewystarczająca, lub schodzi na plan dalszy, wobec różnych potrzeb, które podlegają zmianom w trakcie życia. Tu musi być wynik istotności statystycznej
+
+W czerwcu 2021 r Stowarzyszenie Pielęgniarki Cyfrowe przeprowadziło badanie sondażowe, w którym wzięło udział 2459 osób. ,, 91,9 \% to pielęgniarki i pielęgniarze. 8,1 \% to położne/i. 94,3 \% osób ankietowanych w podstawowym miejscu pracy zatrudnionych jest w pełnym wymiarze etatu. Pozostali wykonują zawód na podstawie innych form zatrudnienia. 45,4 proc. pracuje dodatkowo: kontrakty, umowy zlecenia, a nawet cały etat. Osoby zatrudnione w ramach umowy o pracę deklarowały powyżej 200 godzin pracy w miesiącu. Zdecydowana większość respondentów podawała iż powodem dodatkowej pracy są względy ekonomiczne, plany życiowe - 25,7 proc., podstawowa egzystencja -  23,1 proc. 9,5 proc. godzi się na dodatkowe dyżury z powodu braków kadrowych. Pojawiły się również powody takie jak samotność, pracoholizm, chęć samorealizacji"\cite{cyfrowe}. W badaniach własnych, w których wzięło udział 114 studentów Wyższej Szkoły Medycznej  w Legnicy na kierunku pielęgniarstwo drugiego stopnia, wyniki  przedstawiają się następująco: 64,9 \% pracuje w jednym miejscu pracy, 28,1 \% w dwóch, a 7 \% w więcej niż dwóch.  Ze 114 osób 22 osoby pracują powyżej 200 godzin miesięcznie, co stanowi, aż 19,3 \% ankietowanych. W tym 8 osób powyżej  240 godzin miesięcznie. 
+
+56,1 \% respondentów świadczy usługi w dwuzmianowym systemie pracy, a 14,9 \% w jedno i dwuzmianowym systemie pracy. Pozostałe 28,9 \% wyłącznie wykonuje pracę jednozmianową. W pracy poglądowej - Wymiar czasu pracy kontra zdrowie - przegląd doniesień naukowych, autorki Zużewicz i  Pędrecka przekonują że pracownicy będący w stanie wielogodzinnej aktywności, nie są w stanie wykonywać powierzonych im zadań odpowiedzialnie i efektywnie, co zwiększa ryzyko zagrożenia zdrowia pacjenta jak i samych sprawujących opiekę \cite{kontra}. Trinkoff i współpracownicy zbadali, iż w szpitalach stanu Maryland w USA, wskaźnik umieralności pacjentów ściśle koreluje z większą liczbą pielęgniarek opiekujących się chorymi przez wiele godzin, z krótkim odstępem miedzy dyżurami, pracujących mimo dolegliwości chorobowych i pracujących w nadgodzinach \cite{trinkoff}. Przeważająca liczba badaczy skłania się do wniosków, iż praca w ponadwymiarowym czasie pracy jest szkodliwa i obciążająca dla organizmu człowieka. Jednocześnie istnieją badania, w których podkreśla się, iż,  regularne, rotujące się systemy zmianowe: jeden do trzech dni na tej samej zmianie roboczej, uważa się za biologiczne i społecznie mniej obciążające, niż systemy tygodniowe \cite{konflikt}. Badania przeprowadzone przez Sleep Reasaech Centre w Surrey, na temat zakłócania rytmu dobowego pozwoliły na wyodrębnienie jednostki chorobowej zwanej zespołem nietolerancji pracy zmianowej (ZNPZ) \cite{znpz}.  Natomiast  Ośrodki Zdrowia Pracujących  we  współpracy ze Światową Organizacją Zdrowia - WHO  na konferencji w Pekinie w 1994 roku, dotyczącej miejsca kobiet w świecie , w swoich zaleceniach dotyczących pracy zmianowej, zaleca by kobiety po 45 roku życia nie pracowały w systemie zmianowym, ze względu na nieproporcjonalnie duże koszty zdrowotne, między innymi nowotwory hormonalne zależne od zegara biologicznego \cite{zalecenia}.
+
+
+Nie bez znaczenia jest fakt, że zagrożenia  dla zdrowia, wynikające z pracy w ponadnormatywnym wymiarze mogą ulec intensyfikacji czy zniwelowaniu, poprzez kulturę organizacji. Wśród ankietowanym studentów Wyższej Szkoły Medycznej w Legnicy 35,1 \% uważa, że środowisko miejsca pracy jest toksyczne, występuje mobbibg i hejt. 36,8 \% osób podaje, że w miejscu ich pracy takie zjawiska nie występują. Pozostałe osoby są niezdecydowane w tej kwestii.  Podobne wyniki obserwuje się w pracach innych badaczy. Na uwagę zasługują wnioski z badania ,,mobbing w środowisku pracy pielęgniarek" przeprowadzonego za pomocą sondażu diagnostycznego wśród pielęgniarek województwa świętokrzyskiego w 2010 roku. Gdzie zaobserwowano działania dyskryminacyjne i o charakterze mobbingowym wobec personelu podnoszącego swoje kwalifikacje i wykształcenie. W badaniu tym dokonano porównań z podobnymi w województwie śląskim, mazowieckim i zachodniopomorskim \cite{mobbing}. Z kolei Żuchowski  w badaniach, przeprowadzonych na terenie województwa mazowieckiego i podlaskiego, w którym wzięło udział 140 respondentów, wykazuje, że zjawisko mobbingu kadry zarządzającej pielęgniarkami, w stosunku do podwładnych to liczba, rzędu 27,8 \% \cite{żuchowski}. Z danych Ogólnopolskiego Klubu Antymobbingowgo wynika, iż liczba pracowników Ochrony Zdrowia jest niedoszacowana i na pewno wyższa\cite{grabowski}.  Mimo, iż termin mobbing wprowadzono do znowelizowanego Kodeksu Pracy w 2004 roku \cite{kodeks}.
+
+
+Wykonywanie obowiązków zawodowych w trakcie aktywnej choroby własnej, czy bliskiego, może świadczyć o prawdziwości założonej hipotezy. 50 \% badanych zaznacza, że raczej pracuje mimo wystąpienia choroby własnej czy członka własnej rodziny. 30 \% zdecydowanie wykonuje swoje obowiązki zawodowe w tym czasie. 39,4 \% nie korzysta ze zwolnienia lekarskiego, gdy są do tego wskazania. Jest to wysoce niepokojące zjawisko, gdyż aby wykonywać swoje zadania w pracy zawodowej, muszą one stosować leki, które np. zniwelują objawy przeziębienia czy grypy. Abstrahując od etycznego wymiaru takich działań,  ich konsekwencji dla pacjenta, placówki, to niosą one konkretne skutki dla zdrowia pielęgniarki.  Metha i współpracownicy opublikowali w marcu 2022 wyniki ogólnokrajowego prospektywnego, kohortowego badania  w USA. Czternaście tysięcy pięćset czterdzieści dwie  pielęgniarki w wieku 25-42 lata uczestniczyło w badaniu Nurses Health Study II.  W przedziale czasowym 1989- 2018, co dwa lata monitorowano stosowanie przez nie antybiotyków i jednocześnie przeprowadzano testy poznawcze. Wyniki porównywano z danymi osób, które przyjmowały antybiotyków niewiele lub wcale. Wyniki były niepodważalne: Pielęgniarki, które często, czy długotrwale stosowały antybiotyki uzyskały zdecydowanie niższe parametry uczenia się, pamięci roboczej, szybkości motorycznej czy utrzymania uwagi. Sytuację taką autorzy opisują przyśpieszonym starzeniem mózgu, nawet o 3-4 lata.  Co dla  pielęgniarki polskiej o średniej wieku-53 lata, powinno mieć znaczenie \cite{statystyka}.  Naukowcy  wiążą zaburzenia poznawcze z  kondycją mikrobiomu jelitowego \cite{ metha}. 
+
+Dane o chorobach przewlekłych i współistniejących badanej grupy  studentów WSM w Legnicy  również mogą świadczyć o prawidłowym założeniu hipotezy, gdyż aż 44,7 \% choruje na choroby przewlekłe, a 5,3 \% na choroby współistniejące.
+
+
+24, 5 \% ankietowanych uważa, że jest wypalona zawodowo, a 14 \% respondentów nie ma zdania na ten temat. Jak wiadomo, wypalenie zawodowe jest ogromnym problemem pracowników ochrony zdrowia, jednocześnie, ta grupa zawodowa jest na nie najbardziej narażona,  z pośród pracowników innych profesji \cite{wypal}. Rezmerska i współautorki, w badaniach na temat specyfiki pracy, a wypalenia zawodowego w opinii pielęgniarek,  przekonują, iż poziom wypalenia zawodowego, jest zróżnicowany w zależności od specyfiki oddziału. Jest on wyższy, w oddziałach zabiegowych, u pielęgniarek pracujących w systemie zmianowym \cite{zmiany}. Natomiast Breisert w badaniach przeprowadzonych w Poznaniu na grupie 138 pielęgniarek pokazuje, że najwięcej osób wypalonych zawodowo jest zatrudnionych na pediatrii, onkologii i psychiatrii, natomiast zadecydowanie mniej na internie. Wymagania dotyczące specyficznego kontaktu z chorym dzieckiem, czy chorym z nowotworem, nieustanne stykanie się z cierpieniem, nieustanny, przewlekły stres oraz brak poczucia sensu  własnej działalności, obciążenie pracą, brak systemów motywacyjnych, nieodpowiednie zarobki składają się na stale zwiększającą się liczbę osób wypalonych zawodowo \cite{breisert}.
+
+
+
+Czy  pielęgniarki/arze mają predyspozycje do godzenia życia zawodowego i rodzinnego? W związku z tym, że, aż 56,4 \% ankietowanych badania własnego spędza w pracy od 170 do 260 godzin, co przekłada się np. przy 170 godzinach na około:  7 dyżurów dobowych, 14 dyżurów dwunastogodzinnych, czy 23 dyżury 7.35. Przy 260 godzinach te liczby to: około  10 dyżurów dobowych, 20 dyżurów dwunastogodzinnych i około 35 dyżurów po 7.35 godzin. Rekordzistki w trakcie indywidualnych rozmów przyznają się do 72 godzin nieprzerwanej pracy, bądź 2 dni wolnych w miesiącu \cite{cyfrowe}. Natomiast wykładnia prawa, wyraźnie mówi, że zasadnicze normy czasu pracy obowiązujące pracowników podmiotów leczniczych wynoszą na dobę 7 godzin i 35 minut na dobę, oraz 37 godzin i 55 minut na tydzień. Jest to średnia, której nie można przekraczać w trzymiesięcznym okresie rozliczeniowym \cite{okres}. Ustawa o działalności leczniczej nie reguluje wprost limitu pracy w godzinach nadliczbowych. Pośrednio wynika to z maksymalnej normy czasu pracy w wymiarze 48 godzin tygodniowo \cite{klauzula}.
+  63,5 \% twierdzi, że przynosi pracę do domu w postaci myśli i emocji. 38,3 \% doświadcza traumatyzacji wtórnej. Z tego w badanej grupie 37,4 potrafi niwelować objawy takie smutek, żal, poczucie bezradności, przewlekły stres. 33, 9 \% nie potrafi stosować technik psychologicznych do poradzenia sobie z sytuacją trudną, a 28,7 \% nie opowiedziało się jednoznacznie za lub przeciw. 13,9 \% w celu rozładowania stresu sięga po używki. 47 \% odczuwa dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji, co wiąże się z ograniczeniami w życiu osobistym. Przy tak kategorycznych danych 80 \% ankietowanych stwierdza, że w ich życiu nie występuje konflikt na linii praca - rodzina i odwrotnie. 73 \% uważa, że praca nie jest powodem niezgody z życiowym partnerem, 77,4 osoby twierdzi, że są wspierane w godzeniu obowiązków domowych z pracą. 73,9 \% ma czas dla rodziny i czynnie uczestniczy w życiu rodzinnym i imprezach okolicznościowych. Tylko 16,5 \% kiedykolwiek rozważało rezygnację z zawodu, na rzecz szczęścia rodziny. Równie spektakularnym wynikiem jest odpowiedź na pytanie o pasję pozazawodową. Aż 72,2 \%  podało, iż rozwija pasję pozazawodową.  W badaniach  przeprowadzonych w Centrum Onkologii w Bydgoszczy, w 2011 roku, na grupie 72 pielęgniarek i pielęgniarzy, dotyczące analizy jakości życia pracowników ochrony zdrowia, Kurowska i Klatt  wykazują, że w badanej grupie wystąpił wysoki poziom wsparcia ze strony partnera życiowego. Także ogólne wsparcie rodziny, było na poziomie wysokim, przy czym najwyżej oceniono wsparcie emocjonalne \cite{ poziom}. Natomiast w 2017 roku zespół badaczy Polskiego Pomiaru Postaw i Wartości przeprowadził badanie, w którym wzięło udział 1627 osób z zawodowej grupy pielęgniarskiej. Zdecydowanie większa liczba osób deklarowała, że udaje się jej zachować równowagę między działalnością zawodową i rodzinną - 30, 6 \% było zdecydowanych w tej kwestii, a 42, 1 \% podało odpowiedź, że taką równowagę raczej zachowuje. Tylko 28 \% badanych osób, byłoby skłonnych zrezygnować z pracy, dla dobra rodziny. W tym badaniu  56, 7 \% neguje wpływ pracy na życie rodzinne i twierdzi, że potrafi zachować dystans między pracą, a czasem z rodziną, ale 37 \% nie posiada takiej umiejętności. \cite{komunikat}.
+Podsumowując dyskusję na ten temat, należy wyrazić uznanie dla osób wybierający  zawód  wymagający ciągłego doskonalenia i niosący ogrom poświęceń w życiu osobistym, jednocześnie realizując obie role.
+
+
+
+
+
+
+Zawodowa grupa pielęgniarska, kształci się, aby niwelować skutki traumatyzacji, wynikające z trudnych sytuacji w pracy. Traumatyzacja wtórna określana do niedawna jako zmęczenie współczuciem, przypisywanym pielęgniarkom, a następnie innym zawodom pomocowym, spowodowała przeniesienie traumy z ofiary na terapeutę  \cite{figley}. Na traumatyzacje narażone są osoby o wysokim stopniu inteligencji emocjonalnej. Zwłaszcza jej składowej empatii. Natomiast Wilczek -  Rużyczka twierdzi na podstawie wieloletnich badań własnych i analizy wyników badań innych badaczy, że empatia pełni rolę ochronną, a ,,wysoki poziom  empatii, jest nie tylko wartością psychologiczną, terapeutyczną, lecz również powinnością moralną i staje się kryterium profesjonalizmu."  Pielęgniarka wchodząc w relację z pacjentem, odczuwa bliskość, która zaspokaja często potrzeby obu stron, jednocześnie nie traci własnej tożsamości \cite{wilczek}. Wśród osób, które wzięły udział w badaniu  15,7 \% odpowiedziało, że empatia była głównym kryterium wyboru przez nie zawodu,  a 22,6 \% przychylało się do tej odpowiedzi. Trening empatii oraz kształcenie się w rozpoznawaniu, niwelowaniu niekorzystnych skutków traumatyzacji,  ma ogromne znaczenie dla życia osobistego pielęgniarki. Biorący udział w badaniu własnym,  posiadają wykształcenie wyższe - licencjat pielęgniarstwa.  Znamienita większość zdała egzamin specjalizacyjny - 75 \%,  ankietowani wykazują posiadanie uprawnień zawodowych potwierdzonych zaświadczeniami, certyfikatami i dyplomami, również niezwiązanymi z zawodem wykonywanym, również tytuły magistra innego kierunku. Wśród wielu czynników ryzyka wtórnej traumatyzacji wymienia się poziom wykształcenia. Wyższe wykształcenie oraz poczucie satysfakcji z pracy pełni rolę ochronną, natomiast osoby o niższym stopniu wykształcenia są bardziej podatne, na zmęczenie współczuciem \cite{ogińska}.
+
+
+29,6 \% badanych zdecydowanie czuje presję społeczną, wynikająca z oczekiwań wobec systemu ochrony zdrowia. 35,7 zaznaczyło odpowiedź ,,raczej tak". Ponadto 11,3 \% czuje dylemat wewnętrzny, a 35,7 \% przyznaje, że raczej czuje, dylemat związany z koniecznością ciągłego podnoszenia kwalifikacji.  W przytaczanym wcześniej komunikacie z badań na temat życia rodzinnego i zawodowego. 79,9 \% uznało, że zawód wymaga od nich nieustannego podnoszenia kwalifikacji zawodowych \cite{komunikat}. W badaniu własnym 46 \% ankietowanych doświadczyło przemocy słownej lub fizycznej ze strony pacjenta, a 33 \% uznało, że, ,,raczej tak".  Grudzień i współpracownicy w pracy oryginalnej - opinie personelu medycznego na temat agresywnych zachowań pacjentów przedstawiają wyniki badania sondażowego, w którym udział wzięło 115 przedstawicieli zawodów medycznych. Wyniki są zbliżone do badania własnego - 46,2 \% to kontakt z agresją w stosunku do pielęgniarek. Jest to zarówno agresja słowna, wulgaryzmy oraz lekceważące wypowiadanie się o personelu \cite{grudzień}. 
+
+46,1 \% nie  czuje się bezpiecznie w pracy w zagrożeniu koronarowirusem. Jest to niepokojący wynik, biorąc pod uwagę, że pandemia została znacznie ograniczona przez szczepienia antywirusowe. Zapewne jest to liczba zdecydowanie mniejsza, niż na początku epidemii, gdzie fundamentalne prawo pracownika, do bezpieczeństwa własnego w pracy i poza nią, utraciło moc.
+
+ 37,4 \%, potrafi niwelować objawy traumatyzacji wtórnej za pomocą technik psychologicznych, a 27 \% zdecydowanie i 20 \% - raczej czuje potrzebę korzystania ze wsparcia psychologicznego dla pracowników medycznych. Pozostałe osoby zdecydowanie, nie potrzebują takiego wsparcia -9,6 \% i 30,4 \% raczej nie potrzebują wsparcia w tym zakresie. Ogińska-Bulik w badaniach przeprowadzonych w 2019 roku na grupie 200 przedstawicieli personelu medycznego, w tym 35 \% stanowiły pielęgniarki, przedstawia wyniki wskazujące na wysokie i średnie nasilenie wtórnego stresu wśród pracowników po traumie. Wnioski zachęcają do ,,rozwoju umiejętności i korzystania ze wsparcia społecznego, w celu redukowania negatywnych i występowania pozytywnych konsekwencji wtórnej ekspozycji na traumę" \cite{trauma}. 
+
+
+
+Satysfakcja zawodowa pielęgniarek i pielęgniarzy, wynika z kultury organizacji oraz nabywania kolejnych uprawnień. Hipotezę tę poddano weryfikacji osób badanych i aż, 55,6\%  (64 osoby) odczuwa satysfakcję, wynikającą z autonomii zawodu - nabywania kompetencji, uprawnień, prowadzenia badań naukowych.   85,2\% (98 osób) jest zadowolona z wyboru drogi zawodowej. 71,3\% (82 osoby) uważa z perspektywy czasu, że dokonało właściwego wyboru ścieżki zawodowej, a 56,5\% (65 osób) ankietowanych wspierałoby własne dziecko, gdyby chciało się spełniać w pielęgniarstwie. Mimo to,  36,5\% (42 osoby) podkreśla, że w zakładzie pracy, w którym pracuje,   zdecydowanie nie stosuje się systemów motywacyjnych, 40,9\% (47 osób), że raczej nie. Tylko 13,9\% (16 osób) twierdzi, że raczej istnieją takie systemy. 5,2\% (6 osób) ankietowanych uważa, że środowisko pracy jest wspierające i 48,7\%  (56 osób)  uważa, iż jest raczej wspierające. Natomiast zdecydowanie toksyczne środowisko pracy występuje u 7\% (8 osób) ankietowanych, a 27,8\%  (32 osoby) podało odpowiedź raczej tak. W badaniach  Borowskiej i współpracowników na 130 aktywnych zawodowo pielęgniarkach Uniwersyteckiego Szpitala Klinicznego w Białymstoku, 41,5\% osób określiło własną satysfakcję zawodową jako wysoką, a 63\% czuło się docenioną w pracy zawodowej. Zdaniem co trzeciej osoby, atmosfera w pracy ma kluczowe znaczenie dla poczucia satysfakcji zawodowej. Pielęgniarki - 60\%, w tym badaniu określiły  pozycję swojego zawodu, wśród innych zawodów na poziomie średnim. W pytaniu o prestiż zawodu, ankietowani - 45\% uznało kwalifikacje zawodowe, 40\% wykształcenie, 33\% samodzielność i niezależność zawodu \cite{zbiorowa}. Interesujące są również badania Skorupskiej  i Machowicz, gdzie badani w 92\% uważają, że pielęgniarka jest równorzędnym członkiem zespołu w w opiece nad pacjentem \cite{skorupska}. O ocenę poziomu satysfakcji zawodowej wśród pielęgniarek onkologicznych pokusiły się organizatorki 22 ogólnopolskiej konferencji pielęgniarek onkologicznych w Białymstoku w 2018 roku. Badaniu poddało się dobrowolnie 218 uczestniczek z ośrodków onkologicznych w kraju. Średnia wartość satysfakcji z pracy wyniosła 67,10 punktów. Uczestniczki podkreślały zadowolenie z umiejętności zawodowych swojego przełożonego, wagi własnej pracy. Co ciekawe nie wykazano zależności satysfakcji z wykształceniem, ani stażem pracy. Natomiast wyższy poziom satysfakcji prezentowały osoby w związkach małżeńskich \cite{onkologiczne}. Przekrojowy sondaż Aiken i współpracowników wśród  33 tysięcy 659 pielęgniarek w 488 szpitalach w 12 krajach europejskich wykazał niezadowolenie z pracy  w 11- 56\% badanych, 19-49\% planowała odejść z pracy \cite{termedia}. Podobne wnioski płyną z wyników badań Dallora  i współpracowników, gdzie 26\% pielęgniarek i pielęgniarzy jest bardzo, albo raczej nieusatysfakcjonowanych pracą zawodową \cite{dalora}. Wiedzę i postawy pielęgniarek na temat praktyki opartej na dowodach naukowych oceniała Gotlib i współautorzy Warszawskiego Uniwersytetu Medycznego w 2014 roku. Uczestnicy badania znali zaczenie terminu EBM w 42\%, dla 34\% to nowoczesne wykonywanie zawodu, 36\% zamierza aktualizować wiedzę zgodnie z doniesieniami naukowymi, a 41\% uważa, że są one przydatne w praktyce zawodowej \cite{gotlib} Również Młynarska w swojej pracy doktorskiej- Poszukiwanie czynników wpływających na wykorzystanie przez pielęgniarki Evidence-Based Nursing w praktyce zawodowej ocenia poziom wiedzy, postaw i umiejętności badanych 830 pielęgniarek/rzy z całej Polski  w 2018/19 roku. Wykazała, ze pielęgniarki z wykształceniem wyższym cechują się największą wiedzą i umiejętnościami związanymi z EBM, chętnie je  pogłębiają i wykorzystują. w praktyce zawodowej \cite{ EBM}. Badania własne określają satysfakcję zawodową w oparciu o kulturę organizacji i kolejne stopnie wykształcenia, autonomię zawodu i możliwość prowadzenia prac badawczych. Inni badacze umieścili w kwestionariuszach pytania o wynagrodzenie, docenienie, prestiż środowiska zawodowego i uznanie wśród pacjentów. Całościowe spojrzenie na zjawisko satysfakcji zawodowej, ewaluuje wraz z postępem technologicznym, oczekiwaniami pielęgniarek i ich miejsca w systemie ochrony zdrowia. Szczególnie istotna powinna praktyka oparta na dowodach medycznych. Nowoczesne pielęgniarstwo, to prestiż wyrażony krytycznym myśleniem na każdym etapie kontaktu i pracy z pacjentem, własnych kompetencji, możliwości systemu ochrony zdrowia oraz działaniem popartym dowodami naukowymi, wiedzą ekspertów z danej dziedziny. Natomiast brak satysfakcji zawodowej skutkuje poważnymi konsekwencjami dla systemu opieki zdrowotnej jak i samej pielęgniarki.
+
+
+
+
+
+
+
+
+
+
+
+System Opieki Zdrowotnej nie spełnia oczekiwań, w zakresie promocji, przyszłości i autonomii pielęgniarstwa. W poprzednich rozważaniach przedstawiono dyskusję  na temat środowiska pracy ankietowanych w zakresie wsparcia, bezpieczeństwa, systemów motywacyjnych, hejtu  i agresji. Na tych polach występuje odczuwalny deficyt. Aż 74,8 \%  (86 osób) popiera działania przedstawicieli zawodu zmierzające do poprawy sytuacji pielęgniarek i położnych w Polsce.  66 \% (76 osób) uważa, że kompetencje pielęgniarskie, nie są właściwie wykorzystane w Systemie Ochrony Zdrowia. Wyniki badania przeprowadzonego w Szpitalu Specjalistycznym w Jaśle w 2010 roku, w których wzięło udział 130 pracowników szpitala innych niż pielęgniarki pokazują uznanie szerokich kompetencji pielęgniarskich, traktowanie pielęgniarstwa jako sztuki, samodzielnej nauki, rolę autonomicznych interwencji pielęgniarskich, zaufanie oraz solidaryzowanie się z roszczeniami pielęgniarek \cite{skorupska}. Komunikat z badań - Opinie o protestach pielęgniarek z grudnia 2000 przedstawia bardzo wysokie - 90  \%  poparcie  społeczne dla protestujących pielęgniarek \cite{cebos}. Natomiast w 2021 roku badanie przeprowadzone na próbie 1161 osób ukazało 49 \% poparcie dla strajku medyków, i aż 53 \% uważa, że oczekiwanie finansowe pielęgniarek są adekwatne, a 17 \%, że zbyt małe \cite{cebos2}. W 2019 roku firma Manpover Life Science we współpracy z Polską Federacją Szpitali stworzył raport - niedobór talentów w branży medycznej. Badanie objęło 71 szpitali w całej Polsce zrzeszonych w Polskiej Federacji Szpitali. W swoim opracowaniu wykazuje zapotrzebowanie na stanowiska pielęgniarek wszystkich specjalności, przez 72\% szpitali. Podkreśla brak integralnej, przyszłościowej wizji kształcenia kadr medycznych, dostosowanej do zmieniających się okoliczności, wyzwań zdrowotnych. Naświetla zjawisko emigracji zawodowej,  do krajów dobrze przygotowanych, do wykorzystania potencjału absolwentów kierunków medycznych polskich uczelni  \cite{federacja}.
+
+
+
+
+
+
+
+
 \appendix
 
 
@@ -358,35 +458,35 @@ Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyż
 \bibitem{dorota}{ Kilańska D. Nowe role i zadania pielęgniarki w XXI w. Gabinet Prywatny; 2012: 7/8}
 \bibitem{petycja}{Petycja. Rozszerzenie kompetencji pielęgniarek i położnych.\newline https://www.rynekzdrowia.pl/Polityka-zdrowotna/Pielegniarki-chca-szerszych- kompetencji-Wystawiania-L4-recept-i-skierowan-na-szczepienia,229508,14.html [dostęp 20.02.2022]}
 \bibitem{poz}{Pielęgniarki w zespole do spraw POZ. https://www.rynekzdrowia.pl/Polityka- zdrowotna/Pielegniarki-chca-pracowac-nad-zmianami-w-POZ-Chca-dolaczyc-do- zespolu-powolanego-przez-ministra,229668,14.html [dostęp 20.02.2022]}
-\bibitem{badania}{Felsmann M, Głowacka M, Haor B, Humańska M, Kurowska K, Rezmerska L, et~al. Badania fizykalne jako integralny element pracy pielęgniarki. Bydgoszcz; 2006}
+\bibitem{badania}{Felsmann M., Głowacka M, Haor B., Humańska M.  et~al. Badania fizykalne jako integralny element pracy pielęgniarki. Bydgoszcz; 2006}
 \bibitem{spoty}{Latos M. Krew i mózg; \newline https://open.spotify.com/show/643Y5GdI7yGkqVxzPaBvSH [dostęp 16.02.2022]}
-\bibitem{zdrowie}{Andruszkiewicz A. Nowik M. Zachowania zdrowotne kobiet czynnych zawodowo. Problemy Pielęgniarstwa. 2011; (19)}
+\bibitem{zdrowie}{Andruszkiewicz A., Nowik M. Zachowania zdrowotne kobiet czynnych zawodowo. Problemy Pielęgniarstwa. 2011; (19)}
 \bibitem{obciążenia}{Ksykiewicz-Dorota A. Podstawy organizacji pracy pielęgniarskiej. Lublin; Czelej; 2004}
 \bibitem{statystyka}{Raport NIPIP: Katastrofa kadrowa pielęgniarek i~położnych. Warszawa; NIPIP; 2021 [dostęp 16.02.2022]}
 \bibitem{zgony}{Ile żyje polska pielęgniarka. Wyjaśniamy  wątpliwości wokół danych NIPIP;\newline https://demagog.org.pl/analizy-i-raporty/ile-zyje-polska-pielegniarka-wyjasniamy- watpliwosci-wokol-danych-nipip/ [dostęp 18.02.2022]}.
 \bibitem{sen}{Current psychiatry report. Medical College of Georgia at Augusta University. Frontiers Ottawa. 2021; \newline https://www.mp.pl/covid19/covid19-aktualnosci/270418,pandemiczna-bezsennosc- medykow [dostęp 18.02.2022]}
-\bibitem{covid}{Biegańska-Banaś J. Makara-Studzińska. Strategie radzenia sobie pielęgniarek podczas pandemii Covid-19. Problemy Pielęgniarstwa 2020/1}
+\bibitem{covid}{Biegańska-Banaś J., Makara-Studzińska. Strategie radzenia sobie pielęgniarek podczas pandemii Covid-19. Problemy Pielęgniarstwa 2020/1}
 \bibitem{cyfrowe}{Lewoniewska J. Zarobki i dodatkowe zatrudnienie pielęgniarek i położnych w Polsce. Raport Stowarzyszenia Pielęgniarki Cyfrowe; 2021; https://www.pielegniarkicyfrowe.pl/2021/06/12/zarobki-i-dodatkowe-zatrudnienie- pielegniarek-i-poloznych-w-polsce/ [dostęp 18.02.2022]}
-\bibitem{stanowisko}{Bujanowska M. Żółtańska J. Zawodowe zagrożenia zdrowia pracowników ochrony zdrowia w miejscu pracy. Zeszyty Naukowe PWSZ. Legnica; 2010;(6)}
+\bibitem{stanowisko}{Bujanowska M.,  Żółtańska J. Zawodowe zagrożenia zdrowia pracowników ochrony zdrowia w miejscu pracy. Zeszyty Naukowe PWSZ. Legnica; 2010;(6)}
 \bibitem{skutki}{Zużlewicz K. Skutki zdrowotne pracy w systemie w niefizjologicznym rytmie. Zeszyty Naukowe SGSP. 2017; nr 62 (1/2)}
 \bibitem{p.p}{Bilski B. Wpływ pracy zmianowej na sposób odżywiania się i patologię przewodu pokarmowego wśród pielęgniarek. Medycyna Pracy. Wyniki badania pilotażowego. 2006; 57 (1)}
 \bibitem{wykaz}{Rozporządzenie Rady Ministrów  w sprawie chorób zawodowych z 2009 r. DZ.U.2013.1367.\newline https://sip.lex.pl/akty-prawne/dzu-dziennik-ustaw/choroby-zawodowe-17551901 [dostęp 18.02.2022]}
-\bibitem{skuteczność}{Gromulska L. Cianciara D. Piotrowicz M. Własna skuteczność w modelach zachowań zdrowotnych oraz w edukacji zdrowotnej. Przegląd epidemiologiczny. 2009; (63)}.
-\bibitem{salutogeneza}{Heszen-Celińska I. Sęk H. Psychologia zdrowia. Warszawa; Wydawnictwo Naukowe PWN; 2021}
+\bibitem{skuteczność}{Gromulska L., Cianciara D.,  Piotrowicz M. Własna skuteczność w modelach zachowań zdrowotnych oraz w edukacji zdrowotnej. Przegląd epidemiologiczny. 2009; (63)}.
+\bibitem{salutogeneza}{Heszen-Celińska I., Sęk H. Psychologia zdrowia. Warszawa; Wydawnictwo Naukowe PWN; 2021}
 \bibitem{stres}{Bartkowiak G. Człowiek w pracy. Od stresu do sukcesu w organizacji. Warszawa; Wydawnictwo Ekonomiczne; 2009}
 \bibitem{hipoteza}{Tomaszewska-Lipiec R. Relacje praca-życie pozazawodowe. Bydgoszcz; Wydawnictwo Uniwersytetu Kazimierza Wielkiego; 2014}
 \bibitem{relacja}{Lachowska B. Wzajemne oddziaływanie pracy i rodziny - perspektywa konfliktu i falicytacji. Raport z badań pilotażowych. Łódź; Wydawnictwo Uniwersytetu Łódzkiego; 2008}
-\bibitem{konflikt}{Siemiginowska P. Iskra-Golec I. Wątroba J. Relacja praca/rodzina, zadowolenie z pracy i życia oraz zdrowie u pielęgniarek zmianowych i dziennych. Studia Psychologica. 2014; VII}
+\bibitem{konflikt}{Siemiginowska P., Iskra-Golec I., Wątroba J. Relacja praca/rodzina, zadowolenie z pracy i życia oraz zdrowie u pielęgniarek zmianowych i dziennych. Studia Psychologica. 2014; VII}
 \bibitem{dzieci}{ Frączyk J.  Pierwsze dziecko po trzydziestce.\newline https://businessinsider.com.pl/finanse/makroekonomia/wiek-kobiet-przy-porodzie- pierwszego-dziecka-ciagle-rosnie-co-z-systemem-emerytalnym/c801ke5\newline [dostęp 18.02.2022]}
 \bibitem{urlop}{ Podrażka M. Urlop macierzyński.\newline https://www.gov.pl/web/rodzina/urlop-macierzynski [dostęp 18.02.2022]}
 \bibitem{wywiad}{Kapusta P. Pandemia. Raport z linii frontu. Lubicz; Wydawnictwo Insignis; 2020}
 \bibitem{rozwody}{ Lekarze rozwodzą się rzadziej niż prawnicy.\newline https://pulsmedycyny.pl/lekarze-rozwodza-sie-rzadziej-niz-prawnicy-875944 [dostęp 18.02.2022]}
 \bibitem{melibruda}{Melibruda J. Ja - Ty - My. Warszawa; Instytut Psychologii Zdrowia PTP; 2003}
-\bibitem{wzbogacanie}{Greenhaus J.H. Powell G.N. When work and family are alies; A theory of work-family enrichment. Acadamy of Management Review. 2006 (vol 31/1)}
+\bibitem{wzbogacanie}{Greenhaus J.H.,  Powell G.N. When work and family are alies; A theory of work-family enrichment. Acadamy of Management Review. 2006 (vol 31/1)}
 \bibitem{bezpieczeństwo}{Jabłońska A. Bezpieczeństwo pracy w Polsce 2019. Mobbing, depresja, stres w miejscu pracy. Koalicja Bezpieczni w pracy. 2019; http://bezpieczniwpracy.pl/wp-content/uploads/2019/10/Raport-Bezpieczeństwo- Pracy-w-Polsce-2019.pdf [dostęp 18.02.2022]}
 \bibitem{prężność}{ Falewicz A. Prężność osobowości i jej rola w procesach radzenia sobie ze stresem. Studia Koszalińsko-Kołobrzeskie. 2016; 23} 
 \bibitem{talent}{https://pielegniarskiswiat.pl/ [dostęp 18.02.2022]}
-\bibitem{sport}{Chuchra M. Gorbaniuk J. Aktywność fizyczna pielęgniarek. Badania porównawcze. Pielęgniarstwo Polskie 2017; 2(64)}
+\bibitem{sport}{Chuchra M.,  Gorbaniuk J. Aktywność fizyczna pielęgniarek. Badania porównawcze. Pielęgniarstwo Polskie 2017; 2(64)}
 \bibitem{izby}{https://www.doipip.wroc.pl/dla-pielegniarki-i-poloznej/ [dostęp 18.02.2022]}
 \bibitem{jak}{ Rubinkowska A. Jak wesprzeć zdrowie psychiczne pracowników medycznych. Warszawa;  Wiedza i Praktyka; 2021}
 \bibitem{projekt}{https://medstres.sos.pl/ [dostęp 18.02.2022]}
@@ -401,6 +501,53 @@ Badania przeprowadzono wśród studentów II roku studiów niestacjonarnych Wyż
 \bibitem{tadeusz}{Pilch T. Metodologia pedagogicznych badań środowiskowych. Warszawa; Państwowe Wydawnictwo Naukowe, 1980}
 
 \bibitem{winc}{Okoń W. Nowy słownik pedagogiczny. Warszawa; Wydawnictwo Znak; 1999}
+\bibitem{krytyka}{Piekarski J.,  Urbaniak-Zając D. Pasikowski S. Krytyka metodologiczna w praktyce tworzenia wiedzy. Łódź; Wydawnictwo Uniwersytetu Łódzkiego; 2019}
+\bibitem{kontra}{Zużewicz K.,  Prędecka A. Wymiar czasu pracy kontra zdrowie. Przegląd doniesień naukowych. Warszawa; Zeszyty Naukowe SGSP 2018; Nr 66 (Tom 1/2)}
+\bibitem{trinkoff}{ Trinkoff A.M.,  Johantgen M.,  Storr C.L. et all. Nurses work schedule characteristics, nurse staffing and patient mortality. Nursing Resarch 2011;}
+\bibitem{znpz}{Zawilska J.B., Pólchłopek P.,Wojcieszak J.  et all. Chronobologiczne zaburzenia snu: Obraz kliniczny, podejścia terapeutyczne. Farmacja Polska 2010; 66(3)}
+\bibitem{zalecenia}{Żużewicz K. Nauka o pracy; bezpieczeństwo, higiena i ergonomia. Wydawnictwo CIOP; Warszawa; 2012}
+\bibitem{żuchowski}{Żuchowski I. Zjawisko stosowania mobbingu wśród pielegniarskiej kadry kierowniczej w opinni pieęgniarki/ pielegniarzy. Zeszyty Naukowe ZPSB Firma i Rynek; 2018; 1 (53)}
+\bibitem{grabowski}{Grabowski P. Mobbing - patologia zarządzania. Antidotum 2002; 5}
+\bibitem{mobbing}{Zdziebło K.,  Kozłowska E. Mobbing w środowisku pracy pielęgniarek. Problemy pielęgniarstwa 2010; tom 18/2}
+\bibitem{kodeks}{Kodeks Pracy 1974; Dz.U. z  2020. poz.1320. art 94(3) z późniejszymi zmianami;}
+
+\bibitem{wypal}{ Zbyrad T. Ryzyko wypalenia zawodowego służb społecznych. Kraków; Annales Universitatis Mariae Curie-Skłodowska Lublin-Polonia; 2017; Vol XXX,4}
+\bibitem{zmiany}{Rezmerska L., Kochman D., Anaszkiewicz A. Specyfika pracy a wypalenie zawodowe w opinii pielęgniarek. Pielęgniarstwo; 2016;1(1)}
+\bibitem{breisert}{Sęk H. Wypalenie zawodowe. Przyczyny i zapobieganie. Warszawa; Państwowe Wydawnictwo Naukowe; 2004}
+\bibitem{okres}{ Ustawa o działalności leczniczej z 2011; art. 93 ust.1-3, (15 kwietnia 2011)}
+\bibitem{klauzula}{Ustawa o działalności leczniczej z 2011; art 95 ust 4, ( 15 kwietnia 2011)}
+
+\bibitem{poziom}{Kurowska K., Klatt A. Rola wsparcia w zmaganiu się z syndromem wypalenia zawodowego w grupie pielęgniarek onkologicznych. Pielęgniarstwo Chirurgiczne i Angiologiczne; 2019;(1)}
+\bibitem{komunikat}{ Kawińska M. Życie rodzinne i zawodowe pielęgniarek i pielęgniarzy - komunikat z badań. Uniwersyteckie Czasopismo Socjologiczne. 2018; 23(2)}
+\bibitem{figley}{Figley CR. Compassionfatigue as secondary traumatic stres discorderin those who treat the traumatized. BrunnerMazel Publishers;  New York; 1995}
+\bibitem{wilczek}{Wilczek-Rużyczka E. Wypalenie zawodowe, a empatia u lekarzy i pielęgniarek. Kraków; Wydawnictwo Uniwersytetu Jagiellońskiego; 2008}
+\bibitem{ogińska}{Ogińska-Bulik NJ. Negatywne skutki pracy związanej z pomaganiem osobom po doświadczeniach traumatycznych - zjawisko wtórnej traumatyzacji. Sztuka Leczenia; 2019, 2}
+\bibitem{grudzień}{ Grudzień D.,Zurzycka P., Radzik T. Opinie personelu medycznego na temat agresywnych zachowań pacjentów. Polski Przegląd Nauk o Zdrowiu; 2015; 4(45)}
+\bibitem{trauma}{Ogińska-Bulik NJ. Negatywne i pozytywne skutki wtórnej ekspozycji na traumę wśród personelu medycznego - rola wsparcia społecznego. Psychiatria; 2021; 18 (3)}
+
+
+\bibitem{zbiorowa}{Lewko J., Łukaszuk CR., Krajewska-Kułak E. Pielęgniarstwo wczoraj i dziś-rok 2020 rokiem pielęgniarstwa. Uniwersytet Medyczny w Białymstoku; Białystok;2020}
+\bibitem{skorupska}{Skorupska A., Machowicz A. Wybrane aspekty pracowników ochrony zdrowia wobec pielęgniarek. Problemy Pielęgniarstwa; 2010; 18(1)}
+\bibitem{onkologiczne}{Piotrkowska R., Jarzynkowski P., Książek J. Analiza poziomu satysfakcji z pracy wśród pielegniarek onkologicznych - badanie wstępne. Pielęgniarstwo w opiece długoterminowej/  Long-term care nursing; 2020; 3 vol.5}
+\bibitem{termedia}{10. Aiken LH, Sloane DM., et al. Nurses’ reports of working conditions and hospital quality of care in 12 countries in Europe. International Journal of Nursing Studies 2013}
+\bibitem{dalora}{Dall’Ora C, et al. Association of 12 h shifts and nurses’ job satisfaction, burnout and intention to leave: findings from a cross‐sectional study of 12 European countries. British Medical Journal Open 2015; 5}
+\bibitem{gotlib}{Gotlib J., Belowska J., Żmuda-Trzebiatowska H. et all. Ocena wiedzy i postaw pielegniarek na temat praktyki zawodowej opartej na dowodach naukowych. Problemy Pielęgniarstwa; 2015;23(2)}
+\bibitem{EBM}{Gotlib J. Recenzja rozprawy na stopień doktora nauk o zdrowiu mgr.Katarzyny Agnieszki Młynarskiej. Warszawski Uniwersytet Medyczny; https://old.pum.edu.pl/data/assets/pdf.file/0010/199126/prof.-dr-hab.-Joanna-Gotlib-18.10.2021.pdf [dostęp 24.04.2022]}
+
+\bibitem{cebos}{Derczyński W. Opinie o protestach pielęgniarek. Centrum Badania Opinii Społecznej; Warszawa; 2000}
+\bibitem{cebos2}{Umańska E. Społeczne poparcie dla protestu medyków. Centrum Badania Opinii Społecznej; Warszawa; 2021}
+\bibitem{federacja}{Niedobór talentów w branży medycznej. Manpower Life Science. http://www.pfsz.org/wp-content/uploads/2019/06/LSraport2019dystrybucja-PFSz.pdf [dostęp 22.04.2022]}
+
+
+
+
+
+
+
+
+
+
+
 
 \end{thebibliography}
 
