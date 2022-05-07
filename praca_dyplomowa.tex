@@ -98,6 +98,7 @@
 \sloppy
 \maketitle
 
+
 %-----------------
 % Wstęp
 %-----------------
@@ -303,9 +304,12 @@ Sformułowano hipotezy szczegółowe:
 \section{Metody i narzędzia badawcze}
 Tadeusz Pilch o metodzie badawczej mówi, że jest to zespól czynności i zabiegów zmierzających do poznania określonego przedmiotu. To pewnego rodzaju charakterystyczne działanie, które podejmujemy, w celu zdobycia interesujących nas danych \cite{tadeusz}. Dla celów pracy wybrano metodę sondażu diagnostycznego, analizę i krytykę piśmiennictwa.\cite{krys}
 
-O technice badawczej autor mówi, iż jest wykładnią naczelnych problemów badawczych \cite{tadeusz}. W pracy ze względu na ograniczony dostęp do wybranej grupy badanej, zastosowano autorski kwestionariusz ankietowy oraz techniki statystyczne.
+O technice badawczej autor mówi, iż jest wykładnią naczelnych problemów badawczych \cite{tadeusz}. 
+
+W pracy ze względu na ograniczony dostęp do wybranej grupy badanej, zastosowano autorski kwestionariusz ankietowy oraz techniki statystyczne.
 
 Natomiast narzędzie badawcze wg Wincentego Okonia, to materiały, narzędzia techniczne służące do prowadzenia badań i opracowania ich wyników \cite{winc}. W niniejszej pracy użyto kreator formularzy online google.
+
 
   %-----------------
   % Organizacja i przebieg badań.
@@ -313,176 +317,105 @@ Natomiast narzędzie badawcze wg Wincentego Okonia, to materiały, narzędzia te
 \section{Organizacja i przebieg badań}
 Badania przeprowadzono wśród byłych i obecnych studentów studiów niestacjonarnych Wyższej Szkoły Medycznej w Legnicy, na kierunku pielęgniarstwo w okresie od 01.11.2021 do 01.03.2022. Kryterium włączenia stanowiły osoby czynnie pracujące zawodowo. 
 
-...
 
 %-----------------
-% Wyniki badań
+% Charakterystyka grupy badanej
 %-----------------
-\chapter{Wyniki badań}
-
 \section{Charakterystyka grupy badanej}
 
-% płeć
-\begin{figure}
-\includegraphics[width=8cm]{char_gr_bad/plec00}
-\caption{Płeć}
-\end{figure}
+Ankietę zebrano od 115 osób, pracowników i pracownic służby zdrowia ....
 
-% wiek
+\subsection{Wiek}
+
+Badanie ankietowe przeprowadzono wśród 115 osób w wieku od 18 do 65 lat. Najliczniejszą grupę stanowili respondenci w wieku od 45 do 60 lat (65 osób), co stanowiło 57 \% badanych.
+Ilustrację rozkładu wieku osób biorących udział w badaniu przestawia rysunek \ref{rys:wiek}.
+
+Opis statystyczny przedstawia tabela \ref{tab:wiek}.
+
+
+
+% ilustracja wiek
 \begin{figure}
 \includegraphics[width=8cm]{char_gr_bad/wiek00}
-\caption{Wiek}
+\caption{Wiek osób ankietowanych, Badania własne 2021/2022r.}
+\label{rys:wiek}
 \end{figure}
 
-% wykształcenie
+
+% tabela wiek  - statystyka
+\begin {table}
+\caption{Statystyki opisowe wieku grupy badanej}
+\begin{tabular}{|c|c|}
+\hline
+Statystyka & Wartość\\
+\hline
+Shapiro-Francia  p & 0 (W' = 0.7583)\\
+\hline
+liczność danych & 114\\
+\hline
+Średnia & 43.9649\\
+\hline
+Zakres danych & 22 - 62\\
+\hline
+Odchylenie standardowe & 10.6754\\
+\hline
+
+\end{tabular}
+\label{tab:wiek}
+\end{table}
+
+
+\subsection{Płeć}
+
+W testowej grupie przedstawionej na rysunku \ref{rys:plec} przebadano 108 kobiet 
+(93,9 \%) i 7 mężczyzn (6,1 \%) . Widoczna dysproporcja jest typowa dla rozkładu płci osób zatrudnionych jako pielęgniarki/arze.
+
+% ilustracja plec
 \begin{figure}
-\includegraphics[width=9cm]{char_gr_bad/wyksztalc00}
-\caption{Wykształcenie}
+\includegraphics[width=8cm]{char_gr_bad/plec00}
+\caption{Płeć osób ankietowanych, Badania własne 2021/2022r.}
+\label{rys:plec}
 \end{figure}
 
-% podyplomowe
+
+\subsection{Wykształcenie}
+
+% ilustracja wykształcenie
 \begin{figure}
-\includegraphics[width=10cm]{char_gr_bad/podyplom00}
-\caption{Kształcenie podyplomowe}
-\end{figure}
-
-% stan cywilny
-\begin{figure}
-\includegraphics[width=9cm]{char_gr_bad/cyw00}
-\caption{Stan cywilny}
-\end{figure}
-
-% miejsce zamieszkania
-\begin{figure}
-\includegraphics[width=9cm]{char_gr_bad/zamieszka00}
-\caption{Miejsce zamieszkania}
+\includegraphics[width=8cm]{char_gr_bad/wyksztalc00}
+\caption{Wykształcenie osób ankietowanych, Badania własne 2021/2022r.}
+\label{rys:wykszt}
 \end{figure}
 
 
-\newpage
+
+%-----------------
+% Analizy statystyczne
+%-----------------
+\section{Opis metod analizy statystycznej}
+
+Analizy wykonano w środowisku statystycznym R, wer. 4.2.0 \cite{rproject} oraz programie GNU PSPP, wer.: 1.4.1 \cite{gnupspp}
 
 
-\section{Wyniki ankiety}
+Metody statystyczne, którymi się posłużono, to:
+\begin{itemize}
+     \item Test Shapiro – Wilk, jest testem służącym do sprawdzenia założenia o normalności rozkładu zmiennej.
+     \item Test Shapiro – Francia,  jest testem służącym do sprawdzania normalności rozkładu zmiennej w oparciu o duże >50 próbki danych. Wprowadzony przez S.S.Shapiro oraz R. S Francia w 1972 r. jako uproszczenie testu Shapiro - Wilk
+    
+     \item Test Pearsona $\chi^2$, test służący do oceny zależności pomiędzy rozkładem częstości odpowiedzi w zakresie jednej zmiennej, w odniesieniu do drugiej zmiennej.
+     
+    
+     \item Test Manna – Whinteya opiera się na medianach. Pozwala zweryfikować czy między porównywanymi grupami występują istotne statystyczne różnice. Stosowany jest do porównań pomiędzy dwoma grupami. Stosowany jest w przypadku rozkładów o charakterze różnym od normalnego.
+    
+     \item Test Kruskala – Wallisa test nieparametryczny, opierający się na medianach. Pozwala zweryfikować czy między porównywanymi grupami występują istotne statystyczne różnice. Stosowany jest do porównań pomiędzy więcej niż dwoma grupami. Stosowany jest, gdy w jednej grupie rozkład ma charakter różny od normalnego.
 
-%  01 staz pracy
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/01_staz_pracy}
-    \caption{ 01 staz pracy }
-\end{figure}
+\end{itemize}
 
-%  02 ile miejsc
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/02_ile_miejsc}
-    \caption{ 02 ile miejsc }
-\end{figure}
 
-%  03 wymiar godzin
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/03_wymiar_godzin}
-    \caption{ 03 wymiar godzin }
-\end{figure}
 
-%  04 ile zmian
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/04_ile_zmian}
-    \caption{ 04 ile zmian }
-\end{figure}
+\chapter{Wyniki badań}
 
-%  05 zadowol
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/05_zadowol}
-    \caption{ 05 zadowol }
-\end{figure}
 
-%  06 staz w spec
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/06_staz_w_spec}
-    \caption{ 06 staz w spec }
-\end{figure}
-
-%  07 srod wspiera
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/07_srod_wspiera}
-    \caption{ 07 srod wspiera }
-\end{figure}
-
-%  08 srod toksyczne
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/08_srod_toksyczne}
-    \caption{ 08 srod toksyczne }
-\end{figure}
-
-%  09 systemy motyw
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/09_systemy_motyw}
-    \caption{ 09 systemy motyw }
-\end{figure}
-
-%  10 emocje do domu
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/10_emocje_do_domu}
-    \caption{ 10 emocje do domu }
-\end{figure}
-
-%  11 trauma wtorna
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/11_trauma_wtorna}
-    \caption{ 11 trauma wtorna }
-\end{figure}
-
-%  12 potrafi niwelowac
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/12_potrafi_niwelowac}
-    \caption{ 12 potrafi niwelowac }
-\end{figure}
-
-%  13 siega po uzywki
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/13_siega_po_uzywki}
-    \caption{ 13 siega po uzywki }
-\end{figure}
-
-%  14 dylemat podnos kwal
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/14_dylemat_podnos_kwal}
-    \caption{ 14 dylemat podnos kwal }
-\end{figure}
-
-%  15 presja spol
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/15_presja_spol}
-    \caption{ 15 presja spol }
-\end{figure}
-
-%  16 dosw przemoc
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/16_dosw_przemoc}
-    \caption{ 16 dosw przemoc }
-\end{figure}
-
-%  17 postep dochodz
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/17_postep_dochodz}
-    \caption{ 17 postep dochodz }
-\end{figure}
-
-%  18 pocz bezp covid
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/18_pocz_bezp_covid}
-    \caption{ 18 pocz bezp covid }
-\end{figure}
-
-%  19 popiera dzialania
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/19_popiera_dzialania}
-    \caption{ 19 popiera dzialania }
-\end{figure}
-
-%  20 odczuwa satys
-\begin{figure}
-    \includegraphics[width=9cm]{wyniki/20_odczuwa_satys}
-    \caption{ 20 odczuwa satys }
-\end{figure}
 
 
 %-----------------
@@ -528,9 +461,34 @@ Dane o chorobach przewlekłych i współistniejących badanej grupy  studentów 
 %-------------
 
 \subsection{hipoteza 2:} 
-Czy  pielęgniarki/arze mają predyspozycje do godzenia życia zawodowego i rodzinnego? W związku z tym, że, aż 43,4 \%  ( 50 osób) ankietowanych badania własnego spędza w pracy od 170 do 260 godzin, co przekłada się np. przy 170 godzinach na około:  7 dyżurów dobowych, 14 dyżurów dwunastogodzinnych. Przy 260 godzinach te liczby to: około  10 dyżurów dobowych, 20 dyżurów dwunastogodzinnych. Rekordzistki w trakcie indywidualnych rozmów przyznają się do 72 godzin nieprzerwanej pracy, bądź 2 dni wolnych w miesiącu \cite{cyfrowe}. Natomiast wykładnia prawa, wyraźnie mówi, że zasadnicze normy czasu pracy obowiązujące pracowników podmiotów leczniczych wynoszą na dobę 7 godzin i 35 minut na dobę, oraz 37 godzin i 55 minut na tydzień. Jest to średnia, której nie można przekraczać w trzymiesięcznym okresie rozliczeniowym \cite{okres}. Ustawa o działalności leczniczej nie reguluje wprost limitu pracy w godzinach nadliczbowych. Pośrednio wynika to z maksymalnej normy czasu pracy w wymiarze 48 godzin tygodniowo \cite{klauzula}.
+
+Z analiz statystycznych wynika:
+\begin{itemize}
+
+    \item ilość godzin pracy nie ma istotnego wpływu na przynoszenie do domu pracy w postaci myśli i emocji $\chi^2 (2,115) = 0,224, p=0,89$
+    
+    \item doswiadcza traumatyzacji wtórnej    
+    
+    \item potrafi niwelować
+    
+    \item nie potrafi stosować technik psychologicznych
+    
+    \item w celu rozładowania stres sięga po uzywki
+    
+    
+    \item istnieje korelacja pomiędzy ilością ponadnormatywnych godzin pracy a nasileniem konfliktów na linii praca-rodzina  $\chi^2 (2,115) = 6.4194, p=0,04037$
+    
+
+
+\end{itemize}
+
+Czy  pielęgniarki/arze mają predyspozycje do godzenia życia zawodowego i rodzinnego? 
+
+??? W związku z tym, że, aż 43,4 \%  ( 50 osób) ankietowanych badania własnego spędza w pracy od 170 do 260 godzin, co przekłada się np. przy 170 godzinach na około:  7 dyżurów dobowych, 14 dyżurów dwunastogodzinnych. Przy 260 godzinach te liczby to: około  10 dyżurów dobowych, 20 dyżurów dwunastogodzinnych. Rekordzistki w trakcie indywidualnych rozmów przyznają się do 72 godzin nieprzerwanej pracy, bądź 2 dni wolnych w miesiącu \cite{cyfrowe}. Natomiast wykładnia prawa, wyraźnie mówi, że zasadnicze normy czasu pracy obowiązujące pracowników podmiotów leczniczych wynoszą na dobę 7 godzin i 35 minut na dobę, oraz 37 godzin i 55 minut na tydzień. Jest to średnia, której nie można przekraczać w trzymiesięcznym okresie rozliczeniowym \cite{okres}. Ustawa o działalności leczniczej nie reguluje wprost limitu pracy w godzinach nadliczbowych. Pośrednio wynika to z maksymalnej normy czasu pracy w wymiarze 48 godzin tygodniowo \cite{klauzula}.
   63,5 \%  (73 osoby)twierdzi, że przynosi pracę do domu w postaci myśli i emocji. 38,3 \% (44 osoby) doświadcza traumatyzacji wtórnej. W badanej grupie 37,4 (43 osoby) potrafi niwelować objawy takie jak: smutek, żal, poczucie bezradności, przewlekły stres. 33,9 \%  (39 osób) nie potrafi stosować technik psychologicznych do poradzenia sobie z sytuacją trudną, a 28,7 \%  (33 osoby) nie opowiedziało się jednoznacznie za lub przeciw. 13,9 \% (16 osób) w celu rozładowania stresu sięga po używki. 47 \% (54 osoby) odczuwa dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji, co wiąże się z ograniczeniami w życiu osobistym. Przy tak kategorycznych danych 80 \% (92 osoby) ankietowanych stwierdza, że w ich życiu nie występuje konflikt na linii praca - rodzina i odwrotnie. 73 \% (84 osoby) uważa, że praca nie jest powodem niezgody z życiowym partnerem, 77,4 \%  (89 osób) twierdzi, że są wspierane w godzeniu obowiązków domowych z pracą. 73,9 \% (85 osób) ma czas dla rodziny i czynnie uczestniczy w życiu rodzinnym i imprezach okolicznościowych. Tylko 16,5 \% (19 osób) kiedykolwiek rozważało rezygnację z zawodu, na rzecz szczęścia rodziny. Równie spektakularnym wynikiem jest odpowiedź na pytanie o pasję pozazawodową. Aż 72,2\% (83 osoby) podało, iż rozwija pasję pozazawodową.  W badaniach  przeprowadzonych w Centrum Onkologii w Bydgoszczy, w 2011 roku, na grupie 72 pielęgniarek i pielęgniarzy, dotyczące analizy jakości życia pracowników ochrony zdrowia, Kurowska i Klatt  wykazują, że w badanej grupie wystąpił wysoki poziom wsparcia ze strony partnera życiowego. Także ogólne wsparcie rodziny, było na poziomie wysokim, przy czym najwyżej oceniono wsparcie emocjonalne \cite{ poziom}. Natomiast w 2017 roku zespół badaczy Polskiego Pomiaru Postaw i Wartości przeprowadził badanie, w którym wzięło udział 1627 osób z zawodowej grupy pielęgniarskiej. Zdecydowanie większa liczba osób deklarowała, że udaje się jej zachować równowagę między działalnością zawodową i rodzinną - 30, 6 \% było zdecydowanych w tej kwestii, a 42,1 \% podało odpowiedź, że taką równowagę raczej zachowuje. Tylko 28 \% badanych osób, byłoby skłonnych zrezygnować z pracy, dla dobra rodziny. W tym badaniu  56, 7 \% neguje wpływ pracy na życie rodzinne i twierdzi, że potrafi zachować dystans między pracą, a czasem z rodziną, ale 37 \% nie posiada takiej umiejętności. \cite{komunikat}.
 Podsumowując dyskusję na ten temat, należy wyrazić uznanie dla osób wybierający zawód wymagający ciągłego doskonalenia i niosący ogrom poświęceń w życiu osobistym, jednocześnie realizując obie role.
+
+
 
 %-------------
 % hipoteza 3
@@ -644,6 +602,13 @@ Belowska, w swojej pracy doktorskiej na temat: ,,Ocena wpływu kształcenia na o
 \bibitem{tadeusz}{Pilch T. Metodologia pedagogicznych badań środowiskowych. Warszawa; Państwowe Wydawnictwo Naukowe, 1980}
 
 \bibitem{winc}{Okoń W. Nowy słownik pedagogiczny. Warszawa; Wydawnictwo Znak; 1999}
+
+% programy statystyczne
+
+\bibitem{rproject}{The R Project for Statistical Computing, https://www.r-project.org/}
+\bibitem{gnupspp}{GNU PSPP, http://www.gnu.org/software/pspp/}
+
+
 \bibitem{krytyka}{Piekarski J.,  Urbaniak-Zając D. Pasikowski S. Krytyka metodologiczna w praktyce tworzenia wiedzy. Łódź; Wydawnictwo Uniwersytetu Łódzkiego; 2019}
 \bibitem{kontra}{Zużewicz K.,  Prędecka A. Wymiar czasu pracy kontra zdrowie. Przegląd doniesień naukowych. Warszawa; Zeszyty Naukowe SGSP 2018; Nr 66 (Tom 1/2)}
 \bibitem{trinkoff}{ Trinkoff A.M.,  Johantgen M.,  Storr C.L. et all. Nurses work schedule characteristics, nurse staffing and patient mortality. Nursing Resarch 2011;}
