@@ -340,7 +340,7 @@ Opis statystyczny przedstawia tabela \ref{tab:wiek}.
 % ilustracja wiek
 \begin{figure}
 \includegraphics[width=9cm]{char_gr_bad/wiek00}
-\caption{Wiek osób ankietowanych, Badania własne 2021/2022 r.}
+\caption{Wiek osób ankietowanych. Badania własne 2021/2022 r.}
 \label{rys:wiek}
 \end{figure}
 
@@ -352,13 +352,11 @@ Opis statystyczny przedstawia tabela \ref{tab:wiek}.
 \hline
 Statystyka & Symbol & Wartość\\
 \hline
-Shapiro-Wilk & $p$ & 0 (W' = 0.7583)\\
+Test Shapiro-Wilk & $p$ & 0 (W' = 0.7583)\\
 \hline
 liczność danych & $n$ & 114\\
 \hline
 Średnia & $\bar{x}$ & 43.8772\\
-\hline
-Zakres danych & & 21 - 62\\
 \hline
 Odchylenie standardowe & $S$ & 10.6754\\
 \hline
@@ -373,10 +371,10 @@ Odchylenie standardowe & $S$ & 10.6754\\
 W testowej grupie przedstawionej na rysunku \ref{rys:plec} przebadano 108 kobiet 
 (93,9 \%) i 7 mężczyzn (6,1 \%) . Widoczna dysproporcja jest typowa dla rozkładu płci osób zatrudnionych jako pielęgniarki/arze.
 
-% ilustracja plec
+% ilustracja płeć
 \begin{figure}
 \includegraphics[width=8cm]{char_gr_bad/plec00}
-\caption{Płeć osób ankietowanych, Badania własne 2021/2022 r.}
+\caption{Płeć osób ankietowanych. Badania własne 2021/2022 r.}
 \label{rys:plec}
 \end{figure}
 
@@ -388,14 +386,34 @@ Wśród ankietowanych najliczniejszą grupę reprezentowało 66 osób (57,4 \%) 
 % ilustracja wykształcenie
 \begin{figure}
 \includegraphics[width=9cm]{char_gr_bad/wyksztalc00}
-\caption{Wykształcenie osób ankietowanych, Badania własne 2021/2022 r.}
+\caption{Wykształcenie osób ankietowanych. Badania własne 2021/2022 r.}
 \label{rys:wykszt}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=11cm]{char_gr_bad/podyplom00}
-\caption{Kszałcenie podyplomowe osób ankietowanych, Badania własne 2021/2022 r.}
+\caption{Wykszałcenie podyplomowe osób ankietowanych. Badania własne 2021/2022}
 \label{rys:podyplom}
+\end{figure}
+
+
+\subsection{Stan cywilny}
+Zdecydowana większość ankietowanych to 78 osób w związku małżeńskim (67,8 \%), i 20 w związku nieformalnym (17,4 \%). Jedyne 15 \% to osoby nie żyjące w związku, w tym 10 (8,7 \%) rozwiedzione, 6 (5,2 \%) samotne i 1 (0,9 \%) wdowa. Rozkład ankietowanych pod względem stanu cuywilnego ilustruje rys. \ref{rys:cywil}.
+
+% stan cywilny
+\begin{figure}
+\includegraphics[width=9cm]{char_gr_bad/cyw00}
+\caption{Stan cywiln ankietowanych. Badania własne 2021/2022 r.}
+\label{rys:cywil}
+\end{figure}
+
+\subsection{Miejszce zamieszkania}
+Rozkład ankietowanych pod wzgledem miejsca zamieszkania przedstawiono na rys. \ref{rys:zamiesz}. Rozkład ten okazał si być dość równomierny. Lekko powyżej średniej stanowiła grupa 29 osób (25,2 \%) zamieszkująca pobliskie wsie. Miasta do 50 tys. mieszkańców reprezentowała grupa 23 osób (20 \%), Tak samo liczna grupa zamieszkiwała w miastach od 50 do 150 tys. Nieco mniejsza grupa 21 osób (18,3 \%) pochodziła z miast powyżej 150 tys, natomiast z miast powyżej 500 tys. 19 osób (16,5 \%).
+% miejsce zamieszkania
+\begin{figure}
+\includegraphics[width=9cm]{char_gr_bad/zamieszka00}
+\caption{Miejsce zamieszkania ankietowanych. Badania własne 2021/2022 r.}
+\label{rys:zamiesz}
 \end{figure}
 
 %-----------------
@@ -404,6 +422,21 @@ Wśród ankietowanych najliczniejszą grupę reprezentowało 66 osób (57,4 \%) 
 \section{Opis metod analizy statystycznej}
 
 Analizy wykonano w środowisku statystycznym R, w wersji 4.2.0 \cite{rproject} oraz programie GNU PSPP , wer.: 1.4.1 \cite{gnupspp}. 
+
+\vspace{\baselineskip} 
+
+Wyniki testów statystycznych podano w standardzie APA\cite{apa}:\newline
+
+\begin{equation}
+    \chi^2 (lss, n) = x, p=y
+\end{equation}
+
+\vspace{\baselineskip} 
+gdzie:\newline
+$lss$ -liczba stopni swobody\newline
+$n$ - liczność zbioru danych\newline
+$x$ - obliczona wartość testu $\chi^2$\newline
+$y$ - wartość prawdopodobieństwa $p$\newline
 
 
 Metody statystyczne, którymi się posłużono, to:
@@ -415,6 +448,8 @@ Metody statystyczne, którymi się posłużono, to:
      \item Test Manna – Whinteya opiera się na medianach. Pozwala zweryfikować czy między porównywanymi grupami występują istotne statystyczne różnice. Stosowany jest do porównań pomiędzy dwoma grupami. Stosowany jest w przypadku rozkładów o charakterze różnym od normalnego.
     
      \item Test Kruskala – Wallisa test nieparametryczny, opierający się na medianach. Pozwala zweryfikować czy między porównywanymi grupami występują istotne statystyczne różnice. Stosowany jest do porównań pomiędzy więcej niż dwoma grupami. Stosowany jest, gdy w jednej grupie rozkład ma charakter różny od normalnego.
+     
+     
 
 \end{itemize}
 
@@ -423,6 +458,84 @@ Metody statystyczne, którymi się posłużono, to:
 \chapter{Wyniki badań}
 
 
+%-------------------------
+% badania - hipotezy
+%-------------------------
+\section*{Badania właściwe dla stawianych hipotez}
+
+
+\subsection*{hipoteza: Poziom świadomości na temat zagrożeń wynikających z pracy zawodowej w ponadnormatywnym wymiarze pracy,  jest  istotnie niewystarczający, lub schodzi na plan dalszy, wobec różnych potrzeb, które podlegają zmianom w trakcie życia.}
+
+
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 13 „Czy, w celu radzenia sobie ze stresem związanym z pracą zawodową, sięga Pan/i po używki?”. Pierwsza zmienna ma harakter ilościowy a druga jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona. 
+
+Istnieje korelacja pomiędzy ilością ponadnormatywnych godzin pracy a "sięganiem po używki" ($\chi^2 (2, 115) = 6,1152, p=0,047$)
+   
+\vspace{\baselineskip} 
+
+TODO: więcej badań do hipotezy 1
+
+\vspace{\baselineskip} 
+
+\subsection*{hipoteza: Pielęgniarki/arze mają wsparcie w godzeniu życia zawodowego i rodzinnego.}
+
+
+Analizie korelacyjnej poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 10 „Czy przynosi Pan/i ,,pracę" do domu, w postaci emocji i myśli?”. Pierwsza zmienna ma harakter ilościowy a druga jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona.
+
+    Ilość godzin pracy nie ma istotnego wpływu na przynoszenie do domu pracy w postaci myśli i emocji ($\chi^2 (2, 115) = 0,224, p=0,894$)
+    
+
+\vspace{\baselineskip} 
+  
+
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 11 „Czy doświadcza Pan/i, zjawiska określanego jako traumatyzacja wtórna (odczuwanie, objawów psychicznych - smutek, żal, poczucie bezradności, stres) oraz objawów somatycznych, po wystąpieniu trudnej, dramatycznej sytuacji w pracy, powyżej 30 dni?”. Pierwsza zmienna ma harakter ilościowy a druga jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona. 
+ 
+Ilość godzin pracy nie ma istotnego wpływu na odczywanie traumatyzacji wtórnej ($\chi^2 (2, 115) = 0,8926, p=0,64$)
+
+\vspace{\baselineskip} 
+    
+   
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 27 o wystepowanie konfliktów praca-rodzina. Pierwsza zmienna ma harakter ilościowy a druga jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona.  
+    
+Istnieje korelacja pomiędzy ilością ponadnormatywnych godzin pracy a nasileniem konfliktów na linii praca-rodzina ($\chi^2 (2, 115) = 6.423, p=0,0403$)
+  
+\vspace{\baselineskip}   
+
+\subsection*{hipoteza: Poziom wykształcenia kadry pielęgniarskiej ma istotne znaczenie, dla  redukowania skutków traumatyzacji, wynikających z trudnych sytuacji w pracy.}
+
+
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie dotyczące wykształcenia, oraz odpowiedź na pytanie 12 „Czy potrafi Pan/i, niwelować w.w objawy, za pomocą technik psychologicznych?”. Przyjęto że obie zmienne mają charaskter jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona.
+
+Istnieje korelacja pomiędzy poziomem wykształcenia a umiejętnościami niwelowania skutków traumatyzacji ($\chi^2 (3, 115) = 7,934, p=0,0474$)
+
+\vspace{\baselineskip} 
+
+\subsection*{hipoteza: Satysfakcja zawodowa pielęgniarek i pielęgniarzy, wynika z kultury organizacji oraz nabywania kolejnych uprawnień.}
+
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 7: "Czy  środowisko  Pana/i pracy, jest wspierające?", oraz odpowiedź na pytanie 5: „Czy jest Pan/i zadowolona/y, z wyboru drogi zawodowej?”. Obie zmienne mają charaskter jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona.
+
+Wynik testu pokazuje że istnieje korelacja pomiędzy wspierającym środowiskiem pracy a zadowoleniem pracownika z wyboru drogi zawodowej. ($\chi^2 (4, 115) = 9,53169, p=0,0491$)
+
+\vspace{\baselineskip}
+
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 8: "Czy  środowisko  Pana/i pracy, jest "toksyczne"?", oraz odpowiedź na pytanie 5: „Czy jest Pan/i zadowolona/y, z wyboru drogi zawodowej?”. Obie zmienne mają charaskter jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona.
+
+Wynik testu pokazuje że istnieje korelacja pomiędzy toksycznym środowiskiem pracy a brakiem zadowolenia pracownika z wyboru drogi zawodowej. ($\chi^2 (4, 115) = 10,87545, p=0,028$)
+
+\vspace{\baselineskip}
+Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 9: "Czy zakład pracy, w którym Pan/i pracuje stosuje systemy motywacyjne?", oraz odpowiedź na pytanie 5: „Czy jest Pan/i zadowolona/y, z wyboru drogi zawodowej?”. Obie zmienne mają charaskter jakościowy. W celu określenia istotnosci statystycznej zastosowano test $\chi^2$ Pearsona.
+
+Wynik testu nie pozwala na określenie korelacji pomiędzy stosowaniem systemów motywacyjnych a zadowoleniem pracownika z wyboru drogi zawodowej, ponieważ wartość istotności statystycznej $p$ przekracza załozony próg 0,05. ($\chi^2 (4, 115) = 10,87545, p=0,272$)
+
+\vspace{\baselineskip} 
+
+\subsection*{hipoteza: System Opieki Zdrowotnej nie spełnia oczekiwań, w zakresie promocji, przyszłości i autonomii pielęgniarstwa.}
+
+\vspace{\baselineskip} 
+
+TODO: badania do hipotezy 5
+
+\vspace{\baselineskip} 
 
 
 %-----------------
@@ -468,25 +581,6 @@ Dane o chorobach przewlekłych i współistniejących badanej grupy  studentów 
 
 \subsection{hipoteza 2:} 
 
-Z analiz statystycznych wynika:
-\begin{itemize}
-
-    \item ilość godzin pracy nie ma istotnego wpływu na przynoszenie do domu pracy w postaci myśli i emocji $\chi^2 (2,115) = 0,224, p=0,89$
-    
-    \item doswiadcza traumatyzacji wtórnej    
-    
-    \item potrafi niwelować
-    
-    \item nie potrafi stosować technik psychologicznych
-    
-    \item w celu rozładowania stres sięga po uzywki
-    
-    
-    \item istnieje korelacja pomiędzy ilością ponadnormatywnych godzin pracy a nasileniem konfliktów na linii praca-rodzina  $\chi^2 (2,115) = 6.4194, p=0,04037$
-    
-
-
-\end{itemize}
 
 Czy  pielęgniarki/arze mają predyspozycje do godzenia życia zawodowego i rodzinnego? 
 
@@ -611,8 +705,9 @@ Belowska, w swojej pracy doktorskiej na temat: ,,Ocena wpływu kształcenia na o
 \bibitem{tadeusz}{Pilch T. Metodologia pedagogicznych badań środowiskowych. Warszawa; Państwowe Wydawnictwo Naukowe, 1980}
 
 \bibitem{winc}{Okoń W. Nowy słownik pedagogiczny. Warszawa; Wydawnictwo Znak; 1999}
+\bibitem{apa}{American Psychological Association. (2022). APA Style numbers and statistics guide. https://apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf}
 
-\bibitem{ShapWilk}{Statistics How To}{https://www.statisticshowto.com/shapiro-wilk-test/}
+\bibitem{ShapWilk}{Statistics How To, https://www.statisticshowto.com/shapiro-wilk-test/}
 
 % programy statystyczne
 
@@ -663,17 +758,146 @@ Belowska, w swojej pracy doktorskiej na temat: ,,Ocena wpływu kształcenia na o
 \bibitem{belowska}{Belowska J. Badania naukowe w praktyce pielegniarskiej - ocena wpływu kształcenia na odległość na wiedzę i postawy pielegniarek wobec praktyki zawodowej opartej na dowodach naukowych. https://wnoz.wum.edu.pl/sites/wnoz.wum.edu.pl/files/BelowskaJaros\%C5\%82awastreszczeniepracydoktorskiejwnozwumpl.pdf [dostep 02.05.2022]}
 
 
-
-
-
-
-
-
-
-
-
-
 \end{thebibliography}
+
+
+
+% -----------------------
+%        DODATKI
+% -----------------------
+
+\chapter{Wyniki badań ankietowych}
+
+%  01 staz pracy
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/01_staz_pracy}
+    \caption{Jak długo pracuje Pan/i w zawodzie pielęgniarki/rza?}
+    \label{rys:staz}
+\end{figure}
+
+%  02 ile miejsc
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/02_ile_miejsc}
+    \caption{W ilu miejscach pracy, obecnie Pan/i jest zatrudniony/a?}
+    \label{rys:etaty}
+\end{figure}
+
+%  03 wymiar godzin
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/03_wymiar_godzin}
+    \caption{Ile wynosi miesięczny wymiar godzin, Pana/i pracy?}
+    \label{rys:ile_godzin}
+\end{figure}
+
+%  04 ile zmian
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/04_ile_zmian}
+    \caption{Czy w podstawowym miejscu zatrudnienia, świadczy  Pan/i usługi, w systemie pracy?}
+    \label{rys:ile_zmian}
+\end{figure}
+
+%  05 zadowol
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/05_zadowol}
+    \caption{Czy jest Pan/i zadowolony/a, z wyboru drogi zawodowej?}
+    \label{rys:zadowol}
+\end{figure}
+
+%  06 staz w spec
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/06_staz_w_spec}
+    \caption{Proszę podać, w przybliżeniu staż pracy, w jednej specjalizacji zawodowej (na jednym oddziale)}
+    \label{rys:staz_spec}
+\end{figure}
+
+%  07 srod wspiera
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/07_srod_wspiera}
+    \caption{Czy środowisko Pana/i pracy, jest wspierające?}
+    \label{rys:wspiera}
+\end{figure}
+
+%  08 srod toksyczne
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/08_srod_toksyczne}
+    \caption{Czy środowisko Pana/i pracy, jest ,,toksyczne"( występuje mobbing,hejt)?}
+    \label{rys:toksyczne}
+\end{figure}
+
+%  09 systemy motyw
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/09_systemy_motyw}
+    \caption{Czy zakład pracy, w którym Pan/i pracuje, stosuje systemy motywacyjne?}
+    \label{rys:syst_motyw}
+\end{figure}
+
+%  10 emocje do domu
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/10_emocje_do_domu}
+    \caption{ 10 emocje do domu }
+\end{figure}
+
+%  11 trauma wtorna
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/11_trauma_wtorna}
+    \caption{ 11 trauma wtorna }
+\end{figure}
+
+%  12 potrafi niwelowac
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/12_potrafi_niwelowac}
+    \caption{ 12 potrafi niwelowac }
+\end{figure}
+
+%  13 siega po uzywki
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/13_siega_po_uzywki}
+    \caption{ 13 siega po uzywki }
+\end{figure}
+
+%  14 dylemat podnos kwal
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/14_dylemat_podnos_kwal}
+    \caption{ 14 dylemat podnos kwal }
+\end{figure}
+
+%  15 presja spol
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/15_presja_spol}
+    \caption{ 15 presja spol }
+\end{figure}
+
+%  16 dosw przemoc
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/16_dosw_przemoc}
+    \caption{ 16 dosw przemoc }
+\end{figure}
+
+%  17 postep dochodz
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/17_postep_dochodz}
+    \caption{ 17 postep dochodz }
+\end{figure}
+
+%  18 pocz bezp covid
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/18_pocz_bezp_covid}
+    \caption{ 18 pocz bezp covid }
+\end{figure}
+
+%  19 popiera dzialania
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/19_popiera_dzialania}
+    \caption{ 19 popiera dzialania }
+\end{figure}
+
+%  20 odczuwa satys
+\begin{figure}
+    \includegraphics[width=9cm]{wyniki/20_odczuwa_satys}
+    \caption{ 20 odczuwa satys }
+\end{figure}
+
+
 
 \zakonczenie  % wklejenie recenzji i opinii
 
