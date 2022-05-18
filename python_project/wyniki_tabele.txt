@@ -1,0 +1,879 @@
+Hi, PyCharm
+lista ma: 116 wierszy
+lista ma: 44 kolumn
+
+
+
+
+% pytanie: 1 - 1. Czy pracuję  Pan/i w zawodzie pielęgniarki / pielęgniarza?
+\begin{table}[h]
+\caption{1. Czy pracuję  Pan/i w zawodzie pielęgniarki / pielęgniarza?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+od 10 do 20 lat  &  20  & 17.4\% \\
+\hline
+krócej niż 2 lata  &  13  & 11.3\% \\
+\hline
+od 2 do 5 lat  &  10  & 8.7\% \\
+\hline
+powyżej 20 lat  &  63  & 54.8\% \\
+\hline
+od 5 do 10 lat  &  9  & 7.8\% \\
+\hline
+\end{tabular}
+\label{tab:Q1}
+\end{table}
+
+
+
+% pytanie: 2 - 2.  W ilu miejscach pracy, obecnie Pan/i, jest zatrudniony/a?
+\begin{table}[h]
+\caption{2.  W ilu miejscach pracy, obecnie Pan/i, jest zatrudniony/a?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+dwóch  &  32  & 27.8\% \\
+\hline
+jednym  &  75  & 65.2\% \\
+\hline
+więcej niż dwóch  &  8  & 7.0\% \\
+\hline
+\end{tabular}
+\label{tab:Q2}
+\end{table}
+
+
+
+% pytanie: 3 - 3. Ile, w przybliżeniu, wynosi miesięczny wymiar godzin, Pana/i pracy?
+\begin{table}[h]
+\caption{3. Ile, w przybliżeniu, wynosi miesięczny wymiar godzin, Pana/i pracy?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+od 170 do 199 godzin  &  28  & 24.3\% \\
+\hline
+do 149 godzin  &  15  & 13.0\% \\
+\hline
+od 200 do 239 godzin  &  14  & 12.2\% \\
+\hline
+od 150 do 169 godzin  &  50  & 43.5\% \\
+\hline
+od 240 do 259 godzin  &  5  & 4.3\% \\
+\hline
+powyżej 260 godzin  &  3  & 2.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q3}
+\end{table}
+
+
+
+% pytanie: 4 - 4, Czy w podstawowym miejscu zatrudnienia, świadczy  Pan/i usługi, w systemie pracy?
+\begin{table}[h]
+\caption{4, Czy w podstawowym miejscu zatrudnienia, świadczy  Pan/i usługi, w systemie pracy?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+dwuzmianowej  &  64  & 55.7\% \\
+\hline
+w jedno i dwuzmianowej  &  17  & 14.8\% \\
+\hline
+jednozmianowej  &  34  & 29.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q4}
+\end{table}
+
+
+
+% pytanie: 5 - 5.  Czy jest Pan/i zadowolona/y, z wyboru drogi zawodowej?
+\begin{table}[h]
+\caption{5.  Czy jest Pan/i zadowolona/y, z wyboru drogi zawodowej?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  33  & 28.7\% \\
+\hline
+raczej tak  &  65  & 56.5\% \\
+\hline
+nie mam zdania  &  9  & 7.8\% \\
+\hline
+raczej nie  &  5  & 4.3\% \\
+\hline
+zdecydowanie nie  &  3  & 2.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q5}
+\end{table}
+
+
+
+% pytanie: 6 - 6. Proszę podać, w przybliżeniu staż pracy, w jednej specjalizacji zawodowej (na jednym oddziale).
+\begin{table}[h]
+\caption{6. Proszę podać, w przybliżeniu staż pracy, w jednej specjalizacji zawodowej (na jednym oddziale).}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+od 5 do 10 lat  &  19  & 16.5\% \\
+\hline
+od O do 2 lat  &  17  & 14.8\% \\
+\hline
+od 2 do 5 lat  &  12  & 10.4\% \\
+\hline
+od 20 do 30 lat  &  19  & 16.5\% \\
+\hline
+od 10 do 20 lat  &  40  & 34.8\% \\
+\hline
+powyżej 30 lat  &  8  & 7.0\% \\
+\hline
+\end{tabular}
+\label{tab:Q6}
+\end{table}
+
+
+
+% pytanie: 7 - 7. Czy  środowisko  Pana/i pracy, jest wspierające?
+\begin{table}[h]
+\caption{7. Czy  środowisko  Pana/i pracy, jest wspierające?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  6  & 5.2\% \\
+\hline
+raczej tak  &  56  & 48.7\% \\
+\hline
+nie mam zdania  &  14  & 12.2\% \\
+\hline
+raczej nie  &  0  & 0.0\% \\
+\hline
+zdecydowanie nie  &  8  & 7.0\% \\
+\hline
+\end{tabular}
+\label{tab:Q7}
+\end{table}
+
+
+
+% pytanie: 8 - 8. Czy środowisko Pana/i pracy, jest ,,toksyczne"( występuje mobbing,hejt)?
+\begin{table}[h]
+\caption{8. Czy środowisko Pana/i pracy, jest ,,toksyczne"( występuje mobbing,hejt)?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  8  & 7.0\% \\
+\hline
+raczej tak  &  32  & 27.8\% \\
+\hline
+nie mam zdania  &  16  & 13.9\% \\
+\hline
+raczej nie  &  0  & 0.0\% \\
+\hline
+zdecydowanie nie  &  0  & 0.0\% \\
+\hline
+\end{tabular}
+\label{tab:Q8}
+\end{table}
+
+
+
+% pytanie: 9 - 9. Czy zakład pracy, w którym Pan/i pracuje stosuje systemy motywacyjne?
+\begin{table}[h]
+\caption{9. Czy zakład pracy, w którym Pan/i pracuje stosuje systemy motywacyjne?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  0  & 0.0\% \\
+\hline
+raczej tak  &  16  & 13.9\% \\
+\hline
+nie mam zdania  &  10  & 8.7\% \\
+\hline
+raczej nie  &  47  & 40.9\% \\
+\hline
+zdecydowanie nie  &  42  & 36.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q9}
+\end{table}
+
+
+
+% pytanie: 10 - 10. Czy przynosi Pan/i , ,,pracę" do domu, w postaci emocji i myśli?
+\begin{table}[h]
+\caption{10. Czy przynosi Pan/i , ,,pracę" do domu, w postaci emocji i myśli?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  26  & 22.6\% \\
+\hline
+raczej tak  &  47  & 40.9\% \\
+\hline
+nie mam zdania  &  7  & 6.1\% \\
+\hline
+raczej nie  &  26  & 22.6\% \\
+\hline
+zdecydowanie nie  &  9  & 7.8\% \\
+\hline
+\end{tabular}
+\label{tab:Q10}
+\end{table}
+
+
+
+% pytanie: 11 - 11.  Czy doświadcza Pan/i, zjawiska określanego jako traumatyzacja wtórna (odczuwanie, objawów psychicznych - smutek, żal, poczucie bezradności, stres) oraz objawów somatycznych, po wystąpieniu trudnej, dramatycznej sytuacji w pracy, powyżej 30 dni?
+\begin{table}[h]
+\caption{11.  Czy doświadcza Pan/i, zjawiska określanego jako traumatyzacja wtórna (odczuwanie, objawów psychicznych - smutek, żal, poczucie bezradności, stres) oraz objawów somatycznych, po wystąpieniu trudnej, dramatycznej sytuacji w pracy, powyżej 30 dni?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  7  & 6.1\% \\
+\hline
+raczej tak  &  37  & 32.2\% \\
+\hline
+nie mam zdania  &  12  & 10.4\% \\
+\hline
+raczej nie  &  46  & 40.0\% \\
+\hline
+zdecydowanie nie  &  13  & 11.3\% \\
+\hline
+\end{tabular}
+\label{tab:Q11}
+\end{table}
+
+
+
+% pytanie: 12 - 12. Czy potrafi Pan/i, niwelować w.w objawy, za pomocą technik psychologicznych?
+\begin{table}[h]
+\caption{12. Czy potrafi Pan/i, niwelować w.w objawy, za pomocą technik psychologicznych?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  7  & 6.1\% \\
+\hline
+raczej tak  &  36  & 31.3\% \\
+\hline
+nie mam zdania  &  33  & 28.7\% \\
+\hline
+raczej nie  &  35  & 30.4\% \\
+\hline
+zdecydowanie nie  &  4  & 3.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q12}
+\end{table}
+
+
+
+% pytanie: 13 - 13. Czy, w celu radzenia sobie ze stresem związanym z pracą zawodową, sięga Pan/i po używki?
+\begin{table}[h]
+\caption{13. Czy, w celu radzenia sobie ze stresem związanym z pracą zawodową, sięga Pan/i po używki?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  2  & 1.7\% \\
+\hline
+raczej tak  &  14  & 12.2\% \\
+\hline
+nie mam zdania  &  7  & 6.1\% \\
+\hline
+raczej nie  &  44  & 38.3\% \\
+\hline
+zdecydowanie nie  &  48  & 41.7\% \\
+\hline
+\end{tabular}
+\label{tab:Q13}
+\end{table}
+
+
+
+% pytanie: 14 - 14.Czy czuje Pan/i, dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji i wiążącymi się z nim ograniczeniami w życiu osobistym?
+\begin{table}[h]
+\caption{14.Czy czuje Pan/i, dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji i wiążącymi się z nim ograniczeniami w życiu osobistym?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  13  & 11.3\% \\
+\hline
+raczej tak  &  41  & 35.7\% \\
+\hline
+nie mam zdania  &  8  & 7.0\% \\
+\hline
+raczej nie  &  38  & 33.0\% \\
+\hline
+zdecydowanie nie  &  15  & 13.0\% \\
+\hline
+\end{tabular}
+\label{tab:Q14}
+\end{table}
+
+
+
+% pytanie: 15 - 15. Czy czuję Pan/i presję społeczną, wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia?
+\begin{table}[h]
+\caption{15. Czy czuję Pan/i presję społeczną, wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  34  & 29.6\% \\
+\hline
+raczej tak  &  41  & 35.7\% \\
+\hline
+nie mam zdania  &  10  & 8.7\% \\
+\hline
+raczej nie  &  26  & 22.6\% \\
+\hline
+zdecydowanie nie  &  4  & 3.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q15}
+\end{table}
+
+
+
+% pytanie: 16 - 16. Czy doświadczył Pan/i przemocy słownej, fizycznej ze strony pacjenta?
+\begin{table}[h]
+\caption{16. Czy doświadczył Pan/i przemocy słownej, fizycznej ze strony pacjenta?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  53  & 46.1\% \\
+\hline
+raczej tak  &  38  & 33.0\% \\
+\hline
+nie mam zdania  &  3  & 2.6\% \\
+\hline
+raczej nie  &  16  & 13.9\% \\
+\hline
+zdecydowanie nie  &  5  & 4.3\% \\
+\hline
+\end{tabular}
+\label{tab:Q16}
+\end{table}
+
+
+
+% pytanie: 17 - 17. Czy kiedykolwiek uczestniczył /a Pan/i w postępowaniu dochodzeniowym z tytułu roszczenia pacjenta ?
+\begin{table}[h]
+\caption{17. Czy kiedykolwiek uczestniczył /a Pan/i w postępowaniu dochodzeniowym z tytułu roszczenia pacjenta ?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  13  & 11.3\% \\
+\hline
+raczej tak  &  8  & 7.0\% \\
+\hline
+nie mam zdania  &  2  & 1.7\% \\
+\hline
+raczej nie  &  27  & 23.5\% \\
+\hline
+zdecydowanie nie  &  65  & 56.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q17}
+\end{table}
+
+
+
+% pytanie: 18 - 18. Czy ma Pan/i poczucie bezpieczeństwa w pracy w zagrożeniu koronawirusem?
+\begin{table}[h]
+\caption{18. Czy ma Pan/i poczucie bezpieczeństwa w pracy w zagrożeniu koronawirusem?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  13  & 11.3\% \\
+\hline
+raczej tak  &  40  & 34.8\% \\
+\hline
+nie mam zdania  &  9  & 7.8\% \\
+\hline
+raczej nie  &  30  & 26.1\% \\
+\hline
+zdecydowanie nie  &  23  & 20.0\% \\
+\hline
+\end{tabular}
+\label{tab:Q18}
+\end{table}
+
+
+
+% pytanie: 19 - 19. Czy popiera Pan/i działania przedstawicieli zawodu zmierzające do poprawy sytuacji pielęgniarek i położnych w Polsce ( marsze, strajki)?
+\begin{table}[h]
+\caption{19. Czy popiera Pan/i działania przedstawicieli zawodu zmierzające do poprawy sytuacji pielęgniarek i położnych w Polsce ( marsze, strajki)?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  56  & 48.7\% \\
+\hline
+raczej tak  &  30  & 26.1\% \\
+\hline
+nie mam zdania  &  11  & 9.6\% \\
+\hline
+raczej nie  &  14  & 12.2\% \\
+\hline
+zdecydowanie nie  &  4  & 3.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q19}
+\end{table}
+
+
+
+% pytanie: 20 - 20. Czy odczuwa Pan/i satysfakcję, wynikającą z autonomii zawodu  - nabywania kompetencji, uprawnień, prowadzenia badań naukowych?
+\begin{table}[h]
+\caption{20. Czy odczuwa Pan/i satysfakcję, wynikającą z autonomii zawodu  - nabywania kompetencji, uprawnień, prowadzenia badań naukowych?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  26  & 22.6\% \\
+\hline
+raczej tak  &  38  & 33.0\% \\
+\hline
+nie mam zdania  &  25  & 21.7\% \\
+\hline
+raczej nie  &  21  & 18.3\% \\
+\hline
+zdecydowanie nie  &  5  & 4.3\% \\
+\hline
+\end{tabular}
+\label{tab:Q20}
+\end{table}
+
+
+
+% pytanie: 21 - 21. Czy uważa Pan/i, że nowe kompetencje pielęgniarskie nie są właściwie wykorzystane w Systemie Ochrony Zdrowia?
+\begin{table}[h]
+\caption{21. Czy uważa Pan/i, że nowe kompetencje pielęgniarskie nie są właściwie wykorzystane w Systemie Ochrony Zdrowia?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  38  & 33.0\% \\
+\hline
+raczej tak  &  38  & 33.0\% \\
+\hline
+nie mam zdania  &  21  & 18.3\% \\
+\hline
+raczej nie  &  11  & 9.6\% \\
+\hline
+zdecydowanie nie  &  7  & 6.1\% \\
+\hline
+\end{tabular}
+\label{tab:Q21}
+\end{table}
+
+
+
+% pytanie: 22 - 22. Czy odczuwa Pan/i potrzebę, korzystania ze wsparcia psychologicznego dla pracowników medycznych?
+\begin{table}[h]
+\caption{22. Czy odczuwa Pan/i potrzebę, korzystania ze wsparcia psychologicznego dla pracowników medycznych?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  31  & 27.0\% \\
+\hline
+raczej tak  &  23  & 20.0\% \\
+\hline
+nie mam zdania  &  15  & 13.0\% \\
+\hline
+raczej nie  &  35  & 30.4\% \\
+\hline
+zdecydowanie nie  &  11  & 9.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q22}
+\end{table}
+
+
+
+% pytanie: 23 - 23. Czy posiada Pan/i pasję pozazawodową, którą rozwija ?
+\begin{table}[h]
+\caption{23. Czy posiada Pan/i pasję pozazawodową, którą rozwija ?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  42  & 36.5\% \\
+\hline
+raczej tak  &  41  & 35.7\% \\
+\hline
+nie mam zdania  &  8  & 7.0\% \\
+\hline
+raczej nie  &  20  & 17.4\% \\
+\hline
+zdecydowanie nie  &  4  & 3.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q23}
+\end{table}
+
+
+
+% pytanie: 24 - 24.  Czy czynnie uczestniczy, Pan/i w życiu rodzinnym i imprezach okolicznościowych przyjaciół?
+\begin{table}[h]
+\caption{24.  Czy czynnie uczestniczy, Pan/i w życiu rodzinnym i imprezach okolicznościowych przyjaciół?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  33  & 28.7\% \\
+\hline
+raczej tak  &  52  & 45.2\% \\
+\hline
+nie mam zdania  &  3  & 2.6\% \\
+\hline
+raczej nie  &  25  & 21.7\% \\
+\hline
+zdecydowanie nie  &  2  & 1.7\% \\
+\hline
+\end{tabular}
+\label{tab:Q24}
+\end{table}
+
+
+
+% pytanie: 25 - 25. Czy Pana/i,partner/ka pracuje w Systemie Opieki Zdrowotnej?
+\begin{table}[h]
+\caption{25. Czy Pana/i,partner/ka pracuje w Systemie Opieki Zdrowotnej?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+Nie  &  102  & 88.7\% \\
+\hline
+tak  &  13  & 11.3\% \\
+\hline
+\end{tabular}
+\label{tab:Q25}
+\end{table}
+
+
+
+% pytanie: 26 - 26. Czy rodzina wspiera Pana/ią, w godzeniu obowiązków domowych z pracą?
+\begin{table}[h]
+\caption{26. Czy rodzina wspiera Pana/ią, w godzeniu obowiązków domowych z pracą?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  30  & 26.1\% \\
+\hline
+raczej tak  &  59  & 51.3\% \\
+\hline
+nie mam zdania  &  9  & 7.8\% \\
+\hline
+raczej nie  &  15  & 13.0\% \\
+\hline
+zdecydowanie nie  &  2  & 1.7\% \\
+\hline
+\end{tabular}
+\label{tab:Q26}
+\end{table}
+
+
+
+% pytanie: 27 - 27. Czy w Pana/i życiu przeważa?
+\begin{table}[h]
+\caption{27. Czy w Pana/i życiu przeważa?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+nie ma konfliktu  &  92  & 80.0\% \\
+\hline
+konflikt praca- rodzina  &  12  & 10.4\% \\
+\hline
+konflikt rodzina- praca  &  11  & 9.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q27}
+\end{table}
+
+
+
+% pytanie: 28 - 28. Czy  Pana/i praca zawodowa, jest powodem niezgody z życiowym partnerem?
+\begin{table}[h]
+\caption{28. Czy  Pana/i praca zawodowa, jest powodem niezgody z życiowym partnerem?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  4  & 3.5\% \\
+\hline
+raczej tak  &  13  & 11.3\% \\
+\hline
+nie mam zdania  &  14  & 12.2\% \\
+\hline
+raczej nie  &  42  & 36.5\% \\
+\hline
+zdecydowanie nie  &  42  & 36.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q28}
+\end{table}
+
+
+
+% pytanie: 29 - 29. Czy zna Pan/i, pielęgniarki/pielęgniarzy, u których, doszło do rozpadu związku z powodu, pracy w zawodzie?
+\begin{table}[h]
+\caption{29. Czy zna Pan/i, pielęgniarki/pielęgniarzy, u których, doszło do rozpadu związku z powodu, pracy w zawodzie?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  17  & 14.8\% \\
+\hline
+raczej tak  &  23  & 20.0\% \\
+\hline
+nie mam zdania  &  12  & 10.4\% \\
+\hline
+raczej nie  &  43  & 37.4\% \\
+\hline
+zdecydowanie nie  &  20  & 17.4\% \\
+\hline
+\end{tabular}
+\label{tab:Q29}
+\end{table}
+
+
+
+% pytanie: 30 - 29. Czy kiedykolwiek rozważał/a Pan/i, rezygnację z zawodu na rzecz szczęścia rodziny?
+\begin{table}[h]
+\caption{29. Czy kiedykolwiek rozważał/a Pan/i, rezygnację z zawodu na rzecz szczęścia rodziny?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  3  & 2.6\% \\
+\hline
+raczej tak  &  16  & 13.9\% \\
+\hline
+nie mam zdania  &  13  & 11.3\% \\
+\hline
+raczej nie  &  42  & 36.5\% \\
+\hline
+zdecydowanie nie  &  41  & 35.7\% \\
+\hline
+\end{tabular}
+\label{tab:Q30}
+\end{table}
+
+
+
+% pytanie: 31 - 30. Czy  zdarza się, że pracuje Pan/i, mimo wystąpienia własnej choroby, choroby członka rodziny?
+\begin{table}[h]
+\caption{30. Czy  zdarza się, że pracuje Pan/i, mimo wystąpienia własnej choroby, choroby członka rodziny?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  35  & 30.4\% \\
+\hline
+raczej tak  &  57  & 49.6\% \\
+\hline
+nie mam zdania  &  3  & 2.6\% \\
+\hline
+raczej nie  &  17  & 14.8\% \\
+\hline
+zdecydowanie nie  &  3  & 2.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q31}
+\end{table}
+
+
+
+% pytanie: 32 - 31. Czy korzysta Pan/i  ze zwolnienia L4, gdy są do tego wskazania?
+\begin{table}[h]
+\caption{31. Czy korzysta Pan/i  ze zwolnienia L4, gdy są do tego wskazania?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  18  & 15.7\% \\
+\hline
+raczej tak  &  46  & 40.0\% \\
+\hline
+nie mam zdania  &  6  & 5.2\% \\
+\hline
+raczej nie  &  34  & 29.6\% \\
+\hline
+zdecydowanie nie  &  11  & 9.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q32}
+\end{table}
+
+
+
+% pytanie: 33 - 32.  Czy choruje Pan/i  na ?
+\begin{table}[h]
+\caption{32.  Czy choruje Pan/i  na ?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+choroby przewlekłe  &  50  & 43.5\% \\
+\hline
+nie choruję na w.w choroby  &  59  & 51.3\% \\
+\hline
+choroby współisniejace  &  4  & 3.5\% \\
+\hline
+choroby przewlekłe;choroby współisniejace  &  2  & 1.7\% \\
+\hline
+\end{tabular}
+\label{tab:Q33}
+\end{table}
+
+
+
+% pytanie: 34 - 33. Czy empatia, była głównym kryterium wyboru zawodu, przez Pana/nią?
+\begin{table}[h]
+\caption{33. Czy empatia, była głównym kryterium wyboru zawodu, przez Pana/nią?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  18  & 15.7\% \\
+\hline
+raczej tak  &  26  & 22.6\% \\
+\hline
+nie mam zdania  &  23  & 20.0\% \\
+\hline
+raczej nie  &  29  & 25.2\% \\
+\hline
+zdecydowanie nie  &  19  & 16.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q34}
+\end{table}
+
+
+
+% pytanie: 35 - 34. Czy uważa Pan/i, że jest wypalona zawodowo?
+\begin{table}[h]
+\caption{34. Czy uważa Pan/i, że jest wypalona zawodowo?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  8  & 7.0\% \\
+\hline
+raczej tak  &  20  & 17.4\% \\
+\hline
+nie mam zdania  &  16  & 13.9\% \\
+\hline
+raczej nie  &  52  & 45.2\% \\
+\hline
+zdecydowanie nie  &  19  & 16.5\% \\
+\hline
+\end{tabular}
+\label{tab:Q35}
+\end{table}
+
+
+
+% pytanie: 36 - 35. Czy z perspektywy czasu uważa Pan/i, że dokonał/a dobrego wyboru ścieżki zawodowej?
+\begin{table}[h]
+\caption{35. Czy z perspektywy czasu uważa Pan/i, że dokonał/a dobrego wyboru ścieżki zawodowej?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  30  & 26.1\% \\
+\hline
+raczej tak  &  52  & 45.2\% \\
+\hline
+nie mam zdania  &  13  & 11.3\% \\
+\hline
+raczej nie  &  17  & 14.8\% \\
+\hline
+zdecydowanie nie  &  3  & 2.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q36}
+\end{table}
+
+
+
+% pytanie: 37 - 36.  Czy gdyby Pana/i dziecko, zdecydowało się spełniać w pielęgniarstwie, wspierałby je Pan/i  w tym wyborze?
+\begin{table}[h]
+\caption{36.  Czy gdyby Pana/i dziecko, zdecydowało się spełniać w pielęgniarstwie, wspierałby je Pan/i  w tym wyborze?}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  28  & 24.3\% \\
+\hline
+raczej tak  &  37  & 32.2\% \\
+\hline
+nie mam zdania  &  15  & 13.0\% \\
+\hline
+raczej nie  &  17  & 14.8\% \\
+\hline
+zdecydowanie nie  &  18  & 15.7\% \\
+\hline
+\end{tabular}
+\label{tab:Q37}
+\end{table}
+
+
+
