@@ -7,8 +7,8 @@
 import csv
 # import pandas
 
-trans1 = {'zdecydowanie nie': 1, 'raczej nie': 2, 'nie mam zdania': 3, 'raczej tak': 4, 'zdecydowanie tak': 5}
-trans2 = {1: 'zdecydowanie nie', 2: 'raczej nie', 3: 'nie mam zdania', 4: 'raczej tak', 5: 'zdecydowanie tak'}
+#trans1 = {'zdecydowanie nie': 1, 'raczej nie': 2, 'nie mam zdania': 3, 'raczej tak': 4, 'zdecydowanie tak': 5}
+#trans2 = {1: 'zdecydowanie nie', 2: 'raczej nie', 3: 'nie mam zdania', 4: 'raczej tak', 5: 'zdecydowanie tak'}
 
 likert = ['zdecydowanie tak', 'raczej tak', 'nie mam zdania', 'raczej nie', 'zdecydowanie nie']
 
@@ -60,58 +60,69 @@ def build_table(nr_pytania, pytanie, podpyt):
 def column2dict(llista, col):
     slow = {}
     for line in llista[1:]:
-
         k = line[col]
         if k not in slow.keys():
-            # nie ma takiego klucza
+            # nie ma takiego klucza dodaj go z value = 1
             slow.update({k: 1})
-            # dodano
         else:
-            # klucz juz byl
+            # klucz juz byl - zwieksz value
             slow[k] = slow[k] + 1
-            # zwiekszono wartosc o 1
-
 
     nr_pytania = col - offset
     pytanie = lista[0][col]
-
     build_table(nr_pytania, pytanie, slow)
-
 
 
 def csv2list(filename):
     # opening the CSV file
+    ll = []
     with open(filename, mode='r') as file:
         # reading the CSV file
         csvFile = csv.reader(file)
-
         # row i line <- ankietowany
         # column <- pytanie
-
-
         # read the CSV file into list of lists
         for line in csvFile:
             # dodaj do listy dwie kolumny (dwa pytania)
-            lista.append(line)
-
-        rows = len(lista)
-        print('lista ma:', rows, 'wierszy')
-        columns = len(lista[0])
-        print('lista ma:', columns, 'kolumn')
+            ll.append(line)
+        return ll
 
 
-        for col in range(Q1, Q2):
-            column2dict(lista, col)
+def print_list_info(ll):
+    rows = len(ll)
+    print('\n\nlista ma:', rows, 'wierszy')
+    columns = len(ll[0])
+    print('lista ma:', columns, 'kolumn\n\n')
 
 
-def print_hi(name):
+def print_function(funkcja):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    print(f'Działanie:  {funkcja}')  # Press ⌘F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-    csv2list('../ankieta01.csv')
+    print_function('CSV - > TABELE do LaTeX')
+
+    lista = csv2list('../ankieta01.csv')
+    print_list_info(lista)
+
+    for col in range(Q1, Q2):
+        column2dict(lista, col)
+
+
+
+    print_function('CSV - > TABLICA KONTYNGENCJI')
+
+    # dla 2 pytan  (kolumn) sprawdz odpowiedz kazdej osoby i dodaj 1 na przecieciu odpowiedzi
+    #       | z nie | r nie | n m z | r tak | z tak |
+    #  z tak|       |       |       |       |       |
+    #  r tak|       |   +1  |       |       |       |
+    #  n m z|       |       |       |       |       |
+    #  r nie|       |       |       |       |       |
+    #  z nie|       |       |       |       |       |
+
+    w kolumnie c1 (pytanie 1) wez kazda osobe (wiersze w1..lw)
+    dla kazdego wiersza sprawdz w slowniku
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

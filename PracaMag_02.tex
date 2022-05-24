@@ -1,9 +1,5 @@
 \documentclass[a4paper,12pt,twoside,openany]{report}
 %
-% Wzorzec pracy dyplomowej
-% J. Starzynski (jstar@iem.pw.edu.pl) na podstawie pracy dyplomowej
-% mgr. inż. Błażeja Wincenciaka
-% Wersja 0.1 - 8 października 2016
 %
 \usepackage{polski}
 \usepackage{helvet}
@@ -13,30 +9,18 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{tabularx}
 \usepackage{array}
-%\usepackage[polish]{babel}
 \usepackage{subfigure}
-%\usepackage{amsfonts}
+\usepackage{amsfonts}
 \usepackage{verbatim}
 \usepackage{indentfirst}
 \usepackage[pdftex]{hyperref}
 \usepackage[none]{hyphenat}
 
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-
-
-\usepackage{subfigure}
-%\usepackage{makeidx}
-
-%\usepackage{floatrow}
-
-%marginesy jakie są każdy widzi
-\usepackage[tmargin=2cm, bmargin=1.8cm, lmargin=3.5cm, rmargin=2.0cm]{geometry}
 
 %tytuły rozdziałów bez słowa "Rozdział"
-%\usepackage{titlesec}
+\usepackage{titlesec}
 %\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\LARGE\thechapter.\ }
-%\let\chaptername\relax
+\let\chaptername\relax
 
 
 % rozmaite polecenia pomocnicze
@@ -60,15 +44,19 @@
 
 %\geometry{tmargin=2cm, bmargin=1.5cm, lmargin=3.5cm, rmargin=2cm}
 
+%marginesy jakie są każdy widzi
+\usepackage[tmargin=2cm, bmargin=1.8cm, lmargin=3.5cm, rmargin=2.0cm]{geometry}
+
 % table span multirows
 \usepackage{multirow}
 \usepackage{enumitem}	% enumitem.pdf
 \setlist{listparindent=\parindent, parsep=\parskip} % potrzebuje enumitem
 
+% aby itemize były - a nie *
 \renewcommand\labelitemi{--}
 
 %%%%%%%%%%%%%%% Dodatkowe Pakiety %%%%%%%%%%%%%%%%%
-\usepackage{prmag2017}   % definiuje komendy opiekun, nrindeksu, rodzaj pracy, ...
+%\usepackage{prmag2017}   % definiuje komendy opiekun, nrindeksu, rodzaj pracy, ...
 
 
 %%%%%%%%%%%%%%% Strona Tytułowa %%%%%%%%%%%%%%%%%
@@ -77,23 +65,28 @@
 
 % autor
 \author{Małgorzata Ługin-Dąbrowska}
-\nrindeksu{3942}
+	
+%	\nrindeksu{3942}
 
-\opiekun{dr n. med. Marta Gawlik}
+%	\opiekun{dr n. med. Marta Gawlik}
 
-\terminwykonania{1 maja 2022} % data na oświadczeniu o samodzielności
-\rok{2022}
+%	\terminwykonania{1 maja 2022} % data na oświadczeniu o samodzielności
+
+%	\rok{2022}
 
 % Pielęgniarkom przyszłym i obecnym
 %\podziekowania{\input{podziekowania.tex}}
 
-\miasto{Legnica}
-\uczelnia{Wyższa Szkoła Medyczna}
-\wydzial{WYDZIAŁ PIELĘGNIARSTWA}
-\kierunekstudiow{PIELĘGNIARSTWO}
+%	\miasto{Legnica}
+
+%	\uczelnia{Wyższa Szkoła Medyczna}
+
+%	\wydzial{WYDZIAŁ PIELĘGNIARSTWA}
+
+%	\kierunekstudiow{PIELĘGNIARSTWO}
 
 % domyslnie praca jest inzynierska, ale po odkomentowaniu ponizszej linii zrobi sie magisterska
-\pracamagisterska
+%	\pracamagisterska
 %%% koniec od P.W
 
 %\streszczenia{
@@ -107,13 +100,17 @@
 \sloppy
 \maketitle
 
+\newpage
+\newpage
 
+\tableofcontents
 
 %\printindex
 
-
+\newpage
 % Wykaz skrótów
-\large Wykaz skrótów
+
+\section*{Wykaz skrótów}
 
 
 \begin{table}[ht]
@@ -121,6 +118,8 @@
     \label{tab:index}
     %\begin{tabular}{*{2}{l}}
 	\begin{tabular}{  l  l  }
+	
+    APA & Amerykańskie Towarzystwo Psychologiczne (ang. American Psychological Association	\\
 	
 	CBOS & Centrum Badania Opinii Społecznej\\
 
@@ -136,11 +135,11 @@
 
 	POZ & Podstawowa Opieka Zdrowotna\\
 
-	PTSD & zespół stresu pourazowego (ang.: post-traumatic stress disorder)\\
+	PTSD & zespół stresu pourazowego (ang. post-traumatic stress disorder)\\
 
 	SOZ & system ochrony zdrowia\\
 
-	WHO & Światowa Organizacja Zdrowia (ang.: World Health Organization)\\
+	WHO & Światowa Organizacja Zdrowia (ang. World Health Organization)\\
 
 	ZNPZ & zespół nietolerancji pracy zmianowej \\
 
@@ -159,7 +158,21 @@
 %-----------------
 
 \chapter*{Wstęp}
-... treść wstępu napiszę na końcu ...
+
+Pielęgniarstwo jest tak stare jak ludzkość. Zawsze ludziom towarzyszyły choroby i zawsze były osoby, które rozwiązywały problem na miarę własnych możliwości i na miarę czasów, w których żyły. Postęp naukowy i technologiczny, zmienił postrzeganie pielęgniarstwa z zawodu opiekuńczego, na zawód samodzielny - obejmujący pacjenta w integralności biopsychospołecznej. Pielęgniarstwo, w Polsce od 1996 roku jest autonomicznym zawodem\cite{konst97art17}. Jest także profesją zaufania publicznego, a pielęgniarki i pielęgniarze są chronieni prawnie, w trakcie wykonywania swoich obowiązków zawodowych jak funkcjonariusze publiczni\cite{art4uozp}.
+
+Pielęgniarstwo, to obecnie dyscyplina naukowa dotycząca rozważań teoretycznych, badań in vitro, in vivo, które można wykorzystać w praktyce. Są to doniosłe osiągnięcia pielęgniarek i pielęgniarzy, którzy prowadzą badania na uczelniach, w klinikach, laboratoriach badawczych na całym świecie.\cite{nursingresearch}
+
+Pielęgniarstwo to zaszczyt, prestiż, ale i wyzwanie. Ustawiczne kształcenie, wyrzeczenia w życiu osobistym, stres, traumatyzacja, trudne warunki pracy są dalekie od pojęcia dobrostanu.  Niepokojące zjawiska, które dotykają organizacji pielęgniarstwa, zwłaszcza konsekwencje zdrowotne, wynikające z pracy w ponadnormatywnym wymiarze, stanowią obszar zainteresowań tego opracowania.
+
+Celem głównym niniejszej pracy jest określenie wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy. Cel ten przybliżyły cele szczegółowe, dotyczące godzenia ról społecznych, świadomości pielęgniarek i pielęgniarzy, na temat zagrożeń wynikających z pracy ponadnormatywnym czasie, poziomu satysfakcji zawodowej oraz oceny Systemu Opieki Zdrowotnej w zakresie promocji , przyszłości pielegniarstwa.
+
+Część teoretyczna przybliża: rozwój pielęgniarstwa na świecie i w Polsce, drogę do samodzielności zawodowej. Ukazuje dynamikę zmian w zakresie kompetencji i uprawnień. Rozważania na temat pełnienia ról społecznych: zawodowej i rodzinnej, a także na temat zdrowia i systemów wsparcia pielęgniarek i pielęgniarzy. 
+
+Część badawcza składa się z części metodologicznej opisuje metody, narzędzia i techniki badawcze. Przedstawia organizację i przebieg badania, zastosowane metody analizy statystycznej i graficznie prezentowane dane i wyniki. W dalszej kolejności występują wnioski oraz dyskusja z innymi badaczami.
+
+Ostatnia część zawiera streszczenie, słowa kluczowe w języku polskim i angielskim, spisy tabel oraz załączniki.
+
 
 
 
@@ -253,9 +266,9 @@ Do czynników wpływających na stan zdrowia pielęgniarek należą ogólne waru
 
 Ostatnie badania na temat długości życia kobiet w Polsce jasno pokazują, że długość życia pielęgniarek jest zdecydowanie krótsza, niż średnia kobiet i sukcesywnie się zmniejsza. I tak w według danych Naczelnej Izby Pielęgniarek i Położnych przeciętna długość życia pielęgniarek w Polsce wynosiła w 2020 roku 63,8 lat, przy przeciętnym wieku kobiet w Polsce 81.8 lat. Łączna średnia z lat 2016-2020 jest jeszcze niższa i wynosi 61,4 lata \cite{statystyka}.
 
-W roku 2021 umieralność wśród pielęgniarek wyniosła aż 1,6 tysiąca pielęgniarek. Prezes Naczelnej Izby Pielęgniarek i Położnych uzasadnia, iż jest to wynikiem ciężkiej pracy zmianowej, bez odpowiedniej ilości odpoczynku, regeneracji. Pielęgniarka z 25 letnim stażem, pracująca na nocne zmiany nie przespała we własnym łóżku w domu pięciu lat. To musi się odbić na zdrowiu fizycznym, psychicznym, funkcjonowaniu psychospołecznym. Zmęczenie, bezsenność, zwiększenie ryzyka urazów i wypadków, brak kontaktów towarzyskich, aktywności fizycznej innej niż zawodowa, kłopoty z pamięcią, trudności w uczeniu się, liczne choroby, zwiększone ryzyka nagłych stanów \cite{zgony}.
+W roku 2021 umieralność wśród pielęgniarek wyniosła aż 1,6 tysiąca pielęgniarek. Prezes Naczelnej Izby Pielęgniarek i Położnych uzasadnia, iż jest to wynikiem ciężkiej pracy zmianowej, bez odpowiedniej ilości odpoczynku, regeneracji. Pielęgniarka z 25 letnim stażem, pracująca na nocne zmiany nie przespała we własnym łóżku w domu pięciu lat. To musi się odbić na zdrowiu fizycznym, psychicznym, funkcjonowaniu psychospołecznym. Zmęczenie, bezsenność, zwiększenie ryzyka urazów i wypadków, brak kontaktów towarzyskich, aktywności fizycznej innej niż zawodowa, kłopoty z pamięcią, trudności w uczeniu się, liczne choroby, zwiększone ryzyko nagłych stanów \cite{zgony}.
 
-Pandemia Covid 19 miała kolosalny wpływ na wzrost występowania zaburzeń snu, wśród pracowników ochrony zdrowia. Połączenie stresu i deprywacji snu stanowi ryzyko myśli samobójczych, depresji i ogólnie pojętej złej jakości życia, było przedmiotem badań pielęgniarek w szpitalach w Ottawie. Wyniki badań są istotnie znaczące klinicznie. Grupa zostanie  zbadana ponownie  po zakończeniu pandemii \cite{sen}.
+Pandemia Covid 19 miała kolosalny wpływ na wzrost występowania zaburzeń snu, wśród pracowników ochrony zdrowia. Połączenie stresu i deprywacji snu stanowi ryzyko myśli samobójczych, depresji i ogólnie pojętej złej jakości życia, było przedmiotem badań pielęgniarek w szpitalach w Ottawie. Wyniki tych badań są istotnie znaczące klinicznie.\cite{sen}.
 
 Te przygnębiające statystki pogłębia fakt, że z każdym rokiem coraz więcej pielęgniarek odchodzi na emerytury. Wiele z nich zmuszonych jest pracować nadal, głównie ze względów finansowych.  Największy liczbowo przedział wiekowy tej grupy zawodowej to 51-60 lat. Co stanowi blisko 36\% ogólnej liczby wszystkich przedstawicieli zawodu. Nowy dopływ personelu pielęgniarskiego, nie jest wystarczający, by zabezpieczyć w pełni etaty w placówkach świadczących usługi zdrowotne. Co oznacza, że pracujące wciąż w systemie pielęgniarki, dźwigają ciężar opieki nad pacjentem na swoich barkach nie rzadko ponad dobę, wypracowując nawet 300 godzin miesięcznie. Osoby, które podejmują dodatkową pracę, wykonują niejako pracę od 1,5 do 2,6 etatu \cite{cyfrowe}. Aby to zobrazować, podaje się przykład, gdzie w wyniku zaprzestania pracy dodatkowej oraz zaprzestania pracy przez emerytowane pielęgniarki dochodzi do zamknięcia kilkudziesięciu szpitali w Polsce. W samym województwie Kujawsko-Pomorskim 11. Raport NIPP dotyczący sytuacji kadrowej w zawodzie podkreśla, brak zastępowalności pokoleń w zawodzie \cite{statystyka}. Ciężar pracy wykonywanej ponad normę ma ścisłe odzwierciedlenie w  stanie psychicznym,jakości  odpoczynku, relacjach międzyludzkich – tak ważnych w komunikacji z pacjentem, członkami zespołu terapeutycznego. Jak to odbija się na powierzanych zadaniach? Za błąd ludzki ceną jest życie człowieka – pacjenta, jego rodziny jak również pielęgniarki i jej bliskich. Jak można edukować, promować zdrowie, kiedy samemu się nie jest wzorem do naśladowania? Czy to przejaw hipokryzji, czy po prostu życiowa konieczność? Takie pytania powinny sobie postawić pielęgniarki i pielęgniarze czynni zawodowo.
 
@@ -527,14 +540,37 @@ Metody statystyczne, którymi się posłużono, to:
 \section*{Badania właściwe dla stawianych hipotez}
 
 
-\subsection* {Hipoteza 1 - Własne zdrowie, nie jest priorytetem  dla pielęgniarek pracujących w ponadnormatywnym czasie pracy.}
+\subsection* {Hipoteza 1 - Własne zdrowie, nie jest priorytetem dla pielęgniarek pracujących w ponadnormatywnym czasie pracy.}
 
 
+Q30 v 
 
-Do poparcia tezy wykorzystano odpowiedzi ankietowanych na pytanie 30 dotyczące pracy zawodowej   mimo wystąpienia choroby własnej, lub członka rodziny.
-Rozkład odpowiedzi zbadano testem normalności rozkładu Shapiro - Wilka
-i uzyskano wynik:  $p < 0,001$
-Odpowiedzi na to pytanie przedstawia tabela \ref{tab:praca_choroba}.
+
+Do poparcia tezy wykorzystano odpowiedzi ankietowanych na pytanie 30 dotyczące pracy zawodowej mimo wystąpienia choroby własnej, lub członka rodziny.
+
+Odpowiedzi na to pytanie przedstawia tabela \ref{tab:Q31}.
+
+% pytanie: 31 - 30. Czy  zdarza się, że pracuje Pan/i, mimo wystąpienia własnej choroby, choroby członka rodziny?
+\begin{table}[h]
+\caption{Pracuje, mimo wystąpienia chorobyb, własnej lub członka rodziny}
+\centering
+\begin{tabular}{ | c | c | c |}
+\hline
+odpowiedź & liczność & procent\\
+\hline
+zdecydowanie tak  &  35  & 30.4\% \\
+\hline
+raczej tak  &  57  & 49.6\% \\
+\hline
+nie mam zdania  &  3  & 2.6\% \\
+\hline
+raczej nie  &  17  & 14.8\% \\
+\hline
+zdecydowanie nie  &  3  & 2.6\% \\
+\hline
+\end{tabular}
+\label{tab:Q31}
+\end{table}
 
 
 % tabela wiek  - statystyka
@@ -586,16 +622,18 @@ zdecydowanie tak & 18 & 15,7\\
 \label{tab:L4}
 \end{table}
 
+% Q3 vs. Q13
+Test statystyczny Pearsona $\chi^2$ wykazał istotne statystycznie różnice w sięganiu po używki w celu radzenia sobie ze stresem związanym z pracą zawodową w zależności od ilości godzin pracy miesięcznie. ($\chi^2 (2, 115) = 6,1152, p=0,047$) 
 
-Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 13 czy, w celu radzenia sobie ze stresem związanym z pracą zawodową, sięga Pan/i po używki? Pierwsza zmienna ma charakter ilościowy a druga jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona. 
 
-Istnieje korelacja pomiędzy ilością ponadnormatywnych godzin pracy a sięganiem po używki ($\chi^2 (2, 115) = 6,1152, p=0,047$)
    
 \vspace{\baselineskip} 
 \TODO
 \newline
 powyższe  i kolejne  "analizie poddano ..." zamienić stylistycznie na cos takiego: \newline
 "Test statystyczny wykazał istotne statystycznie różnice globalnego poczucia koherencji (SOC) w zależności od wykształcenia (wartość statystyki testowej Kruskala-Wallisa 9,04; p=0,029). Testy post hoc pokazały, że globalne poczucie koherencji jest istotnie mniejsze u osób, które ukończyły średnią szkołę medyczną w porównaniu do absolwentów magisterskich studiów pielęgniarskich (p=0,026) – Rycina 7." \newline
+
+
 lub gdy p>0,05
 \newline
 Test statystyczny nie wykazał istotnych statystycznie różnic poczucia zrozumiałości (PZR) w zależności od wykształcenia (wartość statystyki testowej Kruskala-Wallisa 5,37; p=0,147).
@@ -781,6 +819,59 @@ Belowska, w swojej pracy doktorskiej na temat: ,,Ocena wpływu kształcenia na o
 \chapter*{Streszczenie}
 
 
+Wstęp opisuje rozwój pielęgniarstwa na przestrzeni wieków, pokazując jak z prostej opieki ewoluowało do rangi dziedziny badaweczej i profesji zaufania publicznego. 
+
+Autor podejmuje próbę odpowiedzi na pytanie o cenę wykonywania tej profesji, w obliczu konieczność nieustannego rozwoju i niełatwych wyzwań, które niejednokrotnie prowadzą do deficytów w życiu osobistym i rodzinnym. 
+
+Cel niniejszej pracy to określenie wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy.
+
+W toku pracy badawczej wykorzystano metodę analizy piśmiennictwa z wykorzystaniem klasycznych technik treściowych, oraz metodę sondażu diagnostycznego z wykorzystaniem techniki ankietowej – autorskiego formularza ankiety. 
+
+Badaniem objęto 115 studentów studiów niestacjonarnych na kierunku pielęgniarstwo Wyższej Szkoły Medycznej w Legnicy. Badanie przeprowadzano od 11.2021 do 02.2022.
+
+Uzyskane wyniki poddano analizie statystycznej. Wykorzystano przy tym test niezależności $\chi^2$ Pearsona.
+
+Wnioski z badań poddano dyskusji, porównując je z wynikami uzyskanymi przez innych badaczy, prezentowanymi w literaturze.
+
+\vspace{\baselineskip} 
+
+\section*{Słowa kluczowe}
+
+\vspace{\baselineskip} 
+
+pielęgniarka, praca, rodzina, satysfakcja zawodowa
+
+\chapter*{Summary}
+
+The introduction describes the development of nursing over the centuries, showing how it has evolved from simple care to become a research field and a profession of public trust. 
+
+The author tries to answer the question about the price of practicing this profession, in the face of the fact of the necessity of constant development and difficult challenges, which often lead to deficits in personal and family life. 
+
+The aim of this study was presented as an attempt to determine the impact of professional work on the personal life of nurses.
+
+
+In the course of the research work, the method of literature analysis with the use of classical content techniques, and the method of diagnostic survey with the use of survey technique - the author's questionnaire form was used. 
+
+The study involved 115 part-time students of nursing at the Medical University of Legnica. The study was conducted from 11.2021 to 02.2022.
+
+The obtained results were subjected to statistical analysis. Pearson's $chi^2$ independence test was used in this process.
+
+The conclusions of the study were discussed, comparing them with the results obtained by other researchers, presented in the literature.
+\vspace{\baselineskip} 
+
+\section*{Keywords}
+
+\vspace{\baselineskip} 
+
+nursery, work, family, work satisfaction
+
+
+% -----------------------------
+%
+%         ZAŁĄCZNIKI
+%
+%----------------------------- 
+
 
 \appendix
 
@@ -791,8 +882,12 @@ Belowska, w swojej pracy doktorskiej na temat: ,,Ocena wpływu kształcenia na o
 %-----------------
 \begin{thebibliography}{99}
 \addcontentsline{toc}{chapter}{Bibliografia}
-\bibitem{who}{ State of Worlds Nursing 2020. Investing in education, job and  leadership; https://apps.who.int/iris/handle/10665/331677. [dostęp 05.02.2022]}
-\bibitem{rap}{Najbardziej poważane zawody przez Polaków w 2021;\newline https://swresearch.pl/news/najbardziej-powazane-zawody-przez-polakow-w-2021. [dostęp 05.02.2022]}
+
+\bibitem{konst97art17}{Konstytucja Rzeczpospolitej Polskiej z 1997r., art.17}
+\bibitem{art4uozp}{Art. 4 ust. 1 punkt 1-5 ustawy o zawodach pielęgniarki i położnej z dnia 15 lipca 2011r.}
+\bibitem{nursingresearch}{Nursing Research. Official Journal of the Eastern Research Society and the Westertn Institute of Nursing; https://journals.lww.com/nursingresearchonline/pages/ viewallmostpopulararticles.aspx. [dostęp 19.05.2022]}
+\bibitem{who}{State of Worlds Nursing 2020. Investing in education, job and  leadership; https://apps.who.int/iris/handle/10665/331677. [dostęp 05.02.2022]}
+\bibitem{rap}{Najbardziej poważane zawody przez Polaków w 2021;\newline https://swresearch.pl/news/najbardziej-powazane-zawody-przez- polakow-w-2021. [dostęp 05.02.2022]}
 \bibitem{zro}{Historia medycyny; https://historiamedycyny.pl/ [dostęp 05.02.2022]}
 \bibitem{tlo}{Maksymowicz A. Zagadnienia zawodowe pielęgniarstwa na tle historycznym. Warszawa: Wydawnictwo Lekarskie PZWL; 1977: 6-14}
 \bibitem{flo}{Bostridge M. Florence Nighitingale -The lady with lamp;\newline https://www.bbc.co.uk/history/british/victorians/nightingale-01.shtml\newline [dostęp 05.02.2022]}
@@ -1806,7 +1901,7 @@ zdecydowanie nie  &  18  & 15.7\% \\
 
 
 
-\zakonczenie  % wklejenie recenzji i opinii
+%	\zakonczenie  % wklejenie recenzji i opinii
 
 \end{document}
 %+++ END +++
@@ -1814,15 +1909,30 @@ zdecydowanie nie  &  18  & 15.7\% \\
 
 
 Streszczenie
-Wstęp
-Od zarania dziejów były osoby, które opiekowały się osobami chorymi. Były to kobiety i mężczyźni. Osoby z marginesu społecznego jak i szlachetnie urodzone.  Kapłani i niewolnicy. Wraz z rozwojem cywilizacji, postępem technologicznym, wyłoniła się dziedzina nauki o pielęgnowaniu chorych – pielęgniarstwo. Obecnie pielęgniarstwo ma znacznie szersze znaczenie.  To przedmiot dociekań naukowych badaczy, który należy wykorzystać w praktyce pielęgniarskiej. Pielęgniarstwo, to profesjonalny zawód, usankcjonowany prawnie, z własnym organem zawodowym. Etyka zawodowa, profesjonalizm w relacji z człowiekiem cierpiącym, wyrażony empatią, holizmem poparte aktualną wiedzą, to istota tego zawodu. 
-Takie zadania, są wyzwaniem dla współczesnej pielęgniarki czy pielęgniarza. Wymagają nieustannego rozwoju zawodowego, co niejednokrotnie wiąże się z deficytami w życiu osobistym i rodzinnym. Niniejsza praca, podejmuje próbę odpowiedzi na pytanie o cenę wykonywania tej profesji.
+
+Wstęp opisuje rozwój pielęgniarstwa na przestrzeni wieków, pokazując jak z prostej opieki ewoluowało do rangi dziedziny badaweczej i profesji zaufania publicznego. 
+
+Autor podejmuje próbę odpowiedzi na pytanie o cenę wykonywania tej profesji, w obliczu konieczność nieustannego rozwoju i niełatwych wyzwań, które niejednokrotnie prowadzą do deficytów w życiu osobistym i rodzinnym. 
+
 Cel niniejszej pracy to określenie wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy.
-Metody i materiał badawczy to metoda analizy piśmiennictwa z wykorzystaniem klasycznych technik treściowych, oraz metoda sondażu diagnostycznego z wykorzystaniem techniki ankietowej – autorskiego formularza ankiety. Zastosowano metody statystyczne w celu analizy prezentowanych zjawisk. {metody statystyczne). Badaniem objęto 115 studentów studiów niestacjonarnych na kierunku pielęgniarstwo Wyższej Szkoły Medycznej w Legnicy. Badanie przeprowadzano od 11.2021 do 02.2022.  Kryterium włączenia stanowili byli i obecni studenci WSM w Legnicy.
+
+W toku pracy badaweczej wykorzystano metodę analizy piśmiennictwa z wykorzystaniem klasycznych technik treściowych, oraz metodę sondażu diagnostycznego z wykorzystaniem techniki ankietowej – autorskiego formularza ankiety. 
+
+Zastosowano metody statystyczne w celu analizy prezentowanych zjawisk. Badaniem objęto 115 studentów studiów niestacjonarnych na kierunku pielęgniarstwo Wyższej Szkoły Medycznej w Legnicy. Badanie przeprowadzano od 11.2021 do 02.2022.
+
+Uzyskane wyniki poddano analizie statystycznej. Wykorzystano przy tym test niezależności $\chi^2$ Pearsona.
+
 Wyniki.
+
+...
+
+
 Wnioski.
 
+
 Słowa kluczowe: pielęgniarka, praca, rodzina, satysfakcja zawodowa
+
+
 Wnioski
 Prezentowane badania mają kilka ograniczeń. W związku z tym, że ankieta była przeprowadzana on line, nie można mieć pewności, że, odpowiedzi udzielali tylko i wyłącznie studenci WSM w Legnicy.  Chociaż, kwestionariusz badań jest anonimowy, nie można wykluczyć efektu oczekiwań autora. Również osobisty charakter pytań, może powodować tendencyjność odpowiedzi. Odpowiedzi na pytania mogą się różnić w zależności od własnych doświadczeń czy obecnej sytuacji zawodowej i osobistej. Mimo tych ograniczeń, można uznać, iż wyniki badania są reprezentatywne i wnoszą istotne informacje na temat wpływu pracy zawodowej na życie osobiste pielęgniarek i położnych.
 Implikacje i kierunki kolejnych badań.
