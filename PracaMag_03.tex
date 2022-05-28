@@ -15,6 +15,7 @@
 \usepackage{indentfirst}
 \usepackage[pdftex]{hyperref}
 \usepackage[none]{hyphenat}
+\usepackage{float}
 
 % interlinia
 \linespread{1.3} % 1 - pojedyncza, 1.3 - poltora, 1.6 - podwojna
@@ -426,7 +427,7 @@ Opis statystyczny przedstawia tabela \ref{tab:wiek}.
 
 
 % ilustracja wiek
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{char_gr_bad/wiek00}
 \caption{Wiek osób ankietowanych. Badania własne 2021/2022 r.}
@@ -435,7 +436,7 @@ Opis statystyczny przedstawia tabela \ref{tab:wiek}.
 
 
 % tabela wiek  - statystyka
-\begin {table}[h]
+\begin {table}[H]
 \caption{Statystyki opisowe wieku grupy badanej}
 \centering
 \begin{tabular}{|l|c|c|}
@@ -461,7 +462,7 @@ Odchylenie standardowe & $S$ & 10.7\\
 Badaną grupę przedstawioną  na rysunku \ref{rys:plec} stanowi  93,9\%  (108 kobiet) i  6,1\%  (7 mężczyzn). Widoczna dysproporcja jest typowa dla rozkładu płci osób zatrudnionych jako pielęgniarki/arze.
 
 % ilustracja płeć
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{char_gr_bad/plec00}
 \caption{Płeć osób ankietowanych. Badania własne 2021/2022 r.}
@@ -476,14 +477,14 @@ Wśród ankietowanych najliczniejszą grupę reprezentowało 57,4\%) (66 osób) 
 
 
 % ilustracja wykształcenie
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{char_gr_bad/wyksztalc00}
 \caption{Wykształcenie osób ankietowanych. Badania własne 2021/2022 r.}
 \label{rys:wykszt}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=11cm]{char_gr_bad/podyplom00}
 \caption{Wykszałcenie podyplomowe osób ankietowanych. Badania własne 2021/2022}
@@ -495,7 +496,7 @@ Wśród ankietowanych najliczniejszą grupę reprezentowało 57,4\%) (66 osób) 
 Zdecydowana większość ankietowanych pozostaje  w związku małżeńskim 67,8\%  (78 osób) , w związku nieformalnym 17,4\% (20 osób). 15 \% to osoby nie żyjące w związku, w tym  8,7\%) (10 osób) rozwiedzione,  5,2\%) ( 6 osób) samotne i 0,9\%)  (1 osoba)  to wdowa. Rozkład ankietowanych pod względem stanu cywilnego ilustruje rys. \ref{rys:cywil}.
 
 % stan cywilny
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{char_gr_bad/cyw00}
 \caption{Stan cywilny ankietowanych. Badania własne 2021/2022 r.}
@@ -505,7 +506,7 @@ Zdecydowana większość ankietowanych pozostaje  w związku małżeńskim 67,8\
 \subsection*{Miejszce zamieszkania}
 Rozkład ankietowanych pod względem miejsca zamieszkania przedstawiono na rys. \ref{rys:zamiesz}. Rozkład ten okazał się być dość równomierny. Niewiele powyżej średniej stanowiła grupa 25,2\%   (29 osób) zamieszkująca  wsie. Miasta do 50 tys. mieszkańców reprezentowała grupa  20\%  (23 osoby). Tak samo liczna grupa zamieszkiwała w miastach od 50 do 150 tys. Nieco mniejsza grupa  18,3\% (21 osób) pochodziła z miast powyżej 150 tys, natomiast z miast powyżej 500 tys.  16,5\% (19 osób).
 % miejsce zamieszkania
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{char_gr_bad/zamieszka00}
 \caption{Miejsce zamieszkania ankietowanych. Badania własne 2021/2022 r.}
@@ -517,7 +518,7 @@ Rozkład ankietowanych pod względem miejsca zamieszkania przedstawiono na rys. 
 %-----------------
 \section{Opis metod analizy statystycznej}
 
-Analizy wykonano w programie GNU PSPP, wer.: 1.4.1, oraz w programie Microsoft Excel, wer 16.60. Konwersję wyników ankiety Google do postaci tabelarycznej wykonano przy pomocy autorskiego skryptu wykonanego w programie PyCharm, wer.: 2022.1.1.
+Analizy wykonano w programie GNU PSPP, wer.: 1.4.1, oraz w programie Microsoft Excel, wer 16.60. Konwersję wyników ankiety Google do postaci tabelarycznej wykonano przy pomocy skryptu wykonanego w programie PyCharm, wer.: 2022.1.1.
 
 \vspace{\baselineskip} 
 
@@ -541,9 +542,9 @@ Metody statystyczne, którymi się posłużono, to:
     
      \item Test Pearsona $\chi^2$, to test nieparametryczny, służący do oceny zależności pomiędzy rozkładem częstości odpowiedzi w zakresie jednej zmiennej, w odniesieniu do drugiej zmiennej.
      
-     \item Współczynnik korelacji liniowej Pearsona $R$, określający poziom zależności liniowej między zmiennymi losowymi.
+     \item Współczynnik korelacji liniowej Pearsona $R$, określający poziom zależności liniowej między zmiennymi losowymi. Jego wartość może przyjmować wartości od -1 do 1. Na podstawie wartości liczbowej wnioskować możemy o sile związku – im wartość jest bliższa zera, tym siła związku jest słabsza. Wartość dodatnia określa korelację wprost proporcjonalną podczas gdy wartość ujemna okreśa korelację odwrotnie proporcjonalną.
      
-     \Item Test trendu Mantel-Haenshel $\chi^2$ (Linear-by-Linear association), określający 
+     \item Test trendu Mantel-Haenshel $\chi^2$ (Linear-by-Linear association)\cite{mantel}, wykorzystano do oszacowania wspólnego ilorazu szans oraz do sprawdzenia, czy ogólny stopień powiązania jest istotny.
      
 %     \item Test Manna – Whinteya opiera się na medianach. Pozwala zweryfikować czy między porównywanymi grupami występują istotne statystyczne różnice. Stosowany jest do porównań pomiędzy dwoma grupami. Stosowany jest w przypadku rozkładów o charakterze różnym od normalnego.
 %    
@@ -555,6 +556,67 @@ Metody statystyczne, którymi się posłużono, to:
 
 \chapter{Wyniki badań}
 
+	Poniżej przedstawiono odpowiedzi respondentów na pytania ankietowe zawarte w załączniku \ref{app:ankieta}. Wyniki w postaci tabel przedstawiono w kolejnosci, w jakiej ich dane wykorzystane były w badaniach prawdziwości załozonych hipotez.
+
+%hip 1
+\input wynikitabele/Q2.tex
+
+\input wynikitabele/Q32.tex
+
+\input wynikitabele/Q24.tex
+
+\input wynikitabele/Q31.tex
+
+\input wynikitabele/Q3.tex
+
+\input wynikitabele/Q4.tex
+
+\input wynikitabele/Q10.tex
+
+\input wynikitabele/Q11.tex
+
+\input wynikitabele/Q13.tex
+
+\input wynikitabele/Q35.tex
+
+\input wynikitabele/Q33.tex
+
+%hip 2
+
+\input wynikitabele/Q8.tex
+
+\input wynikitabele/Q18.tex
+
+\input wynikitabele/Q22.tex
+
+\input wynikitabele/Q15.tex
+
+\input wynikitabele/Q14.tex
+
+\input wynikitabele/Q27.tex
+
+\input wynikitabele/Q12.tex
+
+%hip 3
+
+\input wynikitabele/Q29.tex
+
+\input wynikitabele/Q28.tex
+
+%hip 4
+
+\input wynikitabele/Q5.tex
+
+\input wynikitabele/Q7.tex
+
+\input wynikitabele/Q20.tex
+
+%hip 5
+
+\input wynikitabele/Q21.tex
+
+\input wynikitabele/Q9.tex
+
 
 %-------------------------
 % badania - hipotezy
@@ -565,215 +627,233 @@ Metody statystyczne, którymi się posłużono, to:
 \subsection* {Hipoteza 1 - Własne zdrowie, nie jest priorytetem dla pielęgniarek pracujących w ponadnormatywnym czasie pracy.}
 
 
-Test statystyczny wykazał istotną statystycznie różnice w kożystaniu ze zwolnień lekarskich gdy jest ku temu powód od ilości etyatów na któych pracuje pielęgniarz/arka. 
+Test statystyczny wykazał istotną statystycznie różnice w kożystaniu ze zwolnień lekarskich gdy jest ku temu powód, tab. \ref{tab:Q32} od ilości etatów na któych pracuje pielęgniarz/arka, tab. \ref{tab:Q2}. Wartość Mantel-Haenshel $(\chi^2 (1, 115) = 3,87, p=0,049)$. Współczynnik korelacji liniowej Pearsona $(R = -0,2, p=0,049)$. Wartość ujemna tego współczynnika określa tą zalożność jako odwrotnie proporcjonalną: im większa ilość etatów tym rzadsze korzystanie ze zwolnien lekarskich, pomimo iż są do tego wskazania.
 
- zależności od wykształcenia (wartość statystyki testowej Kruskala-Wallisa 9,04; p=0,029). Testy post hoc pokazały, że globalne poczucie koherencji jest istotnie mniejsze u osób, które ukończyły średnią szkołę medyczną w porównaniu do absolwentów magisterskich studiów pielęgniarskich (p=0,026)
+Również istotną statystycznie okazała się odwrotnie proporcjonalana zależnośc uczestnictwa w życiu rodzinnym i przyjacół, tab. \ref{tab:Q24} od ilości etatów, tab. \ref{tab:Q2}, Mantel-Haenshel $(\chi^2 (1, 115) = 4,02, p=0,045)$, $(R = -0,2, p = 0,045)$. 
 
-ile etatow koreluje negatywnie z Q24 (uczestniczy w zyciu rodzinnym)
-czyli wiecej etatow mniej zycia rodzinnego
+Praca mimo choroby, tab. \ref{tab:Q31}, koreluje z ilością godzin pracy, tab. \ref{tab:Q3} $(R = 0,20, p = 0,038)$, z pracą w systemie zmianowym, tab. \ref{tab:Q4} $(R = 0,26, p = 0,006)$, z "przynoszeniem" do domu emocji, tab. \ref{tab:Q10}, $(R = 0,33, p = 0,000)$ oraz z odczuwaniem traumatyzacji wtórnej, tab. \ref{tab:Q11}, $(R = 0,21, p = 0,022)$.
 
-
-
-
-Q24 vs etaty
-Q32 vs etaty
+Testy statystyczne wykazały, że osoby doświadczające zjawiska traumatyzacji częciej rozpoznają u siebie objawy wypalenia zawodowego, tab. \ref{tab:Q35}, 
+Pearson $(\chi^2 (16, 115) = 30,31, p=0,016)$, $(R = 0,29, p = 0,002)$.
 
 
-
-Do poparcia tezy wykorzystano odpowiedzi ankietowanych na pytanie 30 dotyczące pracy zawodowej mimo wystąpienia choroby własnej, lub członka rodziny.
-
-Odpowiedzi na to pytanie przedstawia tabela \ref{tab:Q31}.
-
-% pytanie: 31 - 30. Czy  zdarza się, że pracuje Pan/i, mimo wystąpienia własnej choroby, choroby członka rodziny?
-\begin{table}[h]
-\caption{Pracuje, mimo wystąpienia chorobyb, własnej lub członka rodziny}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  35  & 30.4\% \\
-\hline
-raczej tak  &  57  & 49.6\% \\
-\hline
-nie mam zdania  &  3  & 2.6\% \\
-\hline
-raczej nie  &  17  & 14.8\% \\
-\hline
-zdecydowanie nie  &  3  & 2.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q31}
-\end{table}
+Natomiast osoby korzystające ze zwolnień lekarskich, gdy są ku temu wskazania, tab. \ref{tab:Q32} w rzadziej doświadczają traumatyzacji, tab. \ref{tab:Q11}, Pearson $(\chi^2 (16, 115) = 40,93, p=0,001)$, $(R = -0,27, p = 0,005)$.
 
 
-% tabela wiek  - statystyka
-\begin {table}[h]
-\caption{Praca pomimo wystąpienia choroby}
-\begin{tabular}{|c|c|c|}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie nie & 3 & 2,6\%\\
-\hline
-raczej nie & 17 & 14,8 \% \\
-\hline
-nie mam zdania & 3 & 2,6\%\\
-\hline
-raczej tak & 57 & 49,6\%\\
-\hline
-zdecydowanie tak & 35 & 30,4 \%\\
-\hline
-
-\end{tabular}
-\label{tab:praca_choroba}
-\end{table}
-
-Uwzględniono również odpowiedzi ankietowanych na pytanie 31 dotyczące  wykorzystania zwolnienia L4, gdy są do tego wskazania.
-Rozkład odpowiedzi zbadano testem normalności rozkładu Shapiro - Wilka
-i uzyskano wynik:  $p < 0,001$
-Odpowiedzi na to pytanie przedstawia tabela \ref{tab:L4}.
-
-% tabela wiek  - statystyka
-\begin {table}[h]
-\caption{Praca pomimo wystąpienia choroby}
-\begin{tabular}{|c|c|c|}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie nie & 11 & 9,6\%\\
-\hline
-raczej nie & 34 & 29,6 \% \\
-\hline
-nie mam zdania & 6 & 5,2\%\\
-\hline
-raczej tak & 46 & 40\%\\
-\hline
-zdecydowanie tak & 18 & 15,7\\
-\hline
-
-\end{tabular}
-\label{tab:L4}
-\end{table}
+Istotna statstycznie korelacja zachodzi pomiedzy przynoszeniem do domu emocji z pracy, tab. \ref{tab:Q10} a częstością wystepowania chorób, tab. \ref{tab:Q33}, Mantel-Haenshel $(\chi^2 (1, 115) = 6,91, p=0,009)$, $(R = 0,25, p = 0,009)$.
 
 % Q3 vs. Q13
-Test statystyczny Pearsona $\chi^2$ wykazał istotne statystycznie różnice w sięganiu po używki w celu radzenia sobie ze stresem związanym z pracą zawodową w zależności od ilości godzin pracy miesięcznie. ($\chi^2 (2, 115) = 6,1152, p=0,047$) 
+Test statystyczny Pearsona $\chi^2$ wykazał istotne statystycznie różnice w sięganiu po używki w celu radzenia sobie ze stresem związanym z pracą zawodową, tab. \ref{tab:Q13} w zależności od ilości godzin pracy miesięcznie, tab. \ref{tab:Q3}, Pearson $(\chi^2 (2, 115) = 6,1152, p=0,047)$. Jednak, co ciekawe, współczynnik korelacji Pearsona $(R = -0,24, p = 0,008)$ ma wartość ujemną co implikuje wniosek, że im więcej godzin pracy, tym rzadziej respondenci sięgają po używki.
 
+%example
 
-   
-\vspace{\baselineskip} 
-\TODO
-\newline
-powyższe  i kolejne  "analizie poddano ..." zamienić stylistycznie na cos takiego: \newline
-"Test statystyczny wykazał istotne statystycznie różnice globalnego poczucia koherencji (SOC) w zależności od wykształcenia (wartość statystyki testowej Kruskala-Wallisa 9,04; p=0,029). Testy post hoc pokazały, że globalne poczucie koherencji jest istotnie mniejsze u osób, które ukończyły średnią szkołę medyczną w porównaniu do absolwentów magisterskich studiów pielęgniarskich (p=0,026) – Rycina 7." \newline
+%p>0,05
 
-
-lub gdy p>0,05
-\newline
-Test statystyczny nie wykazał istotnych statystycznie różnic poczucia zrozumiałości (PZR) w zależności od wykształcenia (wartość statystyki testowej Kruskala-Wallisa 5,37; p=0,147).
-
-   
-   
+%Test statystyczny nie wykazał istotnych statystycznie różnic poczucia zrozumiałości %(PZR) w zależności od wykształcenia (wartość statystyki testowej Kruskala-Wallisa %5,37; p=0,147).
+ 
 
 \subsection*{Hipoteza 2 - Pielęgniarki/arze mają wsparcie w godzeniu życia zawodowego i rodzinnego.}
 
-Ankietowani  w pytaniu 26 udzielali odpowiedzi na temat wsparcia rodziny w godzeniu obowiązków domowych, oraz  pytanie 24 czy czynnie uczestniczy pan/i w życiu rodzinnym i imprezach okolicznościowych.
 
-korelacja z
-zadowolona (z perspektywy czasu)
-czy wspierałaby pani decyzje dziecka
+%1.	1.przynoszenie pracy do domu w postaci myśli i emocji
 
-jest korelacja
-24 z 26 +
-24 z 36 +
-24 z 37 +
-36 z 37 +
+Zauważono korelację w postrzeganiu swojego środowiska pracy jako toksyczne, tab. \ref{tab:Q8}, a ilością stresu "przynoszonego" z pracy do domu w postaci mysli i emocji, tab. \ref{tab:Q10}. Test statystyczny Pearsona $\chi^2$ określa tą korelację jako istotną na poziomie $(\chi^2 (16, 115) = 35,4, p = 0,004)$.
 
-    
+Postrzeganie swojego środowiska pracy jako toksyczne, tab. \ref{tab:Q8}, koreluje również z deficytem poczucia bezpieczeństwa w pracy w zagrożeniu koronarovirusem, tab. \ref{tab:Q18}, Mantel-Haenshel $(\chi^2 (1, 115) = 7,20, p=0,007)$, $(R = -0,3, p = 0,007)$. 
 
-\vspace{\baselineskip} 
+% 2.	Traumatyzacja wtórna Q11
+% z Q10 przynoszenie myśli i emocji
+Istotną statystycznie korelację wykryto pomiędzy przynoszeniem myśli i emocji z pracy, tab. \ref{tab:Q10}, a odczuwaniem traumatyzacji wtórnej, tab. \ref{tab:Q11}, Pearson $(\chi^2 (16, 115) = 76,6, p < 0,001)$.
   
+% z Q22 potrzeba psychologa
+% z Q35  wypalenie zawodowe
+Istotne statystycznie testy wykazały, że respondenci doświadczający zjawiska traumatyzacji wtórnej odczuwają potrzebę korzystania ze wsparcia psychologicznego, tab. \ref{tab:Q22}, Pearson $(\chi^2 (16, 115) = 31,37, p = 0,012)$,  $(R = 0,34, p < 0,001)$.
+
+% z Q15 presja społeczna 
+% z Q14 dylemat rozwój 
+Istotne statystycznie testy wykazały także, że osoby doświadczające zjawiska traumatyzacji wtórnej, częściej wskazują na problemy związane z presją społeczną wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia, tab. \ref{tab:Q15}, $(R = 0,31, p = 0,001)$, oraz na dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji i wiążącymi się z nim ograniczeniami w życiu osobistym, tab. \ref{tab:Q14}, Pearson $(\chi^2 (16, 115) = 30,69, p = 0,015)$,  $(R = 0,32, p < 0,001)$.
 
 
+% 3.	Nieumiejętność radzenia sobie ze stresem(techniki)
 
-\vspace{\baselineskip} 
-    
-Zbadano zależność  występowanie konfliktów praca-rodzina od ilości godzin pracy miesięcznie.
-W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona.  
-Wynik istotności statystycznej < 0,05 pozwala konkludować że istnieje korelacja pomiędzy ilością ponadnormatywnych godzin pracy a nasileniem konfliktów na linii praca-rodzina ($\chi^2 (2, 115) = 6.423, p=0,0403$).
-Test wykonano na zagregowanych danych przedstawinych w tabeli kontyngencji \ref{tab:konflikt-godziny}
+% Q12 z 10 15 31 32 33 13 	
+Badania statystyczne wskazują, że osoby, które lepiej radzą sobie z niwelowaniem stresu, tab. \ref{tab:Q12}
+	\begin{itemize}
+		\item rzadziej przynoszą "pracę" do domu w postaci myśli i emocj, tab. \ref{tab:Q10}, Pearson $(\chi^2 (16, 115) = 30,49, p = 0,016)$,  $(R = -0,26, p = 0,006)$;
+		\item w mniejszym stopniu odczuwają presję społeczną wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia, tab. \ref{tab:Q15},  Pearson $(\chi^2 (16, 115) = 34,77, p = 0,004)$, $(R = -0,24, p = 0,010)$;
+		\item rzadziej chorują, tab. \ref{tab:Q33}, Mantel-Haenshel $(\chi^2 (1, 115) = 3,97, p = 0,046)$, $(R = -0,20, p = 0,046)$;
+		\item rzadziej wskazują na wypalenie zawodowe, tab. \ref{tab:Q35}, Pearson $(\chi^2 (16, 115) = 44,98, p < 0,001)$, $(R = -0,42, p < 0,001)$;
+		\item rzadziej sięgaja po uzywki w celu niwelowania stresu, tab. \ref{tab:Q13}, Pearson $(\chi^2 (16, 115) = 31,67, p = 0,011)$, $(R = -0,24, p = 0,009)$.
+	\end{itemize}
+	
 
-% tabela kontyngencji konflikt-godziny
-\begin {table}[h]
-\caption{Występowania konfliktów praca-rodzina vs. ilość godzin pracy}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\multirow{2}{1cm}{konflikt} & 
-   \multicolumn{3}{|c|}{liczba godzin pracy w mies.}\\
-   \cline{2-4}
-    &  do 169 & od 170 do 239 & 240 i więcej \\
-\hline
-występuje & 9 & 10 & 4 \\
-\hline
-nie występuje & 56 & 32 & 4\\
-\hline
-
-\end{tabular}
-\label{tab:konflikt-godziny}
-\end{table}
-  
-\vspace{\baselineskip}   
-
-\subsection*{Hipoteza 3 - Poziom wykształcenia kadry pielęgniarskiej ma istotne znaczenie, dla  redukowania skutków traumatyzacji, wynikających z trudnych sytuacji w pracy.}
+%5.	Dylemat wynikający z podnoszenia kwalifikacji
 
 
-Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie dotyczące wykształcenia, oraz odpowiedź na pytanie 12 Czy potrafi Pan/i, niwelować w.w objawy, za pomocą technik psychologicznych?. Przyjęto że obie zmienne mają charakter jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona.
+%6.	Konflikt praca dom i odwrotnie Q27
+	% z Q3  Q15  q35 mocny q4 q28 q29 q34   odwrotnie z q7 q24 
+	
+%Q27 z Q4 ilosc godzin pracy	%
+	Test Pearsona $\chi^2$ wykazał istotną zależność występowania konfliktów na płaszczyznach praca - rodzina, tab. \ref{tab:Q27}, a zmianowym systemem pracy, tab. \ref{tab:Q4}, Pearson $(\chi^2 (2, 115) = 7,42, p = 0,024)$. Współczynnik korelacji $(R = 0,25, p = 0,008)$ określa, że jest to korelacja wprost proporcjonalna.
+	
+%Q27 z Q3 ilosc godzin pracy%
 
-Istnieje korelacja pomiędzy poziomem wykształcenia a umiejętnościami niwelowania skutków traumatyzacji ($\chi^2 (3, 115) = 7,934, p=0,0474$)
+	Występuje również zależność nasilenia konfliktów praca - rodzina, tab. \ref{tab:Q27}, od średniiej miesięcznej ilości godzin pracy, tab. \ref{tab:Q3}, 
+Mantel-Haenshel $(\chi^2 (1, 115) = 6,37, p=0,012)$, $(R = 0,24, p = 0,011)$.
 
-\TODO zastanowic sie nad wyrzuceniem lub przeniesieniem do innej Hip
-Analizie korelacyjnej poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 10 „Czy przynosi Pan/i ,,pracę" do domu, w postaci emocji i myśli?”. Pierwsza zmienna ma charakter ilościowy a druga jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona.
+% mocny	Q27 konflikty z Q34 empatia
+	Test statystyczny wskazuje na istotną statystycznie korelację pomiędzy występowaniem konfliktów praca-rodzina, tab. \ref{tab:Q27}, a empatią jako głównym kryterium wyboru zawodu, tab. \ref{tab:Q27}, Pearson $(\chi^2 (4, 115) = 11,52, p=0,021)$, $(R = 0,26, p = 0,005)$.
 
-    Ilość godzin pracy nie ma istotnego wpływu na przynoszenie do domu pracy w postaci myśli i emocji ($\chi^2 (2, 115) = 0,224, p=0,894$)
-    
-    \TODO potrzeba wsparcia  vs wyksztalcenie
-    
-    \TODO zamienic na traumatyzacja vs. wyksztalcenie
-    
-    Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 3, dotyczące ilości godzin pracy miesięcznie, oraz odpowiedź na pytanie 11 czy doświadcza Pan/i, zjawiska określanego jako traumatyzacja wtórna (odczuwanie, objawów psychicznych - smutek, żal, poczucie bezradności, stres) oraz objawów somatycznych, po wystąpieniu trudnej, dramatycznej sytuacji w pracy, powyżej 30 dni?”. Pierwsza zmienna ma charakter ilościowy a druga jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona. 
- 
-Ilość godzin pracy nie ma istotnego wpływu na odczuwanie traumatyzacji wtórnej ($\chi^2 (2, 115) = 0,8926, p=0,64$)
+% mocny  Q27 z Q28 - pominięty z uwagio na oczywistość relacji	
+% mocny  Q27 z Q29	
+	Test statystyczny wskazuje na istotną statystycznie korelację prawdopodobieństwa rozpadu związku,tab. \ref{tab:Q29}, z występowaniem konfliktów praca-rodzina, tab. \ref{tab:Q27}, Pearson $(\chi^2 (4, 115) = 16,27, p=0,003)$, $(R = 0,29, p = 0,002)$.
+	
+% słaby	
+	%Q27 z Q3 ilosc godzin pracy
+	%Q27 z Q35 wypalenie
+	%Q27 z Q15 presja społeczna
+	
+% odwrotny 	Q27 z Q7 pominięto z uwagi na oczywistość
+	
+%7.	niezgody z powodu pracy w zawodzie
+	
+	%Q28 z Q10
+	Istotną statystycznie korelację zaobserwowano momiędzy przynoszenie "pracy" do domu w postaci myśli i emocji, tab. \ref{tab:Q10}, a wskazywaniem, że praca zawodowa jest powodem niezgody z partnerem, tab. \ref{tab:Q28}, Mantel-Haenshel $(\chi^2 (1, 115) = 12,08, p=0,001)$, $(R = 0,33, p = 0,001)$.
+
+
+% 8.	Wsparcie w godzeniu obowiązków
+% Q26 rodzina wspiera  z Q 24 uczestniczy w życiu rodzinnym
+% Q26 rodzina wspiera z Q7 wspierające środowisko pracy
+
+
+%9.	Czynne uczestnictwo w życiu rodzinnym
+%  Q24 z  Q23 posiada pasje
+%  Q24 uczestniczy w zyciu rodzinnym z -Q35 wypalenie zawodowe
+%  Q24 z Q36 uwaza ze dobry wybor
+%
+%10.	Rezygnacja z zwodu na rzecz szczęścia rodziny
+%Q30 rozwaza rezygnacje z Q22 potrzeba psychologa
+%Q30 rozwaza rezygnacje z -Q24 nie uczeswtniczy w zyciu rodzinnym
+%Q30 rozwaza rezygnacje z Q28 praca powodem niezgody
+
+%11.	Pasja pozazawodowa
+%q23 posiada pasje z Q12 potrafi niwelować
+%Q12 potrafi niwelować
+%
+%Q23 posiada pasje to Q12 potrafi niwelowac
+%Q23 posiada pasje to Q24 uczestniczy w zyciu rodzinnym
+%Q32 posiada pasje to -Q35 nie ma wypalenia
+
+
+%\vspace{\baselineskip}   
+
+\subsection*{Hipoteza 3 - Poziom wykształcenia kadry pielęgniarskiej ma istotne znaczenie, dla redukowania skutków traumatyzacji, wynikających z trudnych sytuacji w pracy.}
+
+
+%1.	Empatia
+%2.	Wykształcenie
+%3.	Satysfakcja
+%4.	Presja wobec systemu
+%5.	Dylemat
+%6.	Przemoc pacjenta
+%7.	Bezpieczeństwo pracy
+%8.	Traumatyzacja
+%9.	Techniki radzenia
+
+
+	Test statystyczny wykazał że poziom wykształcenia, rys. \ref{rys:wykszt}, koreluje z poczuciem bezpieczeństwa w pracy wobec zagrożenia koronarowirusem, tab. \ref{tab:Q18}, Mantel-Haenshel $(\chi^2 (1, 115) = 5,72, p=0,017)$, $(R = 0,22, p = 0,017)$
+	
+	Test statystyczny wykazał że poziom wykształcenia, rys. \ref{rys:wykszt}, koreluje odwrotnie proporcjonalnie z poczuciem wypalenia zawodowego, tab. \ref{tab:Q35}, Pearson $(\chi^2 (12, 115) = 29,18, p=0,004)$, $(R = -0,30, p = 0,002)$. 
+		
+	Test statystyczny wykazał że osoby podejmujące więcej kursów podyplomowych i specjalizacyjnych, rys. \ref{rys:podyplom}, mają większe umiejętności niwelowania skutków traumatyzacji, tab. \ref{tab:Q12}, Mantel-Haenshel $(\chi^2 (1, 115) = 4,82, p=0,028)$. 
+
+
 \vspace{\baselineskip} 
 
 \subsection*{Hipoteza 4 - Satysfakcja zawodowa pielęgniarek i pielęgniarzy, wynika z kultury organizacji oraz nabywania kolejnych uprawnień.}
-pyt 20 o satysfakcję
-Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 7: "dotyczące wspierającego środowiska pracy oraz odpowiedź na pytanie 5, na temat zadowolenia z wyboru drogi życiowej. Obie zmienne mają charakter jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona.
 
-Wynik testu pokazuje że istnieje korelacja pomiędzy wspierającym środowiskiem pracy a zadowoleniem pracownika z wyboru drogi zawodowej. ($\chi^2 (4, 115) = 9,53169, p=0,0491$)
+%1.	Wykształcenie
+%2.	Satysfakcja z uprawnien
+%3.	Satysfakcja z wyboru drogi zawodowej
+%4.	Satysfakcja z perspektywy czasu
+%5.	Wspieranie własnego dziecka
+%6.	Systemy motywacyjne w pracy
 
-\vspace{\baselineskip}
 
-Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 8, o występowaniu mobbingu i hejtu w środowisku pracy, oraz odpowiedź na pytanie 5, na temat zadowolenia z wyboru drogi zawodowej. Obie zmienne mają charakter jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona.
+%Q5 zadowolenie z wyboru drogi zawodowej
+%  Q7 środowisko  Pana/i pracy, jest wspierające
+%  -Q8 toksyczne - pominiete z uwagi na oczywistość
+%  -Q11  w mniejszym stopniu odczuwa traumatyzaccje
+%  -Q14 mniejszy dylemat
+%  -Q15 mniej odczuwa presje
+%  -Q35 nie odczuwa wypalenia - pominiete z uwagi na oczywistość
 
-Wynik testu pokazuje że istnieje korelacja pomiędzy toksycznym środowiskiem pracy a brakiem zadowolenia pracownika z wyboru drogi zawodowej. ($\chi^2 (4, 115) = 10,87545, p=0,028$)
+%  Q36 dobry wybor z perspektywy czasu -nie dotyczy
+%  Q37 wspierało by dziecko - nie dotyczy
+  
+Wynik testu pokazuje że istnieje istotna korelacja pomiędzy zadowoleniem pracownika z wyboru drogi zawodowej, \ref{tab:Q5}, a wspierającym środowiskiem pracy, \ref{tab:Q7}, Mantel-Haenshel $(\chi^2 (11, 115) = 4,50, p=0,034)$, $(R = 0,20, p = 0,034)$.
 
-\vspace{\baselineskip}
-Analizie poddano dwie zmienne: odpowiedź ankietowanych na pytanie 9 na temat systemów motywacyjnych w zakładzie pracy, oraz  ponownie odpowiedź na pytanie 5. Obie zmienne mają charakter jakościowy. W celu określenia istotności statystycznej zastosowano test $\chi^2$ Pearsona.
+Testy wykazują istotne statystycznie korelacje większego zadowolenia z wyboru drogi zawodowej, \ref{tab:Q5}, z:
+	\begin{itemize}
+		\item rzadszym odczuwaniem dylematu, wynikającego z koniecznosci podnoszenia kwalifikacji, tab. \ref{tab:Q14}, Mantel-Haenshel $(\chi^2 (1, 115) = 3,97, p < 0,001)$, $(R = -0,36, p < 0,001)$;
+		\item mniejszym odczuwaniem prasji społecznej wynikającej z oczekiwań wobec Systemu Ochrony Zdrowia, tab. \ref{tab:Q15}, Mantel-Haenshel $(\chi^2 (1, 115) = 7,38, p = 0,007)$, $(R = -0,25, p = 0,007)$;
+	\end{itemize}
 
-Wynik testu nie pozwala na określenie korelacji pomiędzy stosowaniem systemów motywacyjnych a zadowoleniem pracownika z wyboru drogi zawodowej, ponieważ wartość istotności statystycznej $p$ przekracza założony próg 0,05. ($\chi^2 (4, 115) = 10,87545, p=0,272$)
+  
+  
+%Q20 Czy odczuwa Pan/i satysfakcję, wynikającą z autonomii zawodu  - nabywania kompetencji, uprawnień, prowadzenia badań naukowych
+% 	z  szkol poziom wykształcenia
+% 	Q24 uczestniczy w zyciu rodzinnym
+
+Poziom satysfakcji wynikającej z autonomii zawodu  - nabywania kompetencji, uprawnień, prowadzenia badań naukowych, tab. \ref{tab:Q20}, istotnie statystycznie koreluje z poziomem wykształcenia, rys. \ref{rys:wykszt}, Mantel-Haenshel $(\chi^2 (1, 115) = 5,94, p = 0,015)$, $(R = 0,23, p = 0,015)$; 
+ 	
+	
+%Q36 z perspektywy czasu uważa Pan/i, że dokonał/a dobrego wyboru ścieżki zawodowej? 
+%	-Q8 toksyczne - ewidentne
+
+%	-Q10 przynosi emocje
+%	-Q14 dylemat rozwój
+%	-Q22 potrzeba psychologa
+%	Q23 posiada pasje
+%	Q24 uczestniczy w życiu rodziny
+%	-Q30 rozwaza rezygnacje
+%	-Q33 mniej choruje
+%	-Q35 nie czuje wypalenia zawodowego
+
+% 	zadna z pozostałych korelacji nie dotyczy hipotezy
+   
+	
 
 \vspace{\baselineskip} 
 
 \subsection*{Hipoteza 5 - System Opieki Zdrowotnej nie spełnia oczekiwań, w zakresie promocji, przyszłości i autonomii pielęgniarstwa.}
 
-\vspace{\baselineskip} 
+%1.	Wspieranie przedstawicieli dla poprawy sytuacji w pielęgniarstwie Q19 - brak korel
 
-TODO: badania do hipotezy 5
-czy czuje się pani bezpiecznie w pracy z koronarowirusem pytanie 18, dylemat wynikający z podnoszenia kwalifikacji, prasja społeczna wobec sytemu ochrony zdrowia 15, poparcie dla działań typu strajki pytanie 19, czy kompetencje są właściwie wykorzystane pytanie 21
+%2.	 Wykorzystanie kompetencji Q21 
+%		z Q15 presja społeczna
+%		z Q35 wypalenie
+Test statystyczney wykazuje istotną korelacje braku poczucia właściwego wykorzystania kompetencji pracownika, tab. \ref{tab:Q21}, z presją społeczą wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia, tab. \ref{tab:Q15}, Pearson $(\chi^2 (16, 115) = 47,47, p < 0,001)$, $(R = 0,24, p = 0,012)$.
+
+%, tab. \ref{tab:Q15}, Mantel-Haenshel $(\chi^2 (1, 115) = 7,38, p = 0,007)$, $(R = -0,25, p = 0,007)$;
+
+Test wskazuje również istotny wpływ braku poczucia właściwego wykorzystania kompetencji pracownika, tab. \ref{tab:Q21}, na odczuwanie wypalenia zawodowego, tab. \ref{tab:Q35}, Pearson $(\chi^2 (16, 115) = 27,61, p = 0,035)$, $(R = 0,20, p = 0,043)$.
 
 
 
-pyt 15 dylemat podnosz kwal vs. pyt 21 kompetencje
+%4.	Toksyczne środowisko
+
+%
+%5.	Q18 odczucie bezpieczeństwa w pracy koreluje 
+%	z Q7 wspierajace srodowiso pracy
+%	z Q9 systemami motywacyjnymi
+%	z -Q15 odwrotnie z presja spoleczna
+
+Poczucie bezpieczeństwa w pracy, tab. \ref{tab:Q18}, istotnie statystycznie koreluje z postrzeganiem środowiaska pracy jako wspierającego, tab. \ref{tab:Q7}, Pearson $(\chi^2 (16, 115) = 27,38, p = 0,037)$, $(R = 0,26, p = 0,005)$, oraz z systemami motywacyjnymi, tab. \ref{tab:Q9}, Pearson $(\chi^2 (16, 115) = 23,63, p = 0,023)$, $(R = 0,25, p = 0,008)$
+	
+
+
+
 \vspace{\baselineskip} 
 
 
@@ -1009,7 +1089,11 @@ nursery, work, family, work satisfaction
 \bibitem{winc}{Okoń W. Nowy słownik pedagogiczny. Warszawa; Wydawnictwo Znak; 1999: 163}
 \bibitem{apa}{American Psychological Association. (2022). APA Style numbers and statistics guide. https://apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf}
 
+%pojęcia statystyczne
+
 \bibitem{ShapWilk}{Statistics How To, https://www.statisticshowto.com/shapiro-wilk-test/}
+
+\bibitem{mantel}{\textit{Mantel-Hanshel Test}, https://itl.nist.gov/div898/software/dataplot/refman1/auxillar/mantel.htm, [dostęp 10.05.2022]}
 
 % programy statystyczne
 
@@ -1067,883 +1151,93 @@ nursery, work, family, work satisfaction
 %        DODATKI
 % -----------------------
 
-\chapter{Wyniki badań ankietowych}
-
-
-% pytanie: 1 - 1. Czy pracuję  Pan/i w zawodzie pielęgniarki / pielęgniarza?
-\begin{table}[h]
-\caption{Staż pracy w zawodzie pielęgniarki / pielęgniarza}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-krócej niż 2 lata  &  13  & 11.3\% \\
-\hline
-od 2 do 5 lat  &  10  & 8.7\% \\
-\hline
-od 5 do 10 lat  &  9  & 7.8\% \\
-\hline
-od 10 do 20 lat  &  20  & 17.4\% \\
-\hline
-powyżej 20 lat  &  63  & 54.8\% \\
-\hline
-\end{tabular}
-\label{tab:Q1}
-\end{table}
-
-
-
-% pytanie: 2 - 2.  W ilu miejscach pracy, obecnie Pan/i, jest zatrudniony/a?
-\begin{table}[h]
-\caption{Ilość równoległych etatów}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-jeden  &  75  & 65.2\% \\
-\hline
-dwa  &  32  & 27.8\% \\
-\hline
-więcej niż dwa  &  8  & 7.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q2}
-\end{table}
-
-
-
-% pytanie: 3 - 3. Ile, w przybliżeniu, wynosi miesięczny wymiar godzin, Pana/i pracy?
-\begin{table}[h]
-\caption{Miesięczny wymiar godzin pracy}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-do 149 godzin  &  15  & 13.0\% \\
-\hline
-od 150 do 169 godzin  &  50  & 43.5\% \\
-\hline
-od 170 do 199 godzin  &  28  & 24.3\% \\
-\hline
-od 200 do 239 godzin  &  14  & 12.2\% \\
-\hline
-od 240 do 259 godzin  &  5  & 4.3\% \\
-\hline
-powyżej 260 godzin  &  3  & 2.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q3}
-\end{table}
-
-
-
-% pytanie: 4 - 4, Czy w podstawowym miejscu zatrudnienia, świadczy  Pan/i usługi, w systemie pracy?
-\begin{table}[h]
-\caption{Zmianowy system pracy}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-jednozmianowy  &  34  & 29.6\% \\
-\hline
-dwuzmianowy  &  64  & 55.7\% \\
-\hline
-jedno i dwuzmianowy  &  17  & 14.8\% \\
-\hline
-\end{tabular}
-\label{tab:Q4}
-\end{table}
-
-
-
-% pytanie: 5 - 5.  Czy jest Pan/i zadowolona/y, z wyboru drogi zawodowej?
-\begin{table}[h]
-\caption{Zadowolenie z wyboru drogi zawodowej}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  33  & 28.7\% \\
-\hline
-raczej tak  &  65  & 56.5\% \\
-\hline
-nie mam zdania  &  9  & 7.8\% \\
-\hline
-raczej nie  &  5  & 4.3\% \\
-\hline
-zdecydowanie nie  &  3  & 2.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q5}
-\end{table}
-
-
-
-% pytanie: 6 - 6. Proszę podać, w przybliżeniu staż pracy, w jednej specjalizacji zawodowej (na jednym oddziale).
-\begin{table}[h]
-\caption{Staż pracy w jednej specjalizacji}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-od O do 2 lat  &  17  & 14.8\% \\
-\hline
-od 2 do 5 lat  &  12  & 10.4\% \\
-\hline
-od 5 do 10 lat  &  19  & 16.5\% \\
-\hline
-od 10 do 20 lat  &  40  & 34.8\% \\
-\hline
-od 20 do 30 lat  &  19  & 16.5\% \\
-\hline
-powyżej 30 lat  &  8  & 7.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q6}
-\end{table}
-
-
-
-% pytanie: 7 - 7. Czy  środowisko  Pana/i pracy, jest wspierające?
-\begin{table}[h]
-\caption{Czy  środowisko  Pana/i pracy, jest wspierające?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  6  & 5.2\% \\
-\hline
-raczej tak  &  56  & 48.7\% \\
-\hline
-nie mam zdania  &  14  & 12.2\% \\
-\hline
-raczej nie  &  0  & 0.0\% \\
-\hline
-zdecydowanie nie  &  8  & 7.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q7}
-\end{table}
-
-
-
-% pytanie: 8 - 8. Czy środowisko Pana/i pracy, jest ,,toksyczne"( występuje mobbing,hejt)?
-\begin{table}[h]
-\caption{Czy środowisko Pana/i pracy jest ,,toksyczne"( występuje mobbing, hejt)?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  8  & 7.0\% \\
-\hline
-raczej tak  &  32  & 27.8\% \\
-\hline
-nie mam zdania  &  16  & 13.9\% \\
-\hline
-raczej nie  &  0  & 0.0\% \\
-\hline
-zdecydowanie nie  &  0  & 0.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q8}
-\end{table}
-
-
-
-% pytanie: 9 - 9. Czy zakład pracy, w którym Pan/i pracuje stosuje systemy motywacyjne?
-\begin{table}[h]
-\caption{Czy zakład pracy, w którym Pan/i pracuje, stosuje systemy motywacyjne?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  0  & 0.0\% \\
-\hline
-raczej tak  &  16  & 13.9\% \\
-\hline
-nie mam zdania  &  10  & 8.7\% \\
-\hline
-raczej nie  &  47  & 40.9\% \\
-\hline
-zdecydowanie nie  &  42  & 36.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q9}
-\end{table}
-
-
-
-% pytanie: 10 - 10. Czy przynosi Pan/i , ,,pracę" do domu, w postaci emocji i myśli?
-\begin{table}[h]
-\caption{Czy przynosi Pan/i ,,pracę" do domu, w postaci emocji i myśli?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  26  & 22.6\% \\
-\hline
-raczej tak  &  47  & 40.9\% \\
-\hline
-nie mam zdania  &  7  & 6.1\% \\
-\hline
-raczej nie  &  26  & 22.6\% \\
-\hline
-zdecydowanie nie  &  9  & 7.8\% \\
-\hline
-\end{tabular}
-\label{tab:Q10}
-\end{table}
-
-
-
-% pytanie: 11 - 11.  Czy doświadcza Pan/i, zjawiska określanego jako traumatyzacja wtórna (odczuwanie, objawów psychicznych - smutek, żal, poczucie bezradności, stres) oraz objawów somatycznych, po wystąpieniu trudnej, dramatycznej sytuacji w pracy, powyżej 30 dni?
-\begin{table}[h]
-\caption{Czy doświadcza Pan/i, zjawiska określanego jako traumatyzacja wtórna (odczuwanie, objawów psychicznych - smutek, żal, poczucie bezradności, stres) oraz objawów somatycznych, po wystąpieniu trudnej, dramatycznej sytuacji w pracy, powyżej 30 dni?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  7  & 6.1\% \\
-\hline
-raczej tak  &  37  & 32.2\% \\
-\hline
-nie mam zdania  &  12  & 10.4\% \\
-\hline
-raczej nie  &  46  & 40.0\% \\
-\hline
-zdecydowanie nie  &  13  & 11.3\% \\
-\hline
-\end{tabular}
-\label{tab:Q11}
-\end{table}
-
-
-
-% pytanie: 12 - 12. Czy potrafi Pan/i, niwelować w.w objawy, za pomocą technik psychologicznych?
-\begin{table}[h]
-\caption{Czy potrafi Pan/i, niwelować w.w objawy, za pomocą technik psychologicznych?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  7  & 6.1\% \\
-\hline
-raczej tak  &  36  & 31.3\% \\
-\hline
-nie mam zdania  &  33  & 28.7\% \\
-\hline
-raczej nie  &  35  & 30.4\% \\
-\hline
-zdecydowanie nie  &  4  & 3.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q12}
-\end{table}
-
-
-
-% pytanie: 13 - 13. Czy, w celu radzenia sobie ze stresem związanym z pracą zawodową, sięga Pan/i po używki?
-\begin{table}[h]
-\caption{Czy, w celu radzenia sobie ze stresem związanym z pracą zawodową, sięga Pan/i po używki?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  2  & 1.7\% \\
-\hline
-raczej tak  &  14  & 12.2\% \\
-\hline
-nie mam zdania  &  7  & 6.1\% \\
-\hline
-raczej nie  &  44  & 38.3\% \\
-\hline
-zdecydowanie nie  &  48  & 41.7\% \\
-\hline
-\end{tabular}
-\label{tab:Q13}
-\end{table}
-
-
-
-% pytanie: 14 - 14.Czy czuje Pan/i, dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji i wiążącymi się z nim ograniczeniami w życiu osobistym?
-\begin{table}[h]
-\caption{Czy czuje Pan/i dylemat wewnętrzny, wynikający z konieczności ciągłego podnoszenia kwalifikacji i wiążącymi się z nim ograniczeniami w życiu osobistym?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  13  & 11.3\% \\
-\hline
-raczej tak  &  41  & 35.7\% \\
-\hline
-nie mam zdania  &  8  & 7.0\% \\
-\hline
-raczej nie  &  38  & 33.0\% \\
-\hline
-zdecydowanie nie  &  15  & 13.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q14}
-\end{table}
-
-
-
-% pytanie: 15 - 15. Czy czuję Pan/i presję społeczną, wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia?
-\begin{table}[h]
-\caption{Czy czuję Pan/i presję społeczną, wynikającą z oczekiwań wobec Systemu Ochrony Zdrowia?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  34  & 29.6\% \\
-\hline
-raczej tak  &  41  & 35.7\% \\
-\hline
-nie mam zdania  &  10  & 8.7\% \\
-\hline
-raczej nie  &  26  & 22.6\% \\
-\hline
-zdecydowanie nie  &  4  & 3.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q15}
-\end{table}
-
-
-
-% pytanie: 16 - 16. Czy doświadczył Pan/i przemocy słownej, fizycznej ze strony pacjenta?
-\begin{table}[h]
-\caption{Czy doświadczył/a Pan/i przemocy słownej lub fizycznej ze strony pacjenta?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  53  & 46.1\% \\
-\hline
-raczej tak  &  38  & 33.0\% \\
-\hline
-nie mam zdania  &  3  & 2.6\% \\
-\hline
-raczej nie  &  16  & 13.9\% \\
-\hline
-zdecydowanie nie  &  5  & 4.3\% \\
-\hline
-\end{tabular}
-\label{tab:Q16}
-\end{table}
-
-
-
-% pytanie: 17 - 17. Czy kiedykolwiek uczestniczył /a Pan/i w postępowaniu dochodzeniowym z tytułu roszczenia pacjenta ?
-\begin{table}[h]
-\caption{Czy kiedykolwiek uczestniczył/a Pan/i w postępowaniu dochodzeniowym z tytułu roszczenia pacjenta?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  13  & 11.3\% \\
-\hline
-raczej tak  &  8  & 7.0\% \\
-\hline
-nie mam zdania  &  2  & 1.7\% \\
-\hline
-raczej nie  &  27  & 23.5\% \\
-\hline
-zdecydowanie nie  &  65  & 56.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q17}
-\end{table}
-
-
-
-% pytanie: 18 - 18. Czy ma Pan/i poczucie bezpieczeństwa w pracy w zagrożeniu koronawirusem?
-\begin{table}[h]
-\caption{Czy ma Pan/i poczucie bezpieczeństwa w pracy w zagrożeniu koronarowirusem?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  13  & 11.3\% \\
-\hline
-raczej tak  &  40  & 34.8\% \\
-\hline
-nie mam zdania  &  9  & 7.8\% \\
-\hline
-raczej nie  &  30  & 26.1\% \\
-\hline
-zdecydowanie nie  &  23  & 20.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q18}
-\end{table}
-
-
-
-% pytanie: 19 - 19. Czy popiera Pan/i działania przedstawicieli zawodu zmierzające do poprawy sytuacji pielęgniarek i położnych w Polsce ( marsze, strajki)?
-\begin{table}[h]
-\caption{Czy popiera Pan/i działania przedstawicieli zawodu zmierzające do poprawy sytuacji pielęgniarek i położnych w Polsce (marsze, strajki)?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  56  & 48.7\% \\
-\hline
-raczej tak  &  30  & 26.1\% \\
-\hline
-nie mam zdania  &  11  & 9.6\% \\
-\hline
-raczej nie  &  14  & 12.2\% \\
-\hline
-zdecydowanie nie  &  4  & 3.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q19}
-\end{table}
-
-
-
-% pytanie: 20 - 20. Czy odczuwa Pan/i satysfakcję, wynikającą z autonomii zawodu  - nabywania kompetencji, uprawnień, prowadzenia badań naukowych?
-\begin{table}[h]
-\caption{Czy odczuwa Pan/i satysfakcję wynikającą z autonomii zawodu - nabywania kompetencji, uprawnień, prowadzenia badań naukowych?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  26  & 22.6\% \\
-\hline
-raczej tak  &  38  & 33.0\% \\
-\hline
-nie mam zdania  &  25  & 21.7\% \\
-\hline
-raczej nie  &  21  & 18.3\% \\
-\hline
-zdecydowanie nie  &  5  & 4.3\% \\
-\hline
-\end{tabular}
-\label{tab:Q20}
-\end{table}
-
-
-
-% pytanie: 21 - 21. Czy uważa Pan/i, że nowe kompetencje pielęgniarskie nie są właściwie wykorzystane w Systemie Ochrony Zdrowia?
-\begin{table}[h]
-\caption{Czy uważa Pan/i, że nowe kompetencje pielęgniarskie nie są właściwie wykorzystane w Systemie Ochrony Zdrowia?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  38  & 33.0\% \\
-\hline
-raczej tak  &  38  & 33.0\% \\
-\hline
-nie mam zdania  &  21  & 18.3\% \\
-\hline
-raczej nie  &  11  & 9.6\% \\
-\hline
-zdecydowanie nie  &  7  & 6.1\% \\
-\hline
-\end{tabular}
-\label{tab:Q21}
-\end{table}
-
-
-
-% pytanie: 22 - 22. Czy odczuwa Pan/i potrzebę, korzystania ze wsparcia psychologicznego dla pracowników medycznych?
-\begin{table}[h]
-\caption{Czy odczuwa Pan/i potrzebę korzystania ze wsparcia psychologicznego dla pracowników medycznych?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  31  & 27.0\% \\
-\hline
-raczej tak  &  23  & 20.0\% \\
-\hline
-nie mam zdania  &  15  & 13.0\% \\
-\hline
-raczej nie  &  35  & 30.4\% \\
-\hline
-zdecydowanie nie  &  11  & 9.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q22}
-\end{table}
-
-
-
-% pytanie: 23 - 23. Czy posiada Pan/i pasję pozazawodową, którą rozwija ?
-\begin{table}[h]
-\caption{Czy posiada Pan/i pasję pozazawodową, którą rozwija?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  42  & 36.5\% \\
-\hline
-raczej tak  &  41  & 35.7\% \\
-\hline
-nie mam zdania  &  8  & 7.0\% \\
-\hline
-raczej nie  &  20  & 17.4\% \\
-\hline
-zdecydowanie nie  &  4  & 3.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q23}
-\end{table}
-
-
-
-% pytanie: 24 - 24.  Czy czynnie uczestniczy, Pan/i w życiu rodzinnym i imprezach okolicznościowych przyjaciół?
-\begin{table}[h]
-\caption{Czy czynnie uczestniczy Pan/i w życiu rodzinnym i imprezach okolicznościowych przyjaciół?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  33  & 28.7\% \\
-\hline
-raczej tak  &  52  & 45.2\% \\
-\hline
-nie mam zdania  &  3  & 2.6\% \\
-\hline
-raczej nie  &  25  & 21.7\% \\
-\hline
-zdecydowanie nie  &  2  & 1.7\% \\
-\hline
-\end{tabular}
-\label{tab:Q24}
-\end{table}
-
-
-
-% pytanie: 25 - 25. Czy Pana/i,partner/ka pracuje w Systemie Opieki Zdrowotnej?
-\begin{table}[h]
-\caption{Czy Pana/i partner/ka pracuje w Systemie Opieki Zdrowotnej?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-Nie  &  102  & 88.7\% \\
-\hline
-tak  &  13  & 11.3\% \\
-\hline
-\end{tabular}
-\label{tab:Q25}
-\end{table}
-
-
-
-% pytanie: 26 - 26. Czy rodzina wspiera Pana/ią, w godzeniu obowiązków domowych z pracą?
-\begin{table}[h]
-\caption{Czy rodzina wspiera Pana/ią w godzeniu obowiązków domowych z pracą?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  30  & 26.1\% \\
-\hline
-raczej tak  &  59  & 51.3\% \\
-\hline
-nie mam zdania  &  9  & 7.8\% \\
-\hline
-raczej nie  &  15  & 13.0\% \\
-\hline
-zdecydowanie nie  &  2  & 1.7\% \\
-\hline
-\end{tabular}
-\label{tab:Q26}
-\end{table}
-
-
-
-% pytanie: 27 - 27. Czy w Pana/i życiu przeważa?
-\begin{table}[h]
-\caption{Czy w Pana/i życiu przeważa?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-konflikt praca - rodzina  &  12  & 10.4\% \\
-\hline
-konflikt rodzina - praca  &  11  & 9.6\% \\
-\hline
-nie ma konfliktu  &  92  & 80.0\% \\
-\hline
-\end{tabular}
-\label{tab:Q27}
-\end{table}
-
-
-
-% pytanie: 28 - 28. Czy  Pana/i praca zawodowa, jest powodem niezgody z życiowym partnerem?
-\begin{table}[h]
-\caption{Czy Pana/i praca zawodowa, jest powodem niezgody z życiowym partnerem?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  4  & 3.5\% \\
-\hline
-raczej tak  &  13  & 11.3\% \\
-\hline
-nie mam zdania  &  14  & 12.2\% \\
-\hline
-raczej nie  &  42  & 36.5\% \\
-\hline
-zdecydowanie nie  &  42  & 36.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q28}
-\end{table}
-
-
-
-% pytanie: 29 - 29. Czy zna Pan/i, pielęgniarki/pielęgniarzy, u których, doszło do rozpadu związku z powodu, pracy w zawodzie?
-\begin{table}[h]
-\caption{Czy zna Pan/i pielęgniarki/pielęgniarzy, u których doszło do rozpadu związku z powodu pracy w zawodzie?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  17  & 14.8\% \\
-\hline
-raczej tak  &  23  & 20.0\% \\
-\hline
-nie mam zdania  &  12  & 10.4\% \\
-\hline
-raczej nie  &  43  & 37.4\% \\
-\hline
-zdecydowanie nie  &  20  & 17.4\% \\
-\hline
-\end{tabular}
-\label{tab:Q29}
-\end{table}
-
-
-
-% pytanie: 30 - 29. Czy kiedykolwiek rozważał/a Pan/i, rezygnację z zawodu na rzecz szczęścia rodziny?
-\begin{table}[h]
-\caption{Czy kiedykolwiek rozważał/a Pan/i rezygnację z zawodu na rzecz szczęścia rodziny?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  3  & 2.6\% \\
-\hline
-raczej tak  &  16  & 13.9\% \\
-\hline
-nie mam zdania  &  13  & 11.3\% \\
-\hline
-raczej nie  &  42  & 36.5\% \\
-\hline
-zdecydowanie nie  &  41  & 35.7\% \\
-\hline
-\end{tabular}
-\label{tab:Q30}
-\end{table}
-
-
-
-% pytanie: 31 - 30. Czy  zdarza się, że pracuje Pan/i, mimo wystąpienia własnej choroby, choroby członka rodziny?
-\begin{table}[h]
-\caption{Czy zdarza się, że pracuje Pan/i mimo wystąpienia własnej choroby lub choroby członka rodziny?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  35  & 30.4\% \\
-\hline
-raczej tak  &  57  & 49.6\% \\
-\hline
-nie mam zdania  &  3  & 2.6\% \\
-\hline
-raczej nie  &  17  & 14.8\% \\
-\hline
-zdecydowanie nie  &  3  & 2.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q31}
-\end{table}
-
-
-
-% pytanie: 32 - 31. Czy korzysta Pan/i  ze zwolnienia L4, gdy są do tego wskazania?
-\begin{table}[h]
-\caption{Czy korzysta Pan/i ze zwolnienia lekarskiego, gdy są do tego wskazania?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  18  & 15.7\% \\
-\hline
-raczej tak  &  46  & 40.0\% \\
-\hline
-nie mam zdania  &  6  & 5.2\% \\
-\hline
-raczej nie  &  34  & 29.6\% \\
-\hline
-zdecydowanie nie  &  11  & 9.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q32}
-\end{table}
-
-
-
-% pytanie: 33 - 32.  Czy choruje Pan/i  na ?
-\begin{table}[h]
-\caption{Czy choruje Pan/i na?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-choroby przewlekłe  &  50  & 43.5\% \\
-\hline
-choroby współisniejace  &  4  & 3.5\% \\
-\hline
-choroby przewlekłe; choroby współisniejace  &  2  & 1.7\% \\
-\hline
-nie choruję na w.w choroby  &  59  & 51.3\% \\
-\hline
-\end{tabular}
-\label{tab:Q33}
-\end{table}
-
-
-
-% pytanie: 34 - 33. Czy empatia, była głównym kryterium wyboru zawodu, przez Pana/nią?
-\begin{table}[h]
-\caption{Czy empatia, była głównym kryterium wyboru zawodu?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  18  & 15.7\% \\
-\hline
-raczej tak  &  26  & 22.6\% \\
-\hline
-nie mam zdania  &  23  & 20.0\% \\
-\hline
-raczej nie  &  29  & 25.2\% \\
-\hline
-zdecydowanie nie  &  19  & 16.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q34}
-\end{table}
-
-
-
-% pytanie: 35 - 34. Czy uważa Pan/i, że jest wypalona zawodowo?
-\begin{table}[h]
-\caption{Czy uważa Pan/i, że jest wypalony/a zawodowo?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  8  & 7.0\% \\
-\hline
-raczej tak  &  20  & 17.4\% \\
-\hline
-nie mam zdania  &  16  & 13.9\% \\
-\hline
-raczej nie  &  52  & 45.2\% \\
-\hline
-zdecydowanie nie  &  19  & 16.5\% \\
-\hline
-\end{tabular}
-\label{tab:Q35}
-\end{table}
-
-
-
-% pytanie: 36 - 35. Czy z perspektywy czasu uważa Pan/i, że dokonał/a dobrego wyboru ścieżki zawodowej?
-\begin{table}[h]
-\caption{Czy z perspektywy czasu uważa Pan/i, że dokonał/a dobrego wyboru ścieżki zawodowej?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  30  & 26.1\% \\
-\hline
-raczej tak  &  52  & 45.2\% \\
-\hline
-nie mam zdania  &  13  & 11.3\% \\
-\hline
-raczej nie  &  17  & 14.8\% \\
-\hline
-zdecydowanie nie  &  3  & 2.6\% \\
-\hline
-\end{tabular}
-\label{tab:Q36}
-\end{table}
-
-
-
-% pytanie: 37 - 36.  Czy gdyby Pana/i dziecko, zdecydowało się spełniać w pielęgniarstwie, wspierałby je Pan/i  w tym wyborze?
-\begin{table}[h]
-\caption{Czy gdyby Pana/i dziecko, zdecydowało się spełniać w pielęgniarstwie, wspierałby je Pan/i w tym wyborze?}
-\centering
-\begin{tabular}{ | c | c | c |}
-\hline
-odpowiedź & liczność & procent\\
-\hline
-zdecydowanie tak  &  28  & 24.3\% \\
-\hline
-raczej tak  &  37  & 32.2\% \\
-\hline
-nie mam zdania  &  15  & 13.0\% \\
-\hline
-raczej nie  &  17  & 14.8\% \\
-\hline
-zdecydowanie nie  &  18  & 15.7\% \\
-\hline
-\end{tabular}
-\label{tab:Q37}
-\end{table}
-
-
-
-
-
+\chapter{Pytania ankietowe}
+\label{app:ankieta}
+
+\textit{Ocena wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy czynnych zawodowo.}
+
+%metryczka
+\begin{enumerate}[label=(\roman*)]
+	\item{Płeć}
+		\begin{itemize}
+			\item{Kobieta}
+			\item{Mężczyzna}
+		\end{itemize}
+	\item{Wiek}
+		\begin{itemize}
+			\item{do 25 lat}
+			\item{od 25 do 35 lat}
+			\item{od 35 do 45 lat}
+			\item{od 45 do 60 lat}
+			\item{powyżej 60 lat}
+		\end{itemize}
+	\item{Wykształcenie}
+		\begin{itemize}
+			\item{Liceum Medyczne}
+			\item{Studium Medyczne}
+			\item{Licencjat Pielęgniarstwa}
+			\item{Magister Pielęgniarstwa}
+		\end{itemize}
+	\item{Kształcenie podyplomowe}
+		\begin{itemize}
+			\item{specjalizacja}
+			\item{kurs kawlifikacyjny}
+			\item{kurs specjalistyczny}
+			\item{nie związane z medycyną}
+		\end{itemize}
+	\item{Stan cywilny}
+		\begin{itemize}
+			\item{w związku małżeńskim}
+			\item{w związku nieformalnym}
+			\item{rozwiedziona/y}
+			\item{wdowa/iec}
+			\item{samotna/y}
+		\end{itemize}
+	\item{Miejsce zamieszkania}
+		\begin{itemize}
+			\item{wieś}
+			\item{Miasto do 50 tys.}
+			\item{Miasto od 50 tys. do 150 tys.}
+			\item{Miasto od 150 tys. do 500 tys.}
+			\item{Miasto powyżej 500 tys.}
+		\end{itemize}
+
+\end{enumerate}
+
+%pytania
+\begin{enumerate}[label=\arabic*)]
+		%staż
+		\item{Jak długo pracuję  Pan/i w zawodzie pielęgniarki / pielęgniarza?}
+		\begin{itemize}
+			\item{krócej niż 2 lata}
+			\item{od 2 do 5 lat}
+			\item{od 5 do 10 lat}
+			\item{od 10 do 20 lat}
+			\item{powyżej 20 lat}
+		\end{itemize}
+		
+		%etaty
+		\item{W ilu miejscach pracy, obecnie Pan/i jest zatrudniony/a?}
+		\begin{itemize}
+			\item{jednym}
+			\item{dwóch}
+			\item{więcej niż dwóch}
+		\end{itemize}
+		
+		%godziny
+		\item{Ile, w przybliżeniu, wynosi miesięczny wymiar godzin Pana/i pracy?}
+		\begin{itemize}
+			\item{do 149 godzin}
+			\item{od 150 do 169 godzin}
+			\item{od 170 do 199 godzin}
+			\item{od 200 do 239 godzin}
+			\item{od 240 do 259 godzin}
+			\item{powyżej 260 godzin}
+		\end{itemize}
+		
+		...
+		\TODO
+\end{enumerate}
 
 
 %	\zakonczenie  % wklejenie recenzji i opinii
