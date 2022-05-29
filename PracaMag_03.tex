@@ -21,8 +21,8 @@
 \linespread{1.3} % 1 - pojedyncza, 1.3 - poltora, 1.6 - podwojna
 
 % aby nie bylo kropek w spisie treści 
-\makeatletter
-\renewcommand\@dotsep{200}
+%\makeatletter
+%\renewcommand\@dotsep{200}
 
 % rozdziały, sekcje niewidoczne w spisie treści
 \newcommand{\nocontentsline}[3]{}
@@ -417,7 +417,6 @@ Badania przeprowadzono wśród byłych i obecnych studentów studiów niestacjon
 W badaniu sondażowym, wzięło udział 115 obecnych i byłych studentów na kierunku pielęgniarstwo w Wyższej Szkole Medycznej w Legnicy. Badanie przeprowadzono on-line.
 
 
-\subsection*{Wiek}
 
 Badanie ankietowe przeprowadzono wśród 115 osób w wieku od 18 do 65 lat. Najliczniejszą grupę 57\%  (65 osób) stanowili respondenci w wieku od 45 do 60 lat 
 Ilustrację rozkładu wieku osób biorących udział w badaniu przestawia rys. \ref{rys:wiek}.
@@ -447,9 +446,11 @@ Test Shapiro-Wilk & $p$ & <0,001\\
 \hline
 liczność danych & $n$ & 114\\
 \hline
-Średnia & $\bar{x}$ & 43.9\\
+Średnia & $\bar{x}$ & 44.1\\
 \hline
-Odchylenie standardowe & $S$ & 10.7\\
+Mediana & $M$ & 52\\
+\hline
+Odchylenie standardowe & $SD$ & 10.7\\
 \hline
 
 \end{tabular}
@@ -457,7 +458,6 @@ Odchylenie standardowe & $S$ & 10.7\\
 \end{table}
 
 
-\subsection*{Płeć}
 
 Badaną grupę przedstawioną  na rysunku \ref{rys:plec} stanowi  93,9\%  (108 kobiet) i  6,1\%  (7 mężczyzn). Widoczna dysproporcja jest typowa dla rozkładu płci osób zatrudnionych jako pielęgniarki/arze.
 
@@ -470,10 +470,10 @@ Badaną grupę przedstawioną  na rysunku \ref{rys:plec} stanowi  93,9\%  (108 k
 \end{figure}
 
 
-\subsection*{Wykształcenie}
 
 
-Wśród ankietowanych najliczniejszą grupę reprezentowało 57,4\%) (66 osób) z wykształceniem wyższym - Licencjat Pielęgniarstwa oraz  23,5\%  (27 osób) z tytułem Magistra Pielęgniarstwa. Niektóre osoby zaznaczyły również opcję Liceum Medyczne i  Studium Medyczne. Graficzną reprezentację rozkładu wykształcenia przedstawia rys. \ref{rys:wykszt}. Dodatkowo, rys. \ref{rys:podyplom} ilustruje kształcenie podyplomowe, podejmowane przez badaną grupę.
+Wśród ankietowanych najliczniejszą grupę reprezentowało 57,4\% (66 osób) z wykształceniem wyższym - Licencjat Pielęgniarstwa oraz  23,5\%  (27 osób) z tytułem Magistra Pielęgniarstwa. Niektóre osoby zaznaczyły również opcję Liceum Medyczne i  Studium Medyczne. Graficzną reprezentację rozkładu wykształcenia przedstawia rys. \ref{rys:wykszt}. Dodatkowo, rys. \ref{rys:podyplom} ilustruje kształcenie podyplomowe, podejmowane przez badaną grupę. Z pośród 115 respondentów, 20\% (23 osoby) miało wykształcenie podyplomowe nie związane z medycyną, 39,1\% (45 osób) ukończyło kurs specjalistyczny, 40\% (46 osób) ukończyło kurs kwalifikacyjny i 
+65,2\% (75 osób) ukończyło specjalizację.  
 
 
 % ilustracja wykształcenie
@@ -486,14 +486,13 @@ Wśród ankietowanych najliczniejszą grupę reprezentowało 57,4\%) (66 osób) 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=11cm]{char_gr_bad/podyplom00}
+\includegraphics[width=13cm]{char_gr_bad/podyplom01}
 \caption{Wykszałcenie podyplomowe osób ankietowanych. Badania własne 2021/2022}
 \label{rys:podyplom}
 \end{figure}
 
 
-\subsection*{Stan cywilny}
-Zdecydowana większość ankietowanych pozostaje  w związku małżeńskim 67,8\%  (78 osób) , w związku nieformalnym 17,4\% (20 osób). 15 \% to osoby nie żyjące w związku, w tym  8,7\%) (10 osób) rozwiedzione,  5,2\%) ( 6 osób) samotne i 0,9\%)  (1 osoba)  to wdowa. Rozkład ankietowanych pod względem stanu cywilnego ilustruje rys. \ref{rys:cywil}.
+Zdecydowana większość ankietowanych pozostaje  w związku małżeńskim 67,8\%  (78 osób) , w związku nieformalnym 17,4\% (20 osób). 15\% to osoby nie żyjące w związku, w tym  8,7\%) (10 osób) rozwiedzione,  5,2\%) (6 osób) samotne i 0,9\%  (1 osoba)  to wdowa. Rozkład ankietowanych pod względem stanu cywilnego ilustruje rys. \ref{rys:cywil}.
 
 % stan cywilny
 \begin{figure}[H]
@@ -503,8 +502,8 @@ Zdecydowana większość ankietowanych pozostaje  w związku małżeńskim 67,8\
 \label{rys:cywil}
 \end{figure}
 
-\subsection*{Miejszce zamieszkania}
-Rozkład ankietowanych pod względem miejsca zamieszkania przedstawiono na rys. \ref{rys:zamiesz}. Rozkład ten okazał się być dość równomierny. Niewiele powyżej średniej stanowiła grupa 25,2\%   (29 osób) zamieszkująca  wsie. Miasta do 50 tys. mieszkańców reprezentowała grupa  20\%  (23 osoby). Tak samo liczna grupa zamieszkiwała w miastach od 50 do 150 tys. Nieco mniejsza grupa  18,3\% (21 osób) pochodziła z miast powyżej 150 tys, natomiast z miast powyżej 500 tys.  16,5\% (19 osób).
+
+Rozkład ankietowanych pod względem miejsca zamieszkania przedstawiono na rys. \ref{rys:zamiesz}. Rozkład ten okazał się być dość równomierny. Niewiele powyżej średniej stanowiła grupa 25,2\% (29 osób) zamieszkująca  wsie. Miasta do 50 tys. mieszkańców reprezentowała grupa  20\%  (23 osoby). Tak samo liczna grupa zamieszkiwała w miastach od 50 do 150 tys. Nieco mniejsza grupa  18,3\% (21 osób) pochodziła z miast powyżej 150 tys, natomiast z miast powyżej 500 tys.  16,5\% (19 osób).
 % miejsce zamieszkania
 \begin{figure}[H]
 \centering
@@ -518,7 +517,7 @@ Rozkład ankietowanych pod względem miejsca zamieszkania przedstawiono na rys. 
 %-----------------
 \section{Opis metod analizy statystycznej}
 
-Analizy wykonano w programie GNU PSPP, wer.: 1.4.1, oraz w programie Microsoft Excel, wer 16.60. Konwersję wyników ankiety Google do postaci tabelarycznej wykonano przy pomocy skryptu wykonanego w programie PyCharm, wer.: 2022.1.1.
+Analizy wykonano w programie GNU PSPP, wer.: 1.4.1, oraz w programie Microsoft Excel, wer 16.60. Konwersję wyników ankiety Google do postaci tabelarycznej wykonano przy pomocy skryptu w języku python wykonanego w programie PyCharm, wer.: 2022.1.1.
 
 \vspace{\baselineskip} 
 
@@ -556,7 +555,10 @@ Metody statystyczne, którymi się posłużono, to:
 
 \chapter*{Wyniki badań}
 
-	Poniżej przedstawiono odpowiedzi respondentów na pytania ankietowe zawarte w załączniku \ref{app:ankieta}. Wyniki w postaci tabel przedstawiono w kolejności, w jakiej ich dane wykorzystane były w badaniach prawdziwości założonych hipotez.
+	Poniżej przedstawiono odpowiedzi respondentów na pytania ankietowe, zał. \ref{app:ankieta}. 
+	Wyniki, w postaci tabel, przedstawiono w kolejności użycia w badaniach założonych hipotez.
+	
+\vspace{\baselineskip} 
 
 %hip 1
 \input wynikitabele/Q2.tex
