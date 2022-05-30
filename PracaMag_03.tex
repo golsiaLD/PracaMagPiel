@@ -16,6 +16,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage[none]{hyphenat}
 \usepackage{float}
+\usepackage[title,titletoc]{appendix}
 
 % interlinia
 \linespread{1.3} % 1 - pojedyncza, 1.3 - poltora, 1.6 - podwojna
@@ -123,8 +124,6 @@
 
 \newpage
 % Wykaz skrótów
-
-
 \Large Wykaz skrótów
 \normalsize
 
@@ -594,33 +593,33 @@ Metody statystyczne, którymi się posłużono, to:
 
 \input wynikitabele/Q22.tex
 
-\input wynikitabele/Q15.tex
+\input wynikitabele/Q15.tex   % presja
 
-\input wynikitabele/Q14.tex
+\input wynikitabele/Q14.tex   % dylemat
 
-\input wynikitabele/Q27.tex
+\input wynikitabele/Q27.tex   % konflikty
 
-\input wynikitabele/Q12.tex
+\input wynikitabele/Q12.tex   % techniki psychologiczne
 
 %hip 3
 
-\input wynikitabele/Q29.tex
+\input wynikitabele/Q29.tex   % rozpad związku
 
-\input wynikitabele/Q28.tex
+\input wynikitabele/Q28.tex   % praca powodem niezgody
 
 %hip 4
 
-\input wynikitabele/Q5.tex
+\input wynikitabele/Q5.tex   % zadowolona z wyboru drogi zaw.
 
-\input wynikitabele/Q7.tex
+\input wynikitabele/Q7.tex   % wspierające środowisko
 
-\input wynikitabele/Q20.tex
+\input wynikitabele/Q20.tex  % satysfakcja z autonomii
 
 %hip 5
 
-\input wynikitabele/Q21.tex
+\input wynikitabele/Q21.tex  % wykorzystanie kompetencji
 
-\input wynikitabele/Q9.tex
+\input wynikitabele/Q9.tex  % systemy motywacyjne
 
 
 %-------------------------
@@ -988,7 +987,7 @@ nursery, work, family, work satisfaction
 %----------------------------- 
 
 
-\appendix
+%\appendix
 
 
 \makeatletter 
@@ -1148,10 +1147,29 @@ nursery, work, family, work satisfaction
 %        DODATKI
 % -----------------------
 
-\chapter{Pytania ankietowe}
+
+\begin{appendices}
+\renewcommand\thechapter{\arabic{chapter}}
+\renewcommand\thesection{\arabic{section}}
+
+\renewcommand{\appendixpagename}{Aneks}
+\renewcommand{\appendixname}{Załącznik}
+
+\appendixpage
+
+\chapter[Załącznik]{Oświadczenie}
+
+
+\chapter[Załacznik]{Pytania ankietowe}
 \label{app:ankieta}
 
-\textit{Ocena wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy czynnych zawodowo.}
+\end{appendices}
+
+\textit{\Large{Ocena wpływu pracy zawodowej na życie osobiste pielęgniarek i pielęgniarzy czynnych zawodowo.}}
+
+\vspace{\baselineskip} 
+
+Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WSM w Legnicy. Bardzo proszę o udzielenie odpowiedzi na pytania zawarte w ankiecie. Udział w badaniu jest dobrowolny i anonimowy, oznacza zgodę na publikację w pracy magisterskiej. Wypełnienie ankiety, nie zajmie Państwu wiele czasu, a dla mnie będzie cennym materiałem badawczym. Bardzo dziękuję za poświęcony czas.
 
 %metryczka
 \begin{enumerate}[label=(\Roman*)]
