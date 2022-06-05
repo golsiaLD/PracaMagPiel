@@ -18,6 +18,13 @@
 \usepackage{float}
 \usepackage[title,titletoc]{appendix}
 
+\usepackage{caption}
+\captionsetup[table]{labelsep=space}
+\captionsetup[figure]{labelsep=period}
+
+
+
+
 % interlinia
 \linespread{1.3} % 1 - pojedyncza, 1.3 - poltora, 1.6 - podwojna
 
@@ -34,6 +41,10 @@
 % \tocless\section{Rozdział niewidoczny w spisie tresci}
 
 \renewcommand*\thetable{\Roman{table}}
+
+
+
+%\renewcommand{\thetable}{\arabic{chapter} \arabic{table}} 
 
 
 %pakiet anysize - papersize marginsize
@@ -111,7 +122,15 @@
 %uaktywnić specjalne komendy związane z tworzeniem indeksów.
 %\makeindex
 
+
+%\DeclareTOCStyleEntry[dynnumwidth]{tocline}{table}
+%\DeclareTOCStyleEntries[dynnumwidth,indent=0pt]{tocline}{figure,table}
+
+
 \begin{document}
+
+
+
 \sloppy
 \maketitle
 
@@ -527,17 +546,21 @@ Analizy wykonano w programie GNU PSPP, wer.: 1.4.1, oraz w programie Microsoft E
 
 Wyniki testów statystycznych podano w standardzie APA \cite{apa}:\newline
 
-\begin{equation}
-    \chi^2 (lss, n) = x, p=y
-\end{equation}
+%\begin{equation}
+    \[\chi^2 (lss, n) = x, p=y\]
+%\end{equation}
+
+\begin{itemize}
+\item[] gdzie:
+\begin{description}
+\item[$lss$] -liczba stopni swobody
+\item[$n$] - liczność zbioru danych
+\item[$x$] - obliczona wartość testu $\chi^2$
+\item[$y$] - wartość prawdopodobieństwa $p$
+\end{description}
+\end{itemize}
 
 \vspace{\baselineskip} 
-gdzie:\newline
-$lss$ -liczba stopni swobody\newline
-$n$ - liczność zbioru danych\newline
-$x$ - obliczona wartość testu $\chi^2$\newline
-$y$ - wartość prawdopodobieństwa $p$\newline
-
 
 Metody statystyczne, którymi się posłużono, to:
 \begin{itemize}
@@ -1217,7 +1240,19 @@ nurse, work, family, work satisfaction
 
 
 %\thispagestyle{empty}
+
+% List of Tables
+
+%\renewcommand{\cftlottitlefont}{\normalfont}
+%\renewcommand\listtablename{\centerline{TABLES}}
+%\renewcommand{\cfttabaftersnum}{.}
+%\setlength{\cfttabindent}{0pt}
+%\setlength\cftbeforechapskip{0pt}
+%\setlength\cftbeforetabskip{11pt}
+
 \listoftables
+
+
 \listoffigures
 
 
