@@ -9,7 +9,7 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{tabularx}
 \usepackage{array}
-\usepackage{subfigure}
+%\usepackage{subfigure}
 \usepackage{amsfonts}
 \usepackage{verbatim}
 \usepackage{indentfirst}
@@ -81,7 +81,7 @@
 
 %%%%%%%%%%%%%%% Strona Tytułowa %%%%%%%%%%%%%%%%%
 % To trzeba wypelnic swoimi danymi
-\title{Wpływ pracy zawodowej w ponadnormatywnym wymiarze czasu pracy, na życie osobiste pielęgniarek i pielęgniarzy}
+\title{Wpływ pracy zawodowej w ponadnormatywnym wymiarze czasu pracy na życie osobiste pielęgniarek i pielęgniarzy}
 
 % autor
 \author{Małgorzata Ługin-Dąbrowska}
@@ -115,6 +115,15 @@
 
 %uaktywnić specjalne komendy związane z tworzeniem indeksów.
 %\makeindex
+
+%modyfikacja odległości przed tyytułem rozdziału
+\makeatletter
+\SetSectionFormatting[breakbefore,wholewidth]{chapter}
+        {33\p@}  %<-------------------- change this value (default is 56)
+        {\FormatBlockHeading{\LARGE}}
+        {24\p@}
+\makeatother
+
 
 \begin{document}
 \sloppy
@@ -216,6 +225,7 @@ Ostatnia część zawiera streszczenie, słowa kluczowe w języku polskim i angi
 % Wpływ pracy zawodowej pielęgniarek i pielęgniarzy na życie osobiste
 %-----------------
 \chapter{Wpływ pracy zawodowej pielęgniarek i~pielęgniarzy na życie osobiste w świetle literatury przedmiotu}
+
 Zawód pielęgniarki należy do najbardziej prestiżowych profesji na świecie. W~wydanym przez WHO i Międzynarodową Radę Pielęgniarek raporcie o~stanie światowego pielęgniarstwa w roku 2020, podkreśla się szczególne znaczenie pielęgniarstwa, w każdym systemie ochrony zdrowia. Pielęgniarki pełnią kluczową rolę w sytuacji światowego zagrożenia zdrowotnego \cite{who}.  Również w Polsce coroczne rankingi najbardziej szanowanych zawodów, umieszczają tę grupę zawodową na~wysokich pozycjach \cite{rap}. Mimo tego, od lat, obserwuje się znaczną dysproporcję między powszechną opinią o szacunku, a kojarzeniem zawodu z niskim wynagrodzeniem, ciężką pracą fizyczną i umysłową oraz nieustannymi wyrzeczeniami w życiu osobistym. Fenomen pogłębia fakt, iż pielęgniarki w większości, nie żałują wyboru zawodu, podkreślają, że daje  im wiele satysfakcji.
 
   %-----------------
@@ -412,8 +422,6 @@ Sformułowano hipotezy szczegółowe:
 \section{Metody i narzędzia badawcze}
 Tadeusz Pilch o metodzie badawczej mówi, że jest to zespól czynności i~zabiegów zmierzających do poznania określonego przedmiotu. To pewnego rodzaju charakterystyczne działanie, które podejmujemy, w celu zdobycia interesujących nas danych \cite{tadeusz}. Dla celów pracy wybrano metodę sondażu diagnostycznego, analizę i~krytykę piśmiennictwa.\cite{krys}
 
-O technice badawczej autor mówi, iż jest wykładnią naczelnych problemów badawczych \cite{tadeusz}. 
-
 W pracy ze względu na ograniczony dostęp do wybranej grupy badanej, zastosowano autorski kwestionariusz ankietowy oraz techniki statystyczne.
 Tworząc narzędzie diagnostyczne do badania istotnych dla tego opracowania (kwestionariusz ankiety dla pielęgniarek i pielęgniarzy) wykorzystano formę pytań i odpowiedzi nazywaną skalą ocen lub pytaniem typu Likerta, w skrócie określaną skalą Likerta. Jest to skala o~wyższym stopniu standaryzacji. Do oceny stwierdzeń wybrano wariant pięciopunktowy. Zawiera on tzw. neutralny punkt środkowy ("nie mam zdania"). Trzeba pamiętać, że~respondenci wykazują tendencję do wyboru tych kategorii, które są najbliżej środka.
 
@@ -438,9 +446,6 @@ Badania przeprowadzono wśród absolwentów i obecnych studentów studiów niest
 W badaniu sondażowym, wzięło udział 115  studentów  i absolwentów  kierunku pielęgniarstwo II stopnia, w Wyższej Szkole Medycznej w Legnicy. Badanie przeprowadzono on-line.  Najliczniejszą grupę 57\%  (65) stanowili respondenci w wieku od 45 do 60 lat 
 Ilustrację rozkładu wieku osób biorących udział w badaniu przestawia rys. \ref{rys:wiek}.
 
-Opis statystyczny przedstawia tabela \ref{tab:wiek}.
-
-
 % ilustracja wiek
 \begin{figure}[H]
 \centering
@@ -449,6 +454,7 @@ Opis statystyczny przedstawia tabela \ref{tab:wiek}.
 \label{rys:wiek}
 \end{figure}
 
+Opis statystyczny przedstawia tabela \ref{tab:wiek}.
 
 % tabela wiek  - statystyka
 \begin {table}[H]
@@ -501,7 +507,7 @@ Wśród ankietowanych najliczniejszą grupę reprezentowało 57,4\% (66) badanyc
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=13cm]{char_gr_bad/podyplom01}
+\includegraphics[width=9cm]{char_gr_bad/podyplom01}
 \caption{Wykszałcenie podyplomowe osób ankietowanych. Badania własne 2021/2022}
 \label{rys:podyplom}
 \end{figure}
@@ -1310,7 +1316,7 @@ nurse, work, family, work satisfaction
 \renewcommand\thesection{\arabic{section}}
 
 \renewcommand{\appendixpagename}{Aneks}
-%\renewcommand{\appendixname}{Załącznik}
+\renewcommand{\appendixname}{Załącznik}
 
 \appendixpage
 
