@@ -18,6 +18,8 @@
 \usepackage{float}
 \usepackage[title,titletoc]{appendix}
 
+\usepackage{changepage}
+
 % usun kropki po rzymskich
 \usepackage{caption}
 \captionsetup[table]{labelsep=space}
@@ -116,7 +118,7 @@
 %uaktywnić specjalne komendy związane z tworzeniem indeksów.
 %\makeindex
 
-%modyfikacja odległości przed tyytułem rozdziału
+%modyfikacja odległości przed tytułem rozdziału
 \makeatletter
 \SetSectionFormatting[breakbefore,wholewidth]{chapter}
         {33\p@}  %<-------------------- change this value (default is 56)
@@ -131,7 +133,7 @@
 
 \newpage
 
-\centerline{Pielęgniarkom przyszłym i obecnym}
+
 %\newpage
 
 \tableofcontents
@@ -140,9 +142,10 @@
 
 \newpage
 % Wykaz skrótów
+
 \Large Wykaz skrótów
 \normalsize
-
+\vspace{\baselineskip} 
 %\tocless\section{Wykaz skrótów}
 %\section*{Wykaz skrótów}
 
@@ -1301,7 +1304,11 @@ nurse, work, family, work satisfaction
 
 
 %\thispagestyle{empty}
-\listoftables
+
+%\listoftables
+\chapter*{Spis tabel}
+\input spistabel.tex
+
 \listoffigures
 
 
@@ -1770,7 +1777,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 			\item{zdecydowanie tak}
 			\item{raczej tak}
 		\end{itemize}
-		\vspace{\baselineskip}
+		\vspace{5pt}
 		
 			%schorzenia
 			\item{Czy choruje Pan/i  na ?}
@@ -1779,7 +1786,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 			\item{choroby współistniejące}
 			\item{nie choruję na w.w choroby}
 			\end{itemize}
-		\vspace{\baselineskip}
+		\vspace{5pt}
 		
 			%empatia
 			\item{Czy empatia była głównym kryterium wyboru zawodu przez Pana/nią?}
@@ -1790,7 +1797,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 			\item{zdecydowanie tak}
 			\item{raczej tak}
 		\end{itemize}
-		\vspace{\baselineskip}
+		\vspace{5pt}
 		
 			%wypalenie
 			\item{Czy uważa Pan/i, że jest wypalona zawodowo?}
@@ -1801,7 +1808,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 			\item{zdecydowanie tak}
 			\item{raczej tak}
 		\end{itemize}
-		\vspace{\baselineskip}
+		\vspace{5pt}
 		
 			%perspektywa
 			\item{ Czy z perspektywy czasu uważa Pan/i, że dokonał/a dobrego wyboru ścieżki zawodowej?}
@@ -1812,7 +1819,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 			\item{zdecydowanie tak}
 			\item{raczej tak}
 		\end{itemize}
-		\vspace{\baselineskip}
+		\vspace{5pt}
 		
 			%dziecko
 			\item{Czy gdyby Pana/i dziecko zdecydowało się spełniać w pielęgniarstwie, wspierałby je Pan/i  w tym wyborze?}
@@ -1823,7 +1830,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 			\item{zdecydowanie tak}
 			\item{raczej tak}
 		\end{itemize}
-		\vspace{\baselineskip}
+		
 			
 \end{enumerate}
 
@@ -1841,7 +1848,7 @@ Jestem studentką II roku studiów magisterskich na kierunku Pielęgniarstwo, WS
 \label{rys:crosstable}
 \end{figure}
 
-Przedstawiona powyżej tablica korelacji jest wynikiem wstępnej analizy statystycznej danych z ankiety. Na obu osiach oznaczono zmienne podane korelacji. Na przecięciach tych zmiennych można zaobserwować pola oznaczone kolorem i wartością liczbową. Pola te oznaczają, że pomiędzy zmiennymi zachodzi pewna korelacja. 
+Przedstawiona powyżej tabela korelacji jest wynikiem wstępnej analizy statystycznej danych z ankiety. Na obu osiach oznaczono zmienne podane korelacji. Na przecięciach tych zmiennych można zaobserwować pola oznaczone kolorem i wartością liczbową. Pola te oznaczają, że pomiędzy zmiennymi zachodzi pewna korelacja. 
 Wartość liczbowa określa siłę korelacji. Zakres tej siły zawiera się w przedziale od -1.0 do 1.0, przy czym wartości bliżej zera oznaczają słabszą korelację niż te bliżej bezwzględnej wartości 1. Znak liczby +/- określa kierunek korelacji. Znak dodatni, podkreślony kolorem zielonym pola, wskazuje na korelacje proporcjonalną, podczas gdy znak ujemny (kolor czerwony) oznacza korelację odwrotnie proporcjonalną.
 
 \end{appendices}
